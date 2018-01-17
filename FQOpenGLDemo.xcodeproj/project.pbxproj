@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B9377DC51F6A5CAA00CC06D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9377DC41F6A5CAA00CC06D8 /* main.m */; };
+		B9377DC81F6A5CAA00CC06D8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9377DC71F6A5CAA00CC06D8 /* AppDelegate.m */; };
+		B9377DCB1F6A5CAA00CC06D8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9377DCA1F6A5CAA00CC06D8 /* ViewController.m */; };
+		B9377DCE1F6A5CAA00CC06D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9377DCC1F6A5CAA00CC06D8 /* Main.storyboard */; };
+		B9377DD01F6A5CAA00CC06D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9377DCF1F6A5CAA00CC06D8 /* Assets.xcassets */; };
+		B9377DD31F6A5CAA00CC06D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9377DD11F6A5CAA00CC06D8 /* LaunchScreen.storyboard */; };
+		B9377DDE1F6A5CAA00CC06D8 /* FQOpenGLDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9377DDD1F6A5CAA00CC06D8 /* FQOpenGLDemoTests.m */; };
+		B9377DE91F6A5CAA00CC06D8 /* FQOpenGLDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9377DE81F6A5CAA00CC06D8 /* FQOpenGLDemoUITests.m */; };
+		B9377DF91F6A5F7500CC06D8 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B9377DF61F6A5F7500CC06D8 /* 1.jpg */; };
+		B9377DFA1F6A5F7500CC06D8 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B9377DF71F6A5F7500CC06D8 /* 2.jpg */; };
+		B9377DFB1F6A5F7500CC06D8 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B9377DF81F6A5F7500CC06D8 /* 3.jpg */; };
+		B9B4C38A1F6B8DDA00905D35 /* GLKExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B4C3891F6B8DDA00905D35 /* GLKExerciseViewController.m */; };
+		B9B4C38D1F6B8E4200905D35 /* ShaderExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B4C38C1F6B8E4200905D35 /* ShaderExerciseViewController.m */; };
+		B9D838BD1F6FB7B200E52FF0 /* vertexShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = B9D838BC1F6FB7B200E52FF0 /* vertexShader.glsl */; };
+		B9D838BF1F6FB82200E52FF0 /* fragmentShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = B9D838BE1F6FB82200E52FF0 /* fragmentShader.glsl */; };
+		B9D838C21F6FBAB500E52FF0 /* MyEAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D838C11F6FBAB500E52FF0 /* MyEAGLView.m */; };
+		B9F2CDD4200373F600FAC8A4 /* ear_10.png in Resources */ = {isa = PBXBuildFile; fileRef = B9F2CDD3200373F600FAC8A4 /* ear_10.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B9377DDA1F6A5CAA00CC06D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9377DB81F6A5CAA00CC06D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9377DBF1F6A5CAA00CC06D8;
+			remoteInfo = FQOpenGLDemo;
+		};
+		B9377DE51F6A5CAA00CC06D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9377DB81F6A5CAA00CC06D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9377DBF1F6A5CAA00CC06D8;
+			remoteInfo = FQOpenGLDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B9377DC01F6A5CAA00CC06D8 /* FQOpenGLDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FQOpenGLDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9377DC41F6A5CAA00CC06D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B9377DC61F6A5CAA00CC06D8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B9377DC71F6A5CAA00CC06D8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B9377DC91F6A5CAA00CC06D8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B9377DCA1F6A5CAA00CC06D8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B9377DCD1F6A5CAA00CC06D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B9377DCF1F6A5CAA00CC06D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B9377DD21F6A5CAA00CC06D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B9377DD41F6A5CAA00CC06D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9377DD91F6A5CAA00CC06D8 /* FQOpenGLDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FQOpenGLDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9377DDD1F6A5CAA00CC06D8 /* FQOpenGLDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FQOpenGLDemoTests.m; sourceTree = "<group>"; };
+		B9377DDF1F6A5CAA00CC06D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9377DE41F6A5CAA00CC06D8 /* FQOpenGLDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FQOpenGLDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9377DE81F6A5CAA00CC06D8 /* FQOpenGLDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FQOpenGLDemoUITests.m; sourceTree = "<group>"; };
+		B9377DEA1F6A5CAA00CC06D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9377DF61F6A5F7500CC06D8 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		B9377DF71F6A5F7500CC06D8 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		B9377DF81F6A5F7500CC06D8 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		B9B4C3881F6B8DDA00905D35 /* GLKExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLKExerciseViewController.h; sourceTree = "<group>"; };
+		B9B4C3891F6B8DDA00905D35 /* GLKExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLKExerciseViewController.m; sourceTree = "<group>"; };
+		B9B4C38B1F6B8E4200905D35 /* ShaderExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderExerciseViewController.h; sourceTree = "<group>"; };
+		B9B4C38C1F6B8E4200905D35 /* ShaderExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShaderExerciseViewController.m; sourceTree = "<group>"; };
+		B9D838BC1F6FB7B200E52FF0 /* vertexShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vertexShader.glsl; sourceTree = "<group>"; };
+		B9D838BE1F6FB82200E52FF0 /* fragmentShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fragmentShader.glsl; sourceTree = "<group>"; };
+		B9D838C01F6FBAB500E52FF0 /* MyEAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyEAGLView.h; sourceTree = "<group>"; };
+		B9D838C11F6FBAB500E52FF0 /* MyEAGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyEAGLView.m; sourceTree = "<group>"; };
+		B9F2CDD3200373F600FAC8A4 /* ear_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ear_10.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B9377DBD1F6A5CAA00CC06D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9377DD61F6A5CAA00CC06D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9377DE11F6A5CAA00CC06D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B9377DB71F6A5CAA00CC06D8 = {
+			isa = PBXGroup;
+			children = (
+				B9377DC21F6A5CAA00CC06D8 /* FQOpenGLDemo */,
+				B9377DDC1F6A5CAA00CC06D8 /* FQOpenGLDemoTests */,
+				B9377DE71F6A5CAA00CC06D8 /* FQOpenGLDemoUITests */,
+				B9377DC11F6A5CAA00CC06D8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B9377DC11F6A5CAA00CC06D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B9377DC01F6A5CAA00CC06D8 /* FQOpenGLDemo.app */,
+				B9377DD91F6A5CAA00CC06D8 /* FQOpenGLDemoTests.xctest */,
+				B9377DE41F6A5CAA00CC06D8 /* FQOpenGLDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B9377DC21F6A5CAA00CC06D8 /* FQOpenGLDemo */ = {
+			isa = PBXGroup;
+			children = (
+				B9F2CDD3200373F600FAC8A4 /* ear_10.png */,
+				B9B4C3D41F6BACAE00905D35 /* Shaders */,
+				B9B4C3871F6B8DDA00905D35 /* Exercises */,
+				B9377DF61F6A5F7500CC06D8 /* 1.jpg */,
+				B9377DF71F6A5F7500CC06D8 /* 2.jpg */,
+				B9377DF81F6A5F7500CC06D8 /* 3.jpg */,
+				B9377DC61F6A5CAA00CC06D8 /* AppDelegate.h */,
+				B9377DC71F6A5CAA00CC06D8 /* AppDelegate.m */,
+				B9377DC91F6A5CAA00CC06D8 /* ViewController.h */,
+				B9377DCA1F6A5CAA00CC06D8 /* ViewController.m */,
+				B9377DCC1F6A5CAA00CC06D8 /* Main.storyboard */,
+				B9377DCF1F6A5CAA00CC06D8 /* Assets.xcassets */,
+				B9377DD11F6A5CAA00CC06D8 /* LaunchScreen.storyboard */,
+				B9377DD41F6A5CAA00CC06D8 /* Info.plist */,
+				B9377DC31F6A5CAA00CC06D8 /* Supporting Files */,
+			);
+			path = FQOpenGLDemo;
+			sourceTree = "<group>";
+		};
+		B9377DC31F6A5CAA00CC06D8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B9377DC41F6A5CAA00CC06D8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B9377DDC1F6A5CAA00CC06D8 /* FQOpenGLDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				B9377DDD1F6A5CAA00CC06D8 /* FQOpenGLDemoTests.m */,
+				B9377DDF1F6A5CAA00CC06D8 /* Info.plist */,
+			);
+			path = FQOpenGLDemoTests;
+			sourceTree = "<group>";
+		};
+		B9377DE71F6A5CAA00CC06D8 /* FQOpenGLDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B9377DE81F6A5CAA00CC06D8 /* FQOpenGLDemoUITests.m */,
+				B9377DEA1F6A5CAA00CC06D8 /* Info.plist */,
+			);
+			path = FQOpenGLDemoUITests;
+			sourceTree = "<group>";
+		};
+		B9B4C3871F6B8DDA00905D35 /* Exercises */ = {
+			isa = PBXGroup;
+			children = (
+				B9B4C3881F6B8DDA00905D35 /* GLKExerciseViewController.h */,
+				B9B4C3891F6B8DDA00905D35 /* GLKExerciseViewController.m */,
+				B9B4C38B1F6B8E4200905D35 /* ShaderExerciseViewController.h */,
+				B9B4C38C1F6B8E4200905D35 /* ShaderExerciseViewController.m */,
+				B9D838C01F6FBAB500E52FF0 /* MyEAGLView.h */,
+				B9D838C11F6FBAB500E52FF0 /* MyEAGLView.m */,
+			);
+			path = Exercises;
+			sourceTree = "<group>";
+		};
+		B9B4C3D41F6BACAE00905D35 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				B9D838BC1F6FB7B200E52FF0 /* vertexShader.glsl */,
+				B9D838BE1F6FB82200E52FF0 /* fragmentShader.glsl */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B9377DBF1F6A5CAA00CC06D8 /* FQOpenGLDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9377DED1F6A5CAA00CC06D8 /* Build configuration list for PBXNativeTarget "FQOpenGLDemo" */;
+			buildPhases = (
+				B9377DBC1F6A5CAA00CC06D8 /* Sources */,
+				B9377DBD1F6A5CAA00CC06D8 /* Frameworks */,
+				B9377DBE1F6A5CAA00CC06D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FQOpenGLDemo;
+			productName = FQOpenGLDemo;
+			productReference = B9377DC01F6A5CAA00CC06D8 /* FQOpenGLDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B9377DD81F6A5CAA00CC06D8 /* FQOpenGLDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9377DF01F6A5CAA00CC06D8 /* Build configuration list for PBXNativeTarget "FQOpenGLDemoTests" */;
+			buildPhases = (
+				B9377DD51F6A5CAA00CC06D8 /* Sources */,
+				B9377DD61F6A5CAA00CC06D8 /* Frameworks */,
+				B9377DD71F6A5CAA00CC06D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9377DDB1F6A5CAA00CC06D8 /* PBXTargetDependency */,
+			);
+			name = FQOpenGLDemoTests;
+			productName = FQOpenGLDemoTests;
+			productReference = B9377DD91F6A5CAA00CC06D8 /* FQOpenGLDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B9377DE31F6A5CAA00CC06D8 /* FQOpenGLDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9377DF31F6A5CAA00CC06D8 /* Build configuration list for PBXNativeTarget "FQOpenGLDemoUITests" */;
+			buildPhases = (
+				B9377DE01F6A5CAA00CC06D8 /* Sources */,
+				B9377DE11F6A5CAA00CC06D8 /* Frameworks */,
+				B9377DE21F6A5CAA00CC06D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9377DE61F6A5CAA00CC06D8 /* PBXTargetDependency */,
+			);
+			name = FQOpenGLDemoUITests;
+			productName = FQOpenGLDemoUITests;
+			productReference = B9377DE41F6A5CAA00CC06D8 /* FQOpenGLDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B9377DB81F6A5CAA00CC06D8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = fanqi;
+				TargetAttributes = {
+					B9377DBF1F6A5CAA00CC06D8 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = V6R68WLKP9;
+						ProvisioningStyle = Automatic;
+					};
+					B9377DD81F6A5CAA00CC06D8 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = V6R68WLKP9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B9377DBF1F6A5CAA00CC06D8;
+					};
+					B9377DE31F6A5CAA00CC06D8 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = V6R68WLKP9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B9377DBF1F6A5CAA00CC06D8;
+					};
+				};
+			};
+			buildConfigurationList = B9377DBB1F6A5CAA00CC06D8 /* Build configuration list for PBXProject "FQOpenGLDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B9377DB71F6A5CAA00CC06D8;
+			productRefGroup = B9377DC11F6A5CAA00CC06D8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B9377DBF1F6A5CAA00CC06D8 /* FQOpenGLDemo */,
+				B9377DD81F6A5CAA00CC06D8 /* FQOpenGLDemoTests */,
+				B9377DE31F6A5CAA00CC06D8 /* FQOpenGLDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B9377DBE1F6A5CAA00CC06D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9D838BF1F6FB82200E52FF0 /* fragmentShader.glsl in Resources */,
+				B9D838BD1F6FB7B200E52FF0 /* vertexShader.glsl in Resources */,
+				B9377DD31F6A5CAA00CC06D8 /* LaunchScreen.storyboard in Resources */,
+				B9377DF91F6A5F7500CC06D8 /* 1.jpg in Resources */,
+				B9377DFA1F6A5F7500CC06D8 /* 2.jpg in Resources */,
+				B9377DFB1F6A5F7500CC06D8 /* 3.jpg in Resources */,
+				B9377DD01F6A5CAA00CC06D8 /* Assets.xcassets in Resources */,
+				B9F2CDD4200373F600FAC8A4 /* ear_10.png in Resources */,
+				B9377DCE1F6A5CAA00CC06D8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9377DD71F6A5CAA00CC06D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9377DE21F6A5CAA00CC06D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B9377DBC1F6A5CAA00CC06D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9377DCB1F6A5CAA00CC06D8 /* ViewController.m in Sources */,
+				B9377DC81F6A5CAA00CC06D8 /* AppDelegate.m in Sources */,
+				B9377DC51F6A5CAA00CC06D8 /* main.m in Sources */,
+				B9D838C21F6FBAB500E52FF0 /* MyEAGLView.m in Sources */,
+				B9B4C38D1F6B8E4200905D35 /* ShaderExerciseViewController.m in Sources */,
+				B9B4C38A1F6B8DDA00905D35 /* GLKExerciseViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9377DD51F6A5CAA00CC06D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9377DDE1F6A5CAA00CC06D8 /* FQOpenGLDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9377DE01F6A5CAA00CC06D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9377DE91F6A5CAA00CC06D8 /* FQOpenGLDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B9377DDB1F6A5CAA00CC06D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9377DBF1F6A5CAA00CC06D8 /* FQOpenGLDemo */;
+			targetProxy = B9377DDA1F6A5CAA00CC06D8 /* PBXContainerItemProxy */;
+		};
+		B9377DE61F6A5CAA00CC06D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9377DBF1F6A5CAA00CC06D8 /* FQOpenGLDemo */;
+			targetProxy = B9377DE51F6A5CAA00CC06D8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B9377DCC1F6A5CAA00CC06D8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9377DCD1F6A5CAA00CC06D8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B9377DD11F6A5CAA00CC06D8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9377DD21F6A5CAA00CC06D8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B9377DEB1F6A5CAA00CC06D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B9377DEC1F6A5CAA00CC06D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B9377DEE1F6A5CAA00CC06D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V6R68WLKP9;
+				INFOPLIST_FILE = FQOpenGLDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = qi.fan.FQOpenGLDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B9377DEF1F6A5CAA00CC06D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V6R68WLKP9;
+				INFOPLIST_FILE = FQOpenGLDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = qi.fan.FQOpenGLDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B9377DF11F6A5CAA00CC06D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = V6R68WLKP9;
+				INFOPLIST_FILE = FQOpenGLDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = qi.fan.FQOpenGLDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FQOpenGLDemo.app/FQOpenGLDemo";
+			};
+			name = Debug;
+		};
+		B9377DF21F6A5CAA00CC06D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = V6R68WLKP9;
+				INFOPLIST_FILE = FQOpenGLDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = qi.fan.FQOpenGLDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FQOpenGLDemo.app/FQOpenGLDemo";
+			};
+			name = Release;
+		};
+		B9377DF41F6A5CAA00CC06D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = V6R68WLKP9;
+				INFOPLIST_FILE = FQOpenGLDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = qi.fan.FQOpenGLDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FQOpenGLDemo;
+			};
+			name = Debug;
+		};
+		B9377DF51F6A5CAA00CC06D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = V6R68WLKP9;
+				INFOPLIST_FILE = FQOpenGLDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = qi.fan.FQOpenGLDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FQOpenGLDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B9377DBB1F6A5CAA00CC06D8 /* Build configuration list for PBXProject "FQOpenGLDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9377DEB1F6A5CAA00CC06D8 /* Debug */,
+				B9377DEC1F6A5CAA00CC06D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9377DED1F6A5CAA00CC06D8 /* Build configuration list for PBXNativeTarget "FQOpenGLDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9377DEE1F6A5CAA00CC06D8 /* Debug */,
+				B9377DEF1F6A5CAA00CC06D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9377DF01F6A5CAA00CC06D8 /* Build configuration list for PBXNativeTarget "FQOpenGLDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9377DF11F6A5CAA00CC06D8 /* Debug */,
+				B9377DF21F6A5CAA00CC06D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9377DF31F6A5CAA00CC06D8 /* Build configuration list for PBXNativeTarget "FQOpenGLDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9377DF41F6A5CAA00CC06D8 /* Debug */,
+				B9377DF51F6A5CAA00CC06D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B9377DB81F6A5CAA00CC06D8 /* Project object */;
+}
