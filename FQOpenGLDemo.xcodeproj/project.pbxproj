@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B904EFE821003BA3008B24FB /* FQShaderHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B904EFE721003BA3008B24FB /* FQShaderHelper.m */; };
+		B904EFEB21003F6C008B24FB /* MyTextureView.m in Sources */ = {isa = PBXBuildFile; fileRef = B904EFEA21003F6C008B24FB /* MyTextureView.m */; };
+		B904EFED21006842008B24FB /* texture.vs in Resources */ = {isa = PBXBuildFile; fileRef = B904EFEC21006842008B24FB /* texture.vs */; };
+		B904EFEF21006852008B24FB /* texture.fs in Resources */ = {isa = PBXBuildFile; fileRef = B904EFEE21006852008B24FB /* texture.fs */; };
+		B904EFF1210070A9008B24FB /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B904EFF0210070A9008B24FB /* 4.jpg */; };
+		B904EFF321008283008B24FB /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B904EFF221008283008B24FB /* 5.jpg */; };
+		B904EFF52100855B008B24FB /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B904EFF42100855B008B24FB /* 6.jpg */; };
+		B904EFF7210085D0008B24FB /* timg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B904EFF6210085CF008B24FB /* timg.jpeg */; };
+		B904EFF921008E55008B24FB /* awesomeface.png in Resources */ = {isa = PBXBuildFile; fileRef = B904EFF821008E55008B24FB /* awesomeface.png */; };
+		B904EFFC2100958A008B24FB /* MyTransformationsView.m in Sources */ = {isa = PBXBuildFile; fileRef = B904EFFB2100958A008B24FB /* MyTransformationsView.m */; };
+		B904EFFF210097E4008B24FB /* MyEAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = B904EFFE210097E4008B24FB /* MyEAGLView.m */; };
 		B9377DC51F6A5CAA00CC06D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9377DC41F6A5CAA00CC06D8 /* main.m */; };
 		B9377DC81F6A5CAA00CC06D8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9377DC71F6A5CAA00CC06D8 /* AppDelegate.m */; };
 		B9377DCB1F6A5CAA00CC06D8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9377DCA1F6A5CAA00CC06D8 /* ViewController.m */; };
@@ -22,7 +33,7 @@
 		B9B4C38D1F6B8E4200905D35 /* ShaderExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B4C38C1F6B8E4200905D35 /* ShaderExerciseViewController.m */; };
 		B9D838BD1F6FB7B200E52FF0 /* vertexShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = B9D838BC1F6FB7B200E52FF0 /* vertexShader.glsl */; };
 		B9D838BF1F6FB82200E52FF0 /* fragmentShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = B9D838BE1F6FB82200E52FF0 /* fragmentShader.glsl */; };
-		B9D838C21F6FBAB500E52FF0 /* MyEAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D838C11F6FBAB500E52FF0 /* MyEAGLView.m */; };
+		B9D838C21F6FBAB500E52FF0 /* MyTriangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D838C11F6FBAB500E52FF0 /* MyTriangleView.m */; };
 		B9F2CDD4200373F600FAC8A4 /* ear_10.png in Resources */ = {isa = PBXBuildFile; fileRef = B9F2CDD3200373F600FAC8A4 /* ear_10.png */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +55,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B904EFE621003BA3008B24FB /* FQShaderHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FQShaderHelper.h; sourceTree = "<group>"; };
+		B904EFE721003BA3008B24FB /* FQShaderHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FQShaderHelper.m; sourceTree = "<group>"; };
+		B904EFE921003F6C008B24FB /* MyTextureView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyTextureView.h; sourceTree = "<group>"; };
+		B904EFEA21003F6C008B24FB /* MyTextureView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTextureView.m; sourceTree = "<group>"; };
+		B904EFEC21006842008B24FB /* texture.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = texture.vs; sourceTree = "<group>"; };
+		B904EFEE21006852008B24FB /* texture.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = texture.fs; sourceTree = "<group>"; };
+		B904EFF0210070A9008B24FB /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		B904EFF221008283008B24FB /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
+		B904EFF42100855B008B24FB /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
+		B904EFF6210085CF008B24FB /* timg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = timg.jpeg; sourceTree = "<group>"; };
+		B904EFF821008E55008B24FB /* awesomeface.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = awesomeface.png; sourceTree = "<group>"; };
+		B904EFFA2100958A008B24FB /* MyTransformationsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyTransformationsView.h; sourceTree = "<group>"; };
+		B904EFFB2100958A008B24FB /* MyTransformationsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTransformationsView.m; sourceTree = "<group>"; };
+		B904EFFD210097E4008B24FB /* MyEAGLView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyEAGLView.h; sourceTree = "<group>"; };
+		B904EFFE210097E4008B24FB /* MyEAGLView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyEAGLView.m; sourceTree = "<group>"; };
 		B9377DC01F6A5CAA00CC06D8 /* FQOpenGLDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FQOpenGLDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9377DC41F6A5CAA00CC06D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B9377DC61F6A5CAA00CC06D8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -69,8 +95,8 @@
 		B9B4C38C1F6B8E4200905D35 /* ShaderExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShaderExerciseViewController.m; sourceTree = "<group>"; };
 		B9D838BC1F6FB7B200E52FF0 /* vertexShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vertexShader.glsl; sourceTree = "<group>"; };
 		B9D838BE1F6FB82200E52FF0 /* fragmentShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fragmentShader.glsl; sourceTree = "<group>"; };
-		B9D838C01F6FBAB500E52FF0 /* MyEAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyEAGLView.h; sourceTree = "<group>"; };
-		B9D838C11F6FBAB500E52FF0 /* MyEAGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyEAGLView.m; sourceTree = "<group>"; };
+		B9D838C01F6FBAB500E52FF0 /* MyTriangleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTriangleView.h; sourceTree = "<group>"; };
+		B9D838C11F6FBAB500E52FF0 /* MyTriangleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTriangleView.m; sourceTree = "<group>"; };
 		B9F2CDD3200373F600FAC8A4 /* ear_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ear_10.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,6 +125,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B904EFE521003B5F008B24FB /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				B904EFE621003BA3008B24FB /* FQShaderHelper.h */,
+				B904EFE721003BA3008B24FB /* FQShaderHelper.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 		B9377DB71F6A5CAA00CC06D8 = {
 			isa = PBXGroup;
 			children = (
@@ -123,11 +158,17 @@
 			isa = PBXGroup;
 			children = (
 				B9F2CDD3200373F600FAC8A4 /* ear_10.png */,
+				B904EFE521003B5F008B24FB /* Tools */,
 				B9B4C3D41F6BACAE00905D35 /* Shaders */,
 				B9B4C3871F6B8DDA00905D35 /* Exercises */,
 				B9377DF61F6A5F7500CC06D8 /* 1.jpg */,
 				B9377DF71F6A5F7500CC06D8 /* 2.jpg */,
 				B9377DF81F6A5F7500CC06D8 /* 3.jpg */,
+				B904EFF0210070A9008B24FB /* 4.jpg */,
+				B904EFF221008283008B24FB /* 5.jpg */,
+				B904EFF42100855B008B24FB /* 6.jpg */,
+				B904EFF821008E55008B24FB /* awesomeface.png */,
+				B904EFF6210085CF008B24FB /* timg.jpeg */,
 				B9377DC61F6A5CAA00CC06D8 /* AppDelegate.h */,
 				B9377DC71F6A5CAA00CC06D8 /* AppDelegate.m */,
 				B9377DC91F6A5CAA00CC06D8 /* ViewController.h */,
@@ -174,8 +215,14 @@
 				B9B4C3891F6B8DDA00905D35 /* GLKExerciseViewController.m */,
 				B9B4C38B1F6B8E4200905D35 /* ShaderExerciseViewController.h */,
 				B9B4C38C1F6B8E4200905D35 /* ShaderExerciseViewController.m */,
-				B9D838C01F6FBAB500E52FF0 /* MyEAGLView.h */,
-				B9D838C11F6FBAB500E52FF0 /* MyEAGLView.m */,
+				B904EFFD210097E4008B24FB /* MyEAGLView.h */,
+				B904EFFE210097E4008B24FB /* MyEAGLView.m */,
+				B9D838C01F6FBAB500E52FF0 /* MyTriangleView.h */,
+				B9D838C11F6FBAB500E52FF0 /* MyTriangleView.m */,
+				B904EFE921003F6C008B24FB /* MyTextureView.h */,
+				B904EFEA21003F6C008B24FB /* MyTextureView.m */,
+				B904EFFA2100958A008B24FB /* MyTransformationsView.h */,
+				B904EFFB2100958A008B24FB /* MyTransformationsView.m */,
 			);
 			path = Exercises;
 			sourceTree = "<group>";
@@ -185,6 +232,8 @@
 			children = (
 				B9D838BC1F6FB7B200E52FF0 /* vertexShader.glsl */,
 				B9D838BE1F6FB82200E52FF0 /* fragmentShader.glsl */,
+				B904EFEC21006842008B24FB /* texture.vs */,
+				B904EFEE21006852008B24FB /* texture.fs */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -300,13 +349,20 @@
 			files = (
 				B9D838BF1F6FB82200E52FF0 /* fragmentShader.glsl in Resources */,
 				B9D838BD1F6FB7B200E52FF0 /* vertexShader.glsl in Resources */,
+				B904EFF921008E55008B24FB /* awesomeface.png in Resources */,
 				B9377DD31F6A5CAA00CC06D8 /* LaunchScreen.storyboard in Resources */,
 				B9377DF91F6A5F7500CC06D8 /* 1.jpg in Resources */,
 				B9377DFA1F6A5F7500CC06D8 /* 2.jpg in Resources */,
+				B904EFF7210085D0008B24FB /* timg.jpeg in Resources */,
 				B9377DFB1F6A5F7500CC06D8 /* 3.jpg in Resources */,
 				B9377DD01F6A5CAA00CC06D8 /* Assets.xcassets in Resources */,
+				B904EFF1210070A9008B24FB /* 4.jpg in Resources */,
 				B9F2CDD4200373F600FAC8A4 /* ear_10.png in Resources */,
+				B904EFF321008283008B24FB /* 5.jpg in Resources */,
+				B904EFED21006842008B24FB /* texture.vs in Resources */,
+				B904EFEF21006852008B24FB /* texture.fs in Resources */,
 				B9377DCE1F6A5CAA00CC06D8 /* Main.storyboard in Resources */,
+				B904EFF52100855B008B24FB /* 6.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,10 +387,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B904EFFC2100958A008B24FB /* MyTransformationsView.m in Sources */,
+				B904EFE821003BA3008B24FB /* FQShaderHelper.m in Sources */,
 				B9377DCB1F6A5CAA00CC06D8 /* ViewController.m in Sources */,
+				B904EFFF210097E4008B24FB /* MyEAGLView.m in Sources */,
 				B9377DC81F6A5CAA00CC06D8 /* AppDelegate.m in Sources */,
 				B9377DC51F6A5CAA00CC06D8 /* main.m in Sources */,
-				B9D838C21F6FBAB500E52FF0 /* MyEAGLView.m in Sources */,
+				B904EFEB21003F6C008B24FB /* MyTextureView.m in Sources */,
+				B9D838C21F6FBAB500E52FF0 /* MyTriangleView.m in Sources */,
 				B9B4C38D1F6B8E4200905D35 /* ShaderExerciseViewController.m in Sources */,
 				B9B4C38A1F6B8DDA00905D35 /* GLKExerciseViewController.m in Sources */,
 			);

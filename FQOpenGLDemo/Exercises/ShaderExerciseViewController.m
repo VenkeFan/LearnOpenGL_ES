@@ -7,7 +7,8 @@
 //
 
 #import "ShaderExerciseViewController.h"
-#import "MyEAGLView.h"
+#import "MyTriangleView.h"
+#import "MyTextureView.h"
 
 @interface ShaderExerciseViewController ()
 
@@ -18,13 +19,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    MyEAGLView *view = [[MyEAGLView alloc] initWithFrame:self.view.bounds];
+    MyTextureView *view = [[MyTextureView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:view];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
 }
 
 @end
