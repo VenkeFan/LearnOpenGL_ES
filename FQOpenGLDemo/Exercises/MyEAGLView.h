@@ -14,6 +14,6 @@
 
 @property (nonatomic, strong) EAGLContext *context;
 
-- (void)render;
+- (void)renderWithVertexFileName:(NSString *)vertexName fragmentFileName:(NSString *)fragmentName;
 
 @end

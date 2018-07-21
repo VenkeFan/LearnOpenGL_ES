@@ -17,12 +17,12 @@
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
-        [self render];
+        [self renderWithVertexFileName:@"triangle" fragmentFileName:@"triangle"];
     }
     return self;
 }
 
-- (void)render {
+- (void)renderWithVertexFileName:(NSString *)vertexName fragmentFileName:(NSString *)fragmentName {
     
 #pragma mark - 复制顶点数组到缓冲中供OpenGL使用
     
@@ -83,8 +83,8 @@
 #pragma mark - 自定义着色器程序
     
     // 着色器源码文件路径
-    NSString* vertexFile = [[NSBundle mainBundle] pathForResource:@"vertexShader" ofType:@"glsl"];
-    NSString* fragmentFile = [[NSBundle mainBundle] pathForResource:@"fragmentShader" ofType:@"glsl"];
+    NSString* vertexFile = [[NSBundle mainBundle] pathForResource:vertexName ofType:@"vs"];
+    NSString* fragmentFile = [[NSBundle mainBundle] pathForResource:fragmentName ofType:@"fs"];
     
     // 着色器程序（项目对象）
     GLuint shaderProgram = [FQShaderHelper linkShaderWithVertexFilePath:vertexFile fragmentFilePath:fragmentFile];

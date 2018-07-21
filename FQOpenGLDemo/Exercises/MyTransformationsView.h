@@ -6,8 +6,8 @@
 //  Copyright © 2018年 fanqi. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "MyTextureView.h"
 
-@interface MyTransformationsView : UIView
+@interface MyTransformationsView : MyTextureView
 
 @end

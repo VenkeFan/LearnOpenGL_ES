@@ -18,12 +18,12 @@
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
-        [self render];
+        [self renderWithVertexFileName:@"texture" fragmentFileName:@"texture"];
     }
     return self;
 }
 
-- (void)render {
+- (void)renderWithVertexFileName:(NSString *)vertexName fragmentFileName:(NSString *)fragmentName {
     float vertices[] = {
         // ---- 位置 ----       ---- 颜色 ----     - 纹理坐标 -
         0.5f,  0.5f, 0.0f,   1.0f, 0.0f, 0.0f,   1.0f, 1.0f,   // 右上
@@ -53,8 +53,8 @@
     glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW); // 把顶点数据从 CPU 内存复制到 GPU 的缓冲内存中
     
     // 着色器程序
-    NSString* vertexFile = [[NSBundle mainBundle] pathForResource:@"texture" ofType:@"vs"];
-    NSString* fragmentFile = [[NSBundle mainBundle] pathForResource:@"texture" ofType:@"fs"];
+    NSString* vertexFile = [[NSBundle mainBundle] pathForResource:vertexName ofType:@"vs"];
+    NSString* fragmentFile = [[NSBundle mainBundle] pathForResource:fragmentName ofType:@"fs"];
     
     GLuint shaderProgram = [FQShaderHelper linkShaderWithVertexFilePath:vertexFile fragmentFilePath:fragmentFile];
     if (shaderProgram == 0) {
@@ -74,6 +74,7 @@
     GLuint texLoc = glGetAttribLocation(shaderProgram, "aTexCoord");
     glEnableVertexAttribArray(texLoc);
     glVertexAttribPointer(texLoc, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(GL_FLOAT), (GLfloat *)NULL + 6);
+    
     
     // 生成纹理
     [self genTexture:shaderProgram];

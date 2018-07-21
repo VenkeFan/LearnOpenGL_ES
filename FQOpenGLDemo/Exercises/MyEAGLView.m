@@ -32,7 +32,7 @@
     return self;
 }
 
-- (void)render {
+- (void)renderWithVertexFileName:(NSString *)vertexName fragmentFileName:(NSString *)fragmentName {
     
 }
 

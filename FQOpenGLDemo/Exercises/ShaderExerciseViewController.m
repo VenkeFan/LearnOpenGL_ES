@@ -9,6 +9,7 @@
 #import "ShaderExerciseViewController.h"
 #import "MyTriangleView.h"
 #import "MyTextureView.h"
+#import "MyTransformationsView.h"
 
 @interface ShaderExerciseViewController ()
 
@@ -19,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    MyTextureView *view = [[MyTextureView alloc] initWithFrame:self.view.bounds];
+    MyTransformationsView *view = [[MyTransformationsView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:view];
 }
 
