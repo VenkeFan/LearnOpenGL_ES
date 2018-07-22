@@ -51,28 +51,6 @@
         0.0f, 0.5f, 0.0f,       0.0f, 0.0f, 1.0f    // 顶部
     };
     
-    
-//    float vertices[] = {
-//        // 正方形（顶点不重复）
-//        0.5f, 0.5f, 0.0f,   // 右上角
-//        0.5f, -0.5f, 0.0f,  // 右下角
-//        -0.5f, -0.5f, 0.0f, // 左下角
-//        -0.5f, 0.5f, 0.0f   // 左上角
-//    };
-//    unsigned int indices[] = { // 注意索引从0开始!
-//        0, 1, 3, // 第一个三角形
-//        1, 2, 3  // 第二个三角形
-//    };
-//
-//    // 索引缓冲对象
-//    GLuint EBO;
-//    glGenBuffers(1, &EBO);
-//
-//    // 复制索引数组到一个索引缓冲中
-//    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
-//    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
-    
-    
     // 顶点缓冲对象
     GLuint VBO; // 缓冲ID
     glGenBuffers(1, &VBO); // 生成VBO对象
@@ -82,12 +60,8 @@
     
 #pragma mark - 自定义着色器程序
     
-    // 着色器源码文件路径
-    NSString* vertexFile = [[NSBundle mainBundle] pathForResource:vertexName ofType:@"vs"];
-    NSString* fragmentFile = [[NSBundle mainBundle] pathForResource:fragmentName ofType:@"fs"];
-    
     // 着色器程序（项目对象）
-    GLuint shaderProgram = [FQShaderHelper linkShaderWithVertexFilePath:vertexFile fragmentFilePath:fragmentFile];
+    GLuint shaderProgram = [FQShaderHelper linkShaderWithVertexFileName:vertexName fragmentFileName:fragmentName];
     if (shaderProgram == 0) {
         return;
     }
@@ -141,8 +115,6 @@
     
     // 绘制（vertices里有几个顶点坐标，这里的参数就传几个）
     glDrawArrays(GL_TRIANGLES, 0, 3); // 使用当前激活的着色器，之前定义的顶点属性配置，和VBO的顶点数据（通过VAO间接绑定）来绘制图元
-    
-//    glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0); // 从索引缓冲渲染
     
 #pragma mark - 渲染
     

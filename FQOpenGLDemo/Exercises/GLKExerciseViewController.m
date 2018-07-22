@@ -66,7 +66,7 @@
     
     
     // 纹理贴图
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"1" ofType:@"jpg"];
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"5" ofType:@"jpg"];
     NSDictionary *options = @{GLKTextureLoaderOriginBottomLeft: @(1)};
     GLKTextureInfo *textureInfo = [GLKTextureLoader textureWithContentsOfFile:filePath options:options error:nil];
     

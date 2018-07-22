@@ -13,7 +13,6 @@
 		B904EFEF21006852008B24FB /* texture.fs in Resources */ = {isa = PBXBuildFile; fileRef = B904EFEE21006852008B24FB /* texture.fs */; };
 		B904EFF1210070A9008B24FB /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B904EFF0210070A9008B24FB /* 4.jpg */; };
 		B904EFF321008283008B24FB /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B904EFF221008283008B24FB /* 5.jpg */; };
-		B904EFF52100855B008B24FB /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B904EFF42100855B008B24FB /* 6.jpg */; };
 		B904EFF7210085D0008B24FB /* timg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B904EFF6210085CF008B24FB /* timg.jpeg */; };
 		B904EFF921008E55008B24FB /* awesomeface.png in Resources */ = {isa = PBXBuildFile; fileRef = B904EFF821008E55008B24FB /* awesomeface.png */; };
 		B904EFFC2100958A008B24FB /* MyTransformationsView.mm in Sources */ = {isa = PBXBuildFile; fileRef = B904EFFB2100958A008B24FB /* MyTransformationsView.mm */; };
@@ -132,6 +131,14 @@
 		B913ABF42102E9FF00B013FB /* scalar_relational.inl in Resources */ = {isa = PBXBuildFile; fileRef = B913AB7F2102E9FE00B013FB /* scalar_relational.inl */; };
 		B913ABF52102E9FF00B013FB /* wrap.inl in Resources */ = {isa = PBXBuildFile; fileRef = B913AB802102E9FE00B013FB /* wrap.inl */; };
 		B913ABF62102E9FF00B013FB /* projection.inl in Resources */ = {isa = PBXBuildFile; fileRef = B913AB832102E9FE00B013FB /* projection.inl */; };
+		B913ABF921030F4100B013FB /* MyCoordinateSystemsView.mm in Sources */ = {isa = PBXBuildFile; fileRef = B913ABF821030F4100B013FB /* MyCoordinateSystemsView.mm */; };
+		B913ABFB210315D400B013FB /* coordinate.vs in Resources */ = {isa = PBXBuildFile; fileRef = B913ABFA210315D400B013FB /* coordinate.vs */; };
+		B913ABFD210315DB00B013FB /* coordinate.fs in Resources */ = {isa = PBXBuildFile; fileRef = B913ABFC210315DB00B013FB /* coordinate.fs */; };
+		B913AC0021041D4300B013FB /* MyCameraView.mm in Sources */ = {isa = PBXBuildFile; fileRef = B913ABFF21041D4300B013FB /* MyCameraView.mm */; };
+		B913AC0321045BA800B013FB /* MyColorView.mm in Sources */ = {isa = PBXBuildFile; fileRef = B913AC0221045BA800B013FB /* MyColorView.mm */; };
+		B913AC0521045C4300B013FB /* color.vs in Resources */ = {isa = PBXBuildFile; fileRef = B913AC0421045C4300B013FB /* color.vs */; };
+		B913AC0721045C4D00B013FB /* color.fs in Resources */ = {isa = PBXBuildFile; fileRef = B913AC0621045C4D00B013FB /* color.fs */; };
+		B913AC0921045FBA00B013FB /* lamp.fs in Resources */ = {isa = PBXBuildFile; fileRef = B913AC0821045FBA00B013FB /* lamp.fs */; };
 		B9377DC51F6A5CAA00CC06D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9377DC41F6A5CAA00CC06D8 /* main.m */; };
 		B9377DC81F6A5CAA00CC06D8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9377DC71F6A5CAA00CC06D8 /* AppDelegate.m */; };
 		B9377DCB1F6A5CAA00CC06D8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9377DCA1F6A5CAA00CC06D8 /* ViewController.m */; };
@@ -140,9 +147,6 @@
 		B9377DD31F6A5CAA00CC06D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9377DD11F6A5CAA00CC06D8 /* LaunchScreen.storyboard */; };
 		B9377DDE1F6A5CAA00CC06D8 /* FQOpenGLDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9377DDD1F6A5CAA00CC06D8 /* FQOpenGLDemoTests.m */; };
 		B9377DE91F6A5CAA00CC06D8 /* FQOpenGLDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9377DE81F6A5CAA00CC06D8 /* FQOpenGLDemoUITests.m */; };
-		B9377DF91F6A5F7500CC06D8 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B9377DF61F6A5F7500CC06D8 /* 1.jpg */; };
-		B9377DFA1F6A5F7500CC06D8 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B9377DF71F6A5F7500CC06D8 /* 2.jpg */; };
-		B9377DFB1F6A5F7500CC06D8 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B9377DF81F6A5F7500CC06D8 /* 3.jpg */; };
 		B9B4C38A1F6B8DDA00905D35 /* GLKExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B4C3891F6B8DDA00905D35 /* GLKExerciseViewController.m */; };
 		B9B4C38D1F6B8E4200905D35 /* ShaderExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B4C38C1F6B8E4200905D35 /* ShaderExerciseViewController.m */; };
 		B9D838BD1F6FB7B200E52FF0 /* triangle.vs in Resources */ = {isa = PBXBuildFile; fileRef = B9D838BC1F6FB7B200E52FF0 /* triangle.vs */; };
@@ -177,7 +181,6 @@
 		B904EFEE21006852008B24FB /* texture.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = texture.fs; sourceTree = "<group>"; };
 		B904EFF0210070A9008B24FB /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
 		B904EFF221008283008B24FB /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
-		B904EFF42100855B008B24FB /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
 		B904EFF6210085CF008B24FB /* timg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = timg.jpeg; sourceTree = "<group>"; };
 		B904EFF821008E55008B24FB /* awesomeface.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = awesomeface.png; sourceTree = "<group>"; };
 		B904EFFA2100958A008B24FB /* MyTransformationsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyTransformationsView.h; sourceTree = "<group>"; };
@@ -444,6 +447,17 @@
 		B913AB822102E9FE00B013FB /* rotate_normalized_axis.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rotate_normalized_axis.hpp; sourceTree = "<group>"; };
 		B913AB832102E9FE00B013FB /* projection.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = projection.inl; sourceTree = "<group>"; };
 		B913AB842102E9FE00B013FB /* type_aligned.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = type_aligned.hpp; sourceTree = "<group>"; };
+		B913ABF721030F4100B013FB /* MyCoordinateSystemsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCoordinateSystemsView.h; sourceTree = "<group>"; };
+		B913ABF821030F4100B013FB /* MyCoordinateSystemsView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MyCoordinateSystemsView.mm; sourceTree = "<group>"; };
+		B913ABFA210315D400B013FB /* coordinate.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = coordinate.vs; sourceTree = "<group>"; };
+		B913ABFC210315DB00B013FB /* coordinate.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = coordinate.fs; sourceTree = "<group>"; };
+		B913ABFE21041D4300B013FB /* MyCameraView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCameraView.h; sourceTree = "<group>"; };
+		B913ABFF21041D4300B013FB /* MyCameraView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MyCameraView.mm; sourceTree = "<group>"; };
+		B913AC0121045BA800B013FB /* MyColorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyColorView.h; sourceTree = "<group>"; };
+		B913AC0221045BA800B013FB /* MyColorView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MyColorView.mm; sourceTree = "<group>"; };
+		B913AC0421045C4300B013FB /* color.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = color.vs; sourceTree = "<group>"; };
+		B913AC0621045C4D00B013FB /* color.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = color.fs; sourceTree = "<group>"; };
+		B913AC0821045FBA00B013FB /* lamp.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = lamp.fs; sourceTree = "<group>"; };
 		B9377DC01F6A5CAA00CC06D8 /* FQOpenGLDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FQOpenGLDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9377DC41F6A5CAA00CC06D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B9377DC61F6A5CAA00CC06D8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -460,9 +474,6 @@
 		B9377DE41F6A5CAA00CC06D8 /* FQOpenGLDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FQOpenGLDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9377DE81F6A5CAA00CC06D8 /* FQOpenGLDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FQOpenGLDemoUITests.m; sourceTree = "<group>"; };
 		B9377DEA1F6A5CAA00CC06D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B9377DF61F6A5F7500CC06D8 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
-		B9377DF71F6A5F7500CC06D8 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
-		B9377DF81F6A5F7500CC06D8 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
 		B9B4C3881F6B8DDA00905D35 /* GLKExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLKExerciseViewController.h; sourceTree = "<group>"; };
 		B9B4C3891F6B8DDA00905D35 /* GLKExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLKExerciseViewController.m; sourceTree = "<group>"; };
 		B9B4C38B1F6B8E4200905D35 /* ShaderExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderExerciseViewController.h; sourceTree = "<group>"; };
@@ -832,12 +843,8 @@
 				B904EFE521003B5F008B24FB /* Tools */,
 				B9B4C3D41F6BACAE00905D35 /* Shaders */,
 				B9B4C3871F6B8DDA00905D35 /* Exercises */,
-				B9377DF61F6A5F7500CC06D8 /* 1.jpg */,
-				B9377DF71F6A5F7500CC06D8 /* 2.jpg */,
-				B9377DF81F6A5F7500CC06D8 /* 3.jpg */,
 				B904EFF0210070A9008B24FB /* 4.jpg */,
 				B904EFF221008283008B24FB /* 5.jpg */,
-				B904EFF42100855B008B24FB /* 6.jpg */,
 				B904EFF821008E55008B24FB /* awesomeface.png */,
 				B904EFF6210085CF008B24FB /* timg.jpeg */,
 				B9F2CDD3200373F600FAC8A4 /* ear_10.png */,
@@ -895,6 +902,12 @@
 				B904EFEA21003F6C008B24FB /* MyTextureView.m */,
 				B904EFFA2100958A008B24FB /* MyTransformationsView.h */,
 				B904EFFB2100958A008B24FB /* MyTransformationsView.mm */,
+				B913ABF721030F4100B013FB /* MyCoordinateSystemsView.h */,
+				B913ABF821030F4100B013FB /* MyCoordinateSystemsView.mm */,
+				B913ABFE21041D4300B013FB /* MyCameraView.h */,
+				B913ABFF21041D4300B013FB /* MyCameraView.mm */,
+				B913AC0121045BA800B013FB /* MyColorView.h */,
+				B913AC0221045BA800B013FB /* MyColorView.mm */,
 			);
 			path = Exercises;
 			sourceTree = "<group>";
@@ -908,6 +921,11 @@
 				B904EFEE21006852008B24FB /* texture.fs */,
 				B913AA7A2101E35500B013FB /* transformations.vs */,
 				B913AA7C2101E36100B013FB /* transformations.fs */,
+				B913ABFA210315D400B013FB /* coordinate.vs */,
+				B913ABFC210315DB00B013FB /* coordinate.fs */,
+				B913AC0421045C4300B013FB /* color.vs */,
+				B913AC0621045C4D00B013FB /* color.fs */,
+				B913AC0821045FBA00B013FB /* lamp.fs */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -1048,14 +1066,13 @@
 				B9377DD31F6A5CAA00CC06D8 /* LaunchScreen.storyboard in Resources */,
 				B913ABDF2102E9FF00B013FB /* vector_query.inl in Resources */,
 				B913ABD72102E9FF00B013FB /* closest_point.inl in Resources */,
+				B913ABFB210315D400B013FB /* coordinate.vs in Resources */,
+				B913AC0721045C4D00B013FB /* color.fs in Resources */,
 				B913ABA72102E9FF00B013FB /* func_exponential_simd.inl in Resources */,
 				B913ABAE2102E9FF00B013FB /* matrix_transform.inl in Resources */,
 				B913ABE22102E9FF00B013FB /* normalize_dot.inl in Resources */,
-				B9377DF91F6A5F7500CC06D8 /* 1.jpg in Resources */,
-				B9377DFA1F6A5F7500CC06D8 /* 2.jpg in Resources */,
 				B904EFF7210085D0008B24FB /* timg.jpeg in Resources */,
 				B913AB8B2102E9FF00B013FB /* func_vector_relational_simd.inl in Resources */,
-				B9377DFB1F6A5F7500CC06D8 /* 3.jpg in Resources */,
 				B913AB882102E9FF00B013FB /* func_vector_relational.inl in Resources */,
 				B913ABB12102E9FF00B013FB /* round.inl in Resources */,
 				B9377DD01F6A5CAA00CC06D8 /* Assets.xcassets in Resources */,
@@ -1071,6 +1088,7 @@
 				B913ABAC2102E9FF00B013FB /* quaternion.inl in Resources */,
 				B913ABAD2102E9FF00B013FB /* packing.inl in Resources */,
 				B913ABCC2102E9FF00B013FB /* number_precision.inl in Resources */,
+				B913AC0521045C4300B013FB /* color.vs in Resources */,
 				B913ABA52102E9FF00B013FB /* type_vec4_simd.inl in Resources */,
 				B913AB9C2102E9FF00B013FB /* type_mat4x4.inl in Resources */,
 				B913AB852102E9FF00B013FB /* CMakeLists.txt in Resources */,
@@ -1144,11 +1162,12 @@
 				B913ABD92102E9FF00B013FB /* integer.inl in Resources */,
 				B9377DCE1F6A5CAA00CC06D8 /* Main.storyboard in Resources */,
 				B913ABEE2102E9FF00B013FB /* normal.inl in Resources */,
+				B913AC0921045FBA00B013FB /* lamp.fs in Resources */,
+				B913ABFD210315DB00B013FB /* coordinate.fs in Resources */,
 				B913ABA62102E9FF00B013FB /* type_mat3x4.inl in Resources */,
 				B913AB932102E9FF00B013FB /* type_mat4x2.inl in Resources */,
 				B913ABDC2102E9FF00B013FB /* rotate_vector.inl in Resources */,
 				B913ABA92102E9FF00B013FB /* type_mat3x2.inl in Resources */,
-				B904EFF52100855B008B24FB /* 6.jpg in Resources */,
 				B913AB992102E9FF00B013FB /* type_mat2x2.inl in Resources */,
 				B913ABAA2102E9FF00B013FB /* type_mat3x3.inl in Resources */,
 			);
@@ -1176,15 +1195,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				B904EFFC2100958A008B24FB /* MyTransformationsView.mm in Sources */,
+				B913AC0321045BA800B013FB /* MyColorView.mm in Sources */,
 				B904EFE821003BA3008B24FB /* FQShaderHelper.m in Sources */,
 				B9377DCB1F6A5CAA00CC06D8 /* ViewController.m in Sources */,
 				B904EFFF210097E4008B24FB /* MyEAGLView.m in Sources */,
 				B9377DC81F6A5CAA00CC06D8 /* AppDelegate.m in Sources */,
 				B9377DC51F6A5CAA00CC06D8 /* main.m in Sources */,
 				B904EFEB21003F6C008B24FB /* MyTextureView.m in Sources */,
+				B913ABF921030F4100B013FB /* MyCoordinateSystemsView.mm in Sources */,
 				B9D838C21F6FBAB500E52FF0 /* MyTriangleView.m in Sources */,
 				B9B4C38D1F6B8E4200905D35 /* ShaderExerciseViewController.m in Sources */,
 				B9B4C38A1F6B8DDA00905D35 /* GLKExerciseViewController.m in Sources */,
+				B913AC0021041D4300B013FB /* MyCameraView.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

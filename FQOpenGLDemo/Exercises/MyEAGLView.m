@@ -69,6 +69,8 @@
     glGetRenderbufferParameteriv(GL_RENDERBUFFER, GL_RENDERBUFFER_WIDTH, &renderWidth);
     glGetRenderbufferParameteriv(GL_RENDERBUFFER, GL_RENDERBUFFER_HEIGHT, &renderHeight);
     
+    _renderWidth = renderWidth, _renderHeight = renderHeight;
+    
     glViewport(0, 0, renderWidth, renderHeight);
 }
 

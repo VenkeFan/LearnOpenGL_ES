@@ -13,6 +13,8 @@
 @interface MyEAGLView : UIView
 
 @property (nonatomic, strong) EAGLContext *context;
+@property (nonatomic, assign, readonly) NSInteger renderWidth;
+@property (nonatomic, assign, readonly) NSInteger renderHeight;
 
 - (void)renderWithVertexFileName:(NSString *)vertexName fragmentFileName:(NSString *)fragmentName;
 

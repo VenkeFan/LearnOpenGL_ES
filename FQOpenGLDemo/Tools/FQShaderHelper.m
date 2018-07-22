@@ -15,13 +15,16 @@
  着色器程序对象(Shader Program Object)是多个着色器合并之后并最终链接完成的版本。
  如果要使用编译的着色器就必须把它们链接为一个着色器程序对象，然后在渲染对象的时候激活这个着色器程序
  
- @param vertexFile 顶点着色器源码文件路径
- @param fragmentFile 片段着色器源码文件路径
+ @param vertexName 顶点着色器源码文件名
+ @param fragmentName 片段着色器源码文件名
  @return 着色器程序
  */
-+ (GLuint)linkShaderWithVertexFilePath:(NSString *)vertexFile fragmentFilePath:(NSString *)fragmentFile {
++ (GLuint)linkShaderWithVertexFileName:(NSString *)vertexName fragmentFileName:(NSString *)fragmentName {
     GLuint program;
     program = glCreateProgram(); // 创建着色器程序
+    
+    NSString* vertexFile = [[NSBundle mainBundle] pathForResource:vertexName ofType:@"vs"];
+    NSString* fragmentFile = [[NSBundle mainBundle] pathForResource:fragmentName ofType:@"fs"];
     
     GLuint vertexShader = [self loadShaderWithFilePath:vertexFile type:GL_VERTEX_SHADER]; // 顶点着色器
     GLuint fragmentShader = [self loadShaderWithFilePath:fragmentFile type:GL_FRAGMENT_SHADER]; // 片段着色器

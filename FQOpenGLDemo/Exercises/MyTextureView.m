@@ -53,10 +53,7 @@
     glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW); // 把顶点数据从 CPU 内存复制到 GPU 的缓冲内存中
     
     // 着色器程序
-    NSString* vertexFile = [[NSBundle mainBundle] pathForResource:vertexName ofType:@"vs"];
-    NSString* fragmentFile = [[NSBundle mainBundle] pathForResource:fragmentName ofType:@"fs"];
-    
-    GLuint shaderProgram = [FQShaderHelper linkShaderWithVertexFilePath:vertexFile fragmentFilePath:fragmentFile];
+    GLuint shaderProgram = [FQShaderHelper linkShaderWithVertexFileName:vertexName fragmentFileName:fragmentName];
     if (shaderProgram == 0) {
         return;
     }
@@ -86,7 +83,7 @@
     glClear(GL_COLOR_BUFFER_BIT);
     
     // 绘制
-    glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+    glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0); // 从索引缓冲渲染
     
     [self.context presentRenderbuffer:GL_RENDERBUFFER];
 }
