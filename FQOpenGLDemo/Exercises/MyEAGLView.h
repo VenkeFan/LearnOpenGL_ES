@@ -9,12 +9,13 @@
 #import <UIKit/UIKit.h>
 #import <GLKit/GLKit.h>
 #import <OpenGLES/ES2/gl.h>
+#import <OpenGLES/ES2/glext.h>
 
 @interface MyEAGLView : UIView
 
 @property (nonatomic, strong) EAGLContext *context;
-@property (nonatomic, assign, readonly) NSInteger renderWidth;
-@property (nonatomic, assign, readonly) NSInteger renderHeight;
+@property (nonatomic, assign, readonly) int32_t renderWidth;
+@property (nonatomic, assign, readonly) int32_t renderHeight;
 
 - (void)renderWithVertexFileName:(NSString *)vertexName fragmentFileName:(NSString *)fragmentName;
 

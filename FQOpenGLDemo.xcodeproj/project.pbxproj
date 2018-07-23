@@ -139,6 +139,11 @@
 		B913AC0521045C4300B013FB /* color.vs in Resources */ = {isa = PBXBuildFile; fileRef = B913AC0421045C4300B013FB /* color.vs */; };
 		B913AC0721045C4D00B013FB /* color.fs in Resources */ = {isa = PBXBuildFile; fileRef = B913AC0621045C4D00B013FB /* color.fs */; };
 		B913AC0921045FBA00B013FB /* lamp.fs in Resources */ = {isa = PBXBuildFile; fileRef = B913AC0821045FBA00B013FB /* lamp.fs */; };
+		B913AC0C2105C66900B013FB /* MyBasicLightingView.mm in Sources */ = {isa = PBXBuildFile; fileRef = B913AC0B2105C66900B013FB /* MyBasicLightingView.mm */; };
+		B913AC0E2105C6D800B013FB /* basicLighting.vs in Resources */ = {isa = PBXBuildFile; fileRef = B913AC0D2105C6D800B013FB /* basicLighting.vs */; };
+		B913AC102105C6E100B013FB /* basicLighting.fs in Resources */ = {isa = PBXBuildFile; fileRef = B913AC0F2105C6E100B013FB /* basicLighting.fs */; };
+		B913AC122105C6EC00B013FB /* basicLighting_lamp.fs in Resources */ = {isa = PBXBuildFile; fileRef = B913AC112105C6EC00B013FB /* basicLighting_lamp.fs */; };
+		B913AC142105C6FE00B013FB /* basicLighting_lamp.vs in Resources */ = {isa = PBXBuildFile; fileRef = B913AC132105C6FE00B013FB /* basicLighting_lamp.vs */; };
 		B9377DC51F6A5CAA00CC06D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9377DC41F6A5CAA00CC06D8 /* main.m */; };
 		B9377DC81F6A5CAA00CC06D8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9377DC71F6A5CAA00CC06D8 /* AppDelegate.m */; };
 		B9377DCB1F6A5CAA00CC06D8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9377DCA1F6A5CAA00CC06D8 /* ViewController.m */; };
@@ -458,6 +463,12 @@
 		B913AC0421045C4300B013FB /* color.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = color.vs; sourceTree = "<group>"; };
 		B913AC0621045C4D00B013FB /* color.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = color.fs; sourceTree = "<group>"; };
 		B913AC0821045FBA00B013FB /* lamp.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = lamp.fs; sourceTree = "<group>"; };
+		B913AC0A2105C66900B013FB /* MyBasicLightingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyBasicLightingView.h; sourceTree = "<group>"; };
+		B913AC0B2105C66900B013FB /* MyBasicLightingView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MyBasicLightingView.mm; sourceTree = "<group>"; };
+		B913AC0D2105C6D800B013FB /* basicLighting.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = basicLighting.vs; sourceTree = "<group>"; };
+		B913AC0F2105C6E100B013FB /* basicLighting.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = basicLighting.fs; sourceTree = "<group>"; };
+		B913AC112105C6EC00B013FB /* basicLighting_lamp.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = basicLighting_lamp.fs; sourceTree = "<group>"; };
+		B913AC132105C6FE00B013FB /* basicLighting_lamp.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = basicLighting_lamp.vs; sourceTree = "<group>"; };
 		B9377DC01F6A5CAA00CC06D8 /* FQOpenGLDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FQOpenGLDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9377DC41F6A5CAA00CC06D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B9377DC61F6A5CAA00CC06D8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -908,6 +919,8 @@
 				B913ABFF21041D4300B013FB /* MyCameraView.mm */,
 				B913AC0121045BA800B013FB /* MyColorView.h */,
 				B913AC0221045BA800B013FB /* MyColorView.mm */,
+				B913AC0A2105C66900B013FB /* MyBasicLightingView.h */,
+				B913AC0B2105C66900B013FB /* MyBasicLightingView.mm */,
 			);
 			path = Exercises;
 			sourceTree = "<group>";
@@ -926,6 +939,10 @@
 				B913AC0421045C4300B013FB /* color.vs */,
 				B913AC0621045C4D00B013FB /* color.fs */,
 				B913AC0821045FBA00B013FB /* lamp.fs */,
+				B913AC0D2105C6D800B013FB /* basicLighting.vs */,
+				B913AC0F2105C6E100B013FB /* basicLighting.fs */,
+				B913AC132105C6FE00B013FB /* basicLighting_lamp.vs */,
+				B913AC112105C6EC00B013FB /* basicLighting_lamp.fs */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -1040,6 +1057,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B913ABF32102E9FF00B013FB /* polar_coordinates.inl in Resources */,
+				B913AC122105C6EC00B013FB /* basicLighting_lamp.fs in Resources */,
 				B913ABDA2102E9FF00B013FB /* vector_angle.inl in Resources */,
 				B913ABBC2102E9FF00B013FB /* noise.inl in Resources */,
 				B913ABC22102E9FF00B013FB /* extend.inl in Resources */,
@@ -1054,6 +1072,7 @@
 				B913ABE62102E9FF00B013FB /* rotate_normalized_axis.inl in Resources */,
 				B913ABD82102E9FF00B013FB /* dual_quaternion.inl in Resources */,
 				B913ABE72102E9FF00B013FB /* matrix_major_storage.inl in Resources */,
+				B913AC0E2105C6D800B013FB /* basicLighting.vs in Resources */,
 				B9D838BD1F6FB7B200E52FF0 /* triangle.vs in Resources */,
 				B913AB952102E9FF00B013FB /* func_packing_simd.inl in Resources */,
 				B913ABC12102E9FF00B013FB /* matrix_query.inl in Resources */,
@@ -1080,6 +1099,7 @@
 				B913ABA42102E9FF00B013FB /* func_matrix.inl in Resources */,
 				B913ABB52102E9FF00B013FB /* integer.inl in Resources */,
 				B913ABBE2102E9FF00B013FB /* constants.inl in Resources */,
+				B913AC102105C6E100B013FB /* basicLighting.fs in Resources */,
 				B904EFF1210070A9008B24FB /* 4.jpg in Resources */,
 				B9F2CDD4200373F600FAC8A4 /* ear_10.png in Resources */,
 				B913ABC72102E9FF00B013FB /* type_trait.inl in Resources */,
@@ -1167,6 +1187,7 @@
 				B913ABA62102E9FF00B013FB /* type_mat3x4.inl in Resources */,
 				B913AB932102E9FF00B013FB /* type_mat4x2.inl in Resources */,
 				B913ABDC2102E9FF00B013FB /* rotate_vector.inl in Resources */,
+				B913AC142105C6FE00B013FB /* basicLighting_lamp.vs in Resources */,
 				B913ABA92102E9FF00B013FB /* type_mat3x2.inl in Resources */,
 				B913AB992102E9FF00B013FB /* type_mat2x2.inl in Resources */,
 				B913ABAA2102E9FF00B013FB /* type_mat3x3.inl in Resources */,
@@ -1203,6 +1224,7 @@
 				B9377DC51F6A5CAA00CC06D8 /* main.m in Sources */,
 				B904EFEB21003F6C008B24FB /* MyTextureView.m in Sources */,
 				B913ABF921030F4100B013FB /* MyCoordinateSystemsView.mm in Sources */,
+				B913AC0C2105C66900B013FB /* MyBasicLightingView.mm in Sources */,
 				B9D838C21F6FBAB500E52FF0 /* MyTriangleView.m in Sources */,
 				B9B4C38D1F6B8E4200905D35 /* ShaderExerciseViewController.m in Sources */,
 				B9B4C38A1F6B8DDA00905D35 /* GLKExerciseViewController.m in Sources */,

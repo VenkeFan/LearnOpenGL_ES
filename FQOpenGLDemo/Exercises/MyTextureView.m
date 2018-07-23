@@ -93,11 +93,11 @@
     NSDictionary *options = @{GLKTextureLoaderOriginBottomLeft: @(YES)};
     GLKTextureInfo *textureInfo = [GLKTextureLoader textureWithContentsOfFile:filePath options:options error:nil];
     
-    // 纹理单元0
+    // 纹理单元1
     GLuint texLocation = glGetUniformLocation(shaderProgram, "ourTexture");
     glUniform1i(texLocation, 0); // 将0传递给uniform ourTexture,如果激活的是GL_TEXTURE1就传递1，以此类推
     
-    // 纹理单元1
+    // 纹理单元2
     GLKTextureInfo *textureInfo2 = [GLKTextureLoader textureWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"awesomeface" ofType:@"png"] options:options error:nil];
     GLuint texLocation2 = glGetUniformLocation(shaderProgram, "anthorTexture");
     glUniform1i(texLocation2, 1);

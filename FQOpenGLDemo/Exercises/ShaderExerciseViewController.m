@@ -13,6 +13,7 @@
 #import "MyCoordinateSystemsView.h"
 #import "MyCameraView.h"
 #import "MyColorView.h"
+#import "MyBasicLightingView.h"
 
 @interface ShaderExerciseViewController ()
 
@@ -23,7 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    MyColorView *view = [[MyColorView alloc] initWithFrame:self.view.bounds];
+    MyBasicLightingView *view = [[MyBasicLightingView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:view];
 }
 

@@ -51,6 +51,11 @@
         0.0f, 0.5f, 0.0f,       0.0f, 0.0f, 1.0f    // 顶部
     };
     
+    // 顶点数组对象
+    GLuint VAO;
+    glGenVertexArraysOES(1, &VAO);
+    glBindVertexArrayOES(VAO);
+    
     // 顶点缓冲对象
     GLuint VBO; // 缓冲ID
     glGenBuffers(1, &VBO); // 生成VBO对象
