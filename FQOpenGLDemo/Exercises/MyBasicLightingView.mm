@@ -114,6 +114,7 @@
         glUniform3fv(glGetUniformLocation(objProgram, "lightPos"), 1, glm::value_ptr(lightPos));
         glUniform3f(glGetUniformLocation(objProgram, "lightColor"), 1.0f, 1.0f, 1.0f);
         glUniform3f(glGetUniformLocation(objProgram, "objectColor"), 1.0f, 0.5f, 0.31f);
+        glUniform3f(glGetUniformLocation(objProgram, "viewPos"), 0.0f, 0.0f, 3.0f);
         
         
         // 物体坐标

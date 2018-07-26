@@ -116,7 +116,7 @@
     glClearColor(0.3, 0.0, 0.0, 1.0);
     
     // 清空渲染缓存的旧内容
-    glClear(GL_COLOR_BUFFER_BIT);
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     
     // 绘制（vertices里有几个顶点坐标，这里的参数就传几个）
     glDrawArrays(GL_TRIANGLES, 0, 3); // 使用当前激活的着色器，之前定义的顶点属性配置，和VBO的顶点数据（通过VAO间接绑定）来绘制图元

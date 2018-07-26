@@ -80,7 +80,7 @@
     // 设置背景色
     glClearColor(0.3, 0.0, 0.0, 1.0);
     // 清空渲染缓存的旧内容
-    glClear(GL_COLOR_BUFFER_BIT);
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     
     // 绘制
     glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0); // 从索引缓冲渲染
