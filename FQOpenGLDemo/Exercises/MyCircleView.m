@@ -35,7 +35,7 @@ typedef struct {
         GLfloat y = radiusY * sin(delta * i);
         GLfloat z = 0.0;
         
-        Vertex v = (Vertex){x, y, z, x, y, x + y};
+        Vertex v = (Vertex){x, y, z, 1.0, 0.0, 0.0};
         vertices[i] = v;
         
         printf("%f, %f\n", x, y);
@@ -59,7 +59,7 @@ typedef struct {
     
     int colorLoc = glGetAttribLocation(shaderProgram, "v_Color");
     glEnableVertexAttribArray(colorLoc);
-    glVertexAttribPointer(colorLoc, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), (GLfloat *)NULL + sizeof(GLfloat) * 3);
+    glVertexAttribPointer(colorLoc, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), (GLfloat *)NULL + 3);
     
     glClearColor(1.0, 1.0, 0, 1.0);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
