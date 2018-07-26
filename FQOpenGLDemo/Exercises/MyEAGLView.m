@@ -14,7 +14,11 @@
 
 @end
 
-@implementation MyEAGLView
+@implementation MyEAGLView {
+    GLuint _frameBuffer;
+    GLuint _renderBuffer;
+    GLuint _depthRenderbuffer;
+}
 
 + (Class)layerClass {
     return [CAEAGLLayer class];
@@ -29,6 +33,12 @@
         [self initializeContext];
     }
     return self;
+}
+
+- (void)dealloc {
+    glDeleteFramebuffers(1, &_frameBuffer);
+    glDeleteRenderbuffers(1, &_renderBuffer);
+    glDeleteRenderbuffers(1, &_depthRenderbuffer);
 }
 
 - (void)renderWithVertexFileName:(NSString *)vertexName fragmentFileName:(NSString *)fragmentName {
@@ -47,22 +57,20 @@
                                             kEAGLDrawablePropertyColorFormat: kEAGLColorFormatRGBA8};
     
     // 设置颜色缓存
-    GLuint renderBuffer;
-    glGenRenderbuffers(1, &renderBuffer);
+    glGenRenderbuffers(1, &_renderBuffer);
     // 当第一次来绑定某个渲染缓存的时候，它会分配这个对象的存储空间并初始化，此后再调用这个函数的时候会将指定的渲染缓存对象绑定为当前的激活状态
-    glBindRenderbuffer(GL_RENDERBUFFER, renderBuffer);
+    glBindRenderbuffer(GL_RENDERBUFFER, _renderBuffer);
     
     // 渲染上下文绑定渲染窗口（图层）
     [self.context renderbufferStorage:GL_RENDERBUFFER fromDrawable:self.myEAGLLayer];
     
     // 设置帧缓存
-    GLuint frameBuffer;
-    glGenFramebuffers(1, &frameBuffer);
+    glGenFramebuffers(1, &_frameBuffer);
     // 当第一次来绑定某个帧缓存的时候，它会分配这个对象的存储空间并初始化，此后再调用这个函数的时候会将指定的帧缓存对象绑定为当前的激活状态
-    glBindFramebuffer(GL_FRAMEBUFFER, frameBuffer);
+    glBindFramebuffer(GL_FRAMEBUFFER, _frameBuffer);
     
     // 帧缓存装载渲染缓存的内容
-    glFramebufferRenderbuffer(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_RENDERBUFFER, renderBuffer);
+    glFramebufferRenderbuffer(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_RENDERBUFFER, _renderBuffer);
     
     // 渲染窗口
     glGetRenderbufferParameteriv(GL_RENDERBUFFER, GL_RENDERBUFFER_WIDTH, &_renderWidth);
@@ -71,16 +79,15 @@
     glViewport(0, 0, _renderWidth, _renderHeight);
     
     // 设置深度缓冲区
-    GLuint depthRenderbuffer;
-    glGenRenderbuffers(1, &depthRenderbuffer);
-    glBindRenderbuffer(GL_RENDERBUFFER, depthRenderbuffer);
+    glGenRenderbuffers(1, &_depthRenderbuffer);
+    glBindRenderbuffer(GL_RENDERBUFFER, _depthRenderbuffer);
     // 为当前绑定的渲染缓存对象分配图像数据空间
     glRenderbufferStorage(GL_RENDERBUFFER, GL_DEPTH_COMPONENT16, _renderWidth, _renderHeight);
-    glFramebufferRenderbuffer(GL_FRAMEBUFFER, GL_DEPTH_ATTACHMENT, GL_RENDERBUFFER, depthRenderbuffer);
+    glFramebufferRenderbuffer(GL_FRAMEBUFFER, GL_DEPTH_ATTACHMENT, GL_RENDERBUFFER, _depthRenderbuffer);
     glEnable(GL_DEPTH_TEST);
     
     // 设置颜色缓存为当前的渲染缓存
-    glBindRenderbuffer(GL_RENDERBUFFER, renderBuffer);
+    glBindRenderbuffer(GL_RENDERBUFFER, _renderBuffer);
 }
 
 @end

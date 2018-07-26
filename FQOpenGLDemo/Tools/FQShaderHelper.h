@@ -12,6 +12,5 @@
 @interface FQShaderHelper : NSObject
 
 + (GLuint)linkShaderWithVertexFileName:(NSString *)vertexName fragmentFileName:(NSString *)fragmentName;
-+ (GLuint)loadShaderWithFilePath:(NSString *)filePath type:(GLenum)type;
 
 @end

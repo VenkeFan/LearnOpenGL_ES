@@ -8,6 +8,7 @@
 
 #import "ShaderExerciseViewController.h"
 #import "MyTriangleView.h"
+#import "MyCircleView.h"
 #import "MyTextureView.h"
 #import "MyTransformationsView.h"
 #import "MyCoordinateSystemsView.h"
@@ -24,7 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    MyBasicLightingView *view = [[MyBasicLightingView alloc] initWithFrame:self.view.bounds];
+    MyCircleView *view = [[MyCircleView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:view];
 }
 

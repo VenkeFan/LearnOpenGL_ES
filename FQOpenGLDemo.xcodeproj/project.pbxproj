@@ -152,6 +152,9 @@
 		B9377DD31F6A5CAA00CC06D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9377DD11F6A5CAA00CC06D8 /* LaunchScreen.storyboard */; };
 		B9377DDE1F6A5CAA00CC06D8 /* FQOpenGLDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9377DDD1F6A5CAA00CC06D8 /* FQOpenGLDemoTests.m */; };
 		B9377DE91F6A5CAA00CC06D8 /* FQOpenGLDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9377DE81F6A5CAA00CC06D8 /* FQOpenGLDemoUITests.m */; };
+		B9A1D4CF2109BE3700375BE7 /* MyCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A1D4CE2109BE3700375BE7 /* MyCircleView.m */; };
+		B9A1D4D12109C7BD00375BE7 /* circle.vs in Resources */ = {isa = PBXBuildFile; fileRef = B9A1D4D02109C7BD00375BE7 /* circle.vs */; };
+		B9A1D4D32109C7C400375BE7 /* circle.fs in Resources */ = {isa = PBXBuildFile; fileRef = B9A1D4D22109C7C400375BE7 /* circle.fs */; };
 		B9B4C38A1F6B8DDA00905D35 /* GLKExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B4C3891F6B8DDA00905D35 /* GLKExerciseViewController.m */; };
 		B9B4C38D1F6B8E4200905D35 /* ShaderExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B4C38C1F6B8E4200905D35 /* ShaderExerciseViewController.m */; };
 		B9D838BD1F6FB7B200E52FF0 /* triangle.vs in Resources */ = {isa = PBXBuildFile; fileRef = B9D838BC1F6FB7B200E52FF0 /* triangle.vs */; };
@@ -485,6 +488,10 @@
 		B9377DE41F6A5CAA00CC06D8 /* FQOpenGLDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FQOpenGLDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9377DE81F6A5CAA00CC06D8 /* FQOpenGLDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FQOpenGLDemoUITests.m; sourceTree = "<group>"; };
 		B9377DEA1F6A5CAA00CC06D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9A1D4CD2109BE3700375BE7 /* MyCircleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCircleView.h; sourceTree = "<group>"; };
+		B9A1D4CE2109BE3700375BE7 /* MyCircleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCircleView.m; sourceTree = "<group>"; };
+		B9A1D4D02109C7BD00375BE7 /* circle.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = circle.vs; sourceTree = "<group>"; };
+		B9A1D4D22109C7C400375BE7 /* circle.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = circle.fs; sourceTree = "<group>"; };
 		B9B4C3881F6B8DDA00905D35 /* GLKExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLKExerciseViewController.h; sourceTree = "<group>"; };
 		B9B4C3891F6B8DDA00905D35 /* GLKExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLKExerciseViewController.m; sourceTree = "<group>"; };
 		B9B4C38B1F6B8E4200905D35 /* ShaderExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderExerciseViewController.h; sourceTree = "<group>"; };
@@ -909,6 +916,8 @@
 				B904EFFE210097E4008B24FB /* MyEAGLView.m */,
 				B9D838C01F6FBAB500E52FF0 /* MyTriangleView.h */,
 				B9D838C11F6FBAB500E52FF0 /* MyTriangleView.m */,
+				B9A1D4CD2109BE3700375BE7 /* MyCircleView.h */,
+				B9A1D4CE2109BE3700375BE7 /* MyCircleView.m */,
 				B904EFE921003F6C008B24FB /* MyTextureView.h */,
 				B904EFEA21003F6C008B24FB /* MyTextureView.m */,
 				B904EFFA2100958A008B24FB /* MyTransformationsView.h */,
@@ -930,6 +939,8 @@
 			children = (
 				B9D838BC1F6FB7B200E52FF0 /* triangle.vs */,
 				B9D838BE1F6FB82200E52FF0 /* triangle.fs */,
+				B9A1D4D02109C7BD00375BE7 /* circle.vs */,
+				B9A1D4D22109C7C400375BE7 /* circle.fs */,
 				B904EFEC21006842008B24FB /* texture.vs */,
 				B904EFEE21006852008B24FB /* texture.fs */,
 				B913AA7A2101E35500B013FB /* transformations.vs */,
@@ -1119,6 +1130,7 @@
 				B913ABDD2102E9FF00B013FB /* matrix_interpolation.inl in Resources */,
 				B913ABCF2102E9FF00B013FB /* bit.inl in Resources */,
 				B913ABB02102E9FF00B013FB /* bitfield.inl in Resources */,
+				B9A1D4D32109C7C400375BE7 /* circle.fs in Resources */,
 				B913ABB62102E9FF00B013FB /* functions.inl in Resources */,
 				B913ABB32102E9FF00B013FB /* ulp.inl in Resources */,
 				B913ABCD2102E9FF00B013FB /* mixed_product.inl in Resources */,
@@ -1178,6 +1190,7 @@
 				B913ABBA2102E9FF00B013FB /* color_encoding.inl in Resources */,
 				B913ABE52102E9FF00B013FB /* compatibility.inl in Resources */,
 				B913AB902102E9FF00B013FB /* func_common.inl in Resources */,
+				B9A1D4D12109C7BD00375BE7 /* circle.vs in Resources */,
 				B913AA7D2101E36100B013FB /* transformations.fs in Resources */,
 				B913ABD92102E9FF00B013FB /* integer.inl in Resources */,
 				B9377DCE1F6A5CAA00CC06D8 /* Main.storyboard in Resources */,
@@ -1227,6 +1240,7 @@
 				B913AC0C2105C66900B013FB /* MyBasicLightingView.mm in Sources */,
 				B9D838C21F6FBAB500E52FF0 /* MyTriangleView.m in Sources */,
 				B9B4C38D1F6B8E4200905D35 /* ShaderExerciseViewController.m in Sources */,
+				B9A1D4CF2109BE3700375BE7 /* MyCircleView.m in Sources */,
 				B9B4C38A1F6B8DDA00905D35 /* GLKExerciseViewController.m in Sources */,
 				B913AC0021041D4300B013FB /* MyCameraView.mm in Sources */,
 			);
