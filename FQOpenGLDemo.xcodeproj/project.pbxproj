@@ -878,7 +878,6 @@
 		B9377DC21F6A5CAA00CC06D8 /* FQOpenGLDemo */ = {
 			isa = PBXGroup;
 			children = (
-				B913AA7E2102E9FE00B013FB /* glm */,
 				B904EFE521003B5F008B24FB /* Tools */,
 				B9B4C3D41F6BACAE00905D35 /* Shaders */,
 				B9B4C3871F6B8DDA00905D35 /* Exercises */,
@@ -929,6 +928,7 @@
 		B9A1D7E9210D661F00375BE7 /* 3rd */ = {
 			isa = PBXGroup;
 			children = (
+				B913AA7E2102E9FE00B013FB /* glm */,
 				B9A1D7EA210D661F00375BE7 /* jpeg */,
 			);
 			path = 3rd;
