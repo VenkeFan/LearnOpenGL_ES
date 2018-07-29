@@ -158,6 +158,11 @@
 		B9A1D806210D661F00375BE7 /* Android.mk in Resources */ = {isa = PBXBuildFile; fileRef = B9A1D7FB210D661F00375BE7 /* Android.mk */; };
 		B9A1D808210D661F00375BE7 /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A1D7FF210D661F00375BE7 /* libjpeg.a */; };
 		B9A1D80B210D662000375BE7 /* JpegUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = B9A1D804210D661F00375BE7 /* JpegUtil.c */; };
+		B9A1D826210DBFCF00375BE7 /* Android.mk in Resources */ = {isa = PBXBuildFile; fileRef = B9A1D81B210DBFCF00375BE7 /* Android.mk */; };
+		B9A1D829210DBFCF00375BE7 /* libpng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A1D821210DBFCF00375BE7 /* libpng.a */; };
+		B9A1D82B210DBFCF00375BE7 /* PngUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = B9A1D824210DBFCF00375BE7 /* PngUtil.c */; };
+		B9A1D82E210DC37300375BE7 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A1D82D210DC37300375BE7 /* libz.tbd */; };
+		B9A1D831210DC45B00375BE7 /* TextureUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = B9A1D82F210DC45A00375BE7 /* TextureUtil.c */; };
 		B9B4C38A1F6B8DDA00905D35 /* GLKExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B4C3891F6B8DDA00905D35 /* GLKExerciseViewController.m */; };
 		B9B4C38D1F6B8E4200905D35 /* ShaderExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B4C38C1F6B8E4200905D35 /* ShaderExerciseViewController.m */; };
 		B9D838BD1F6FB7B200E52FF0 /* triangle.vs in Resources */ = {isa = PBXBuildFile; fileRef = B9D838BC1F6FB7B200E52FF0 /* triangle.vs */; };
@@ -511,6 +516,23 @@
 		B9A1D801210D661F00375BE7 /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjpeg.a; sourceTree = "<group>"; };
 		B9A1D803210D661F00375BE7 /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjpeg.a; sourceTree = "<group>"; };
 		B9A1D804210D661F00375BE7 /* JpegUtil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = JpegUtil.c; sourceTree = "<group>"; };
+		B9A1D80F210DBFCF00375BE7 /* png.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = png.h; sourceTree = "<group>"; };
+		B9A1D810210DBFCF00375BE7 /* pnglibconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pnglibconf.h; sourceTree = "<group>"; };
+		B9A1D811210DBFCF00375BE7 /* pngconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pngconf.h; sourceTree = "<group>"; };
+		B9A1D813210DBFCF00375BE7 /* png.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = png.h; sourceTree = "<group>"; };
+		B9A1D814210DBFCF00375BE7 /* pnglibconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pnglibconf.h; sourceTree = "<group>"; };
+		B9A1D815210DBFCF00375BE7 /* pngconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pngconf.h; sourceTree = "<group>"; };
+		B9A1D816210DBFCF00375BE7 /* PngUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PngUtil.h; sourceTree = "<group>"; };
+		B9A1D819210DBFCF00375BE7 /* libpng.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpng.a; sourceTree = "<group>"; };
+		B9A1D81B210DBFCF00375BE7 /* Android.mk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Android.mk; sourceTree = "<group>"; };
+		B9A1D81D210DBFCF00375BE7 /* libpng.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpng.a; sourceTree = "<group>"; };
+		B9A1D81F210DBFCF00375BE7 /* libpng.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpng.a; sourceTree = "<group>"; };
+		B9A1D821210DBFCF00375BE7 /* libpng.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpng.a; sourceTree = "<group>"; };
+		B9A1D823210DBFCF00375BE7 /* libpng.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpng.a; sourceTree = "<group>"; };
+		B9A1D824210DBFCF00375BE7 /* PngUtil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PngUtil.c; sourceTree = "<group>"; };
+		B9A1D82D210DC37300375BE7 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		B9A1D82F210DC45A00375BE7 /* TextureUtil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TextureUtil.c; sourceTree = "<group>"; };
+		B9A1D830210DC45B00375BE7 /* TextureUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextureUtil.h; sourceTree = "<group>"; };
 		B9B4C3881F6B8DDA00905D35 /* GLKExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLKExerciseViewController.h; sourceTree = "<group>"; };
 		B9B4C3891F6B8DDA00905D35 /* GLKExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLKExerciseViewController.m; sourceTree = "<group>"; };
 		B9B4C38B1F6B8E4200905D35 /* ShaderExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderExerciseViewController.h; sourceTree = "<group>"; };
@@ -527,6 +549,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9A1D82E210DC37300375BE7 /* libz.tbd in Frameworks */,
+				B9A1D829210DBFCF00375BE7 /* libpng.a in Frameworks */,
 				B9A1D808210D661F00375BE7 /* libjpeg.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -862,6 +886,7 @@
 				B9377DDC1F6A5CAA00CC06D8 /* FQOpenGLDemoTests */,
 				B9377DE71F6A5CAA00CC06D8 /* FQOpenGLDemoUITests */,
 				B9377DC11F6A5CAA00CC06D8 /* Products */,
+				B9A1D82C210DC37300375BE7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -928,6 +953,9 @@
 		B9A1D7E9210D661F00375BE7 /* 3rd */ = {
 			isa = PBXGroup;
 			children = (
+				B9A1D82F210DC45A00375BE7 /* TextureUtil.c */,
+				B9A1D830210DC45B00375BE7 /* TextureUtil.h */,
+				B9A1D80C210DBFCF00375BE7 /* png */,
 				B913AA7E2102E9FE00B013FB /* glm */,
 				B9A1D7EA210D661F00375BE7 /* jpeg */,
 			);
@@ -1035,6 +1063,115 @@
 				B9A1D803210D661F00375BE7 /* libjpeg.a */,
 			);
 			path = armeabi;
+			sourceTree = "<group>";
+		};
+		B9A1D80C210DBFCF00375BE7 /* png */ = {
+			isa = PBXGroup;
+			children = (
+				B9A1D816210DBFCF00375BE7 /* PngUtil.h */,
+				B9A1D824210DBFCF00375BE7 /* PngUtil.c */,
+				B9A1D80D210DBFCF00375BE7 /* include */,
+				B9A1D817210DBFCF00375BE7 /* prebuilt */,
+			);
+			path = png;
+			sourceTree = "<group>";
+		};
+		B9A1D80D210DBFCF00375BE7 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				B9A1D80E210DBFCF00375BE7 /* ios */,
+				B9A1D812210DBFCF00375BE7 /* android */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		B9A1D80E210DBFCF00375BE7 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				B9A1D80F210DBFCF00375BE7 /* png.h */,
+				B9A1D810210DBFCF00375BE7 /* pnglibconf.h */,
+				B9A1D811210DBFCF00375BE7 /* pngconf.h */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		B9A1D812210DBFCF00375BE7 /* android */ = {
+			isa = PBXGroup;
+			children = (
+				B9A1D813210DBFCF00375BE7 /* png.h */,
+				B9A1D814210DBFCF00375BE7 /* pnglibconf.h */,
+				B9A1D815210DBFCF00375BE7 /* pngconf.h */,
+			);
+			path = android;
+			sourceTree = "<group>";
+		};
+		B9A1D817210DBFCF00375BE7 /* prebuilt */ = {
+			isa = PBXGroup;
+			children = (
+				B9A1D818210DBFCF00375BE7 /* ios */,
+				B9A1D81A210DBFCF00375BE7 /* android */,
+			);
+			path = prebuilt;
+			sourceTree = "<group>";
+		};
+		B9A1D818210DBFCF00375BE7 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				B9A1D819210DBFCF00375BE7 /* libpng.a */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		B9A1D81A210DBFCF00375BE7 /* android */ = {
+			isa = PBXGroup;
+			children = (
+				B9A1D81B210DBFCF00375BE7 /* Android.mk */,
+				B9A1D81C210DBFCF00375BE7 /* armeabi-v7a */,
+				B9A1D81E210DBFCF00375BE7 /* x86 */,
+				B9A1D820210DBFCF00375BE7 /* arm64-v8a */,
+				B9A1D822210DBFCF00375BE7 /* armeabi */,
+			);
+			path = android;
+			sourceTree = "<group>";
+		};
+		B9A1D81C210DBFCF00375BE7 /* armeabi-v7a */ = {
+			isa = PBXGroup;
+			children = (
+				B9A1D81D210DBFCF00375BE7 /* libpng.a */,
+			);
+			path = "armeabi-v7a";
+			sourceTree = "<group>";
+		};
+		B9A1D81E210DBFCF00375BE7 /* x86 */ = {
+			isa = PBXGroup;
+			children = (
+				B9A1D81F210DBFCF00375BE7 /* libpng.a */,
+			);
+			path = x86;
+			sourceTree = "<group>";
+		};
+		B9A1D820210DBFCF00375BE7 /* arm64-v8a */ = {
+			isa = PBXGroup;
+			children = (
+				B9A1D821210DBFCF00375BE7 /* libpng.a */,
+			);
+			path = "arm64-v8a";
+			sourceTree = "<group>";
+		};
+		B9A1D822210DBFCF00375BE7 /* armeabi */ = {
+			isa = PBXGroup;
+			children = (
+				B9A1D823210DBFCF00375BE7 /* libpng.a */,
+			);
+			path = armeabi;
+			sourceTree = "<group>";
+		};
+		B9A1D82C210DC37300375BE7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9A1D82D210DC37300375BE7 /* libz.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		B9B4C3871F6B8DDA00905D35 /* Exercises */ = {
@@ -1281,6 +1418,7 @@
 				B913ABA82102E9FF00B013FB /* type_mat.inl in Resources */,
 				B913ABBB2102E9FF00B013FB /* color_space.inl in Resources */,
 				B913ABA12102E9FF00B013FB /* type_gentype.inl in Resources */,
+				B9A1D826210DBFCF00375BE7 /* Android.mk in Resources */,
 				B904EFED21006842008B24FB /* texture.vs in Resources */,
 				B913AB942102E9FF00B013FB /* type_mat4x3.inl in Resources */,
 				B913ABD12102E9FF00B013FB /* fast_trigonometry.inl in Resources */,
@@ -1368,11 +1506,13 @@
 				B904EFFF210097E4008B24FB /* MyEAGLView.m in Sources */,
 				B9377DC81F6A5CAA00CC06D8 /* AppDelegate.m in Sources */,
 				B9377DC51F6A5CAA00CC06D8 /* main.m in Sources */,
+				B9A1D831210DC45B00375BE7 /* TextureUtil.c in Sources */,
 				B904EFEB21003F6C008B24FB /* MyTextureView.m in Sources */,
 				B913ABF921030F4100B013FB /* MyCoordinateSystemsView.mm in Sources */,
 				B913AC0C2105C66900B013FB /* MyBasicLightingView.mm in Sources */,
 				B9D838C21F6FBAB500E52FF0 /* MyTriangleView.m in Sources */,
 				B9B4C38D1F6B8E4200905D35 /* ShaderExerciseViewController.m in Sources */,
+				B9A1D82B210DBFCF00375BE7 /* PngUtil.c in Sources */,
 				B9A1D4CF2109BE3700375BE7 /* MyCircleView.m in Sources */,
 				B9B4C38A1F6B8DDA00905D35 /* GLKExerciseViewController.m in Sources */,
 				B913AC0021041D4300B013FB /* MyCameraView.mm in Sources */,
@@ -1532,7 +1672,10 @@
 				INFOPLIST_FILE = FQOpenGLDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/FQOpenGLDemo/Tools/3rd/jpeg/prebuilt/ios";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/FQOpenGLDemo/Tools/3rd/jpeg/prebuilt/ios",
+					"$(PROJECT_DIR)/FQOpenGLDemo/Tools/3rd/png/prebuilt/ios",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = qi.fan.FQOpenGLDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1547,7 +1690,10 @@
 				INFOPLIST_FILE = FQOpenGLDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/FQOpenGLDemo/Tools/3rd/jpeg/prebuilt/ios";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/FQOpenGLDemo/Tools/3rd/jpeg/prebuilt/ios",
+					"$(PROJECT_DIR)/FQOpenGLDemo/Tools/3rd/png/prebuilt/ios",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = qi.fan.FQOpenGLDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
