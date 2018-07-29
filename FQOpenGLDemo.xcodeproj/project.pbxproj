@@ -155,6 +155,9 @@
 		B9A1D4CF2109BE3700375BE7 /* MyCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A1D4CE2109BE3700375BE7 /* MyCircleView.m */; };
 		B9A1D4D12109C7BD00375BE7 /* circle.vs in Resources */ = {isa = PBXBuildFile; fileRef = B9A1D4D02109C7BD00375BE7 /* circle.vs */; };
 		B9A1D4D32109C7C400375BE7 /* circle.fs in Resources */ = {isa = PBXBuildFile; fileRef = B9A1D4D22109C7C400375BE7 /* circle.fs */; };
+		B9A1D806210D661F00375BE7 /* Android.mk in Resources */ = {isa = PBXBuildFile; fileRef = B9A1D7FB210D661F00375BE7 /* Android.mk */; };
+		B9A1D808210D661F00375BE7 /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A1D7FF210D661F00375BE7 /* libjpeg.a */; };
+		B9A1D80B210D662000375BE7 /* JpegUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = B9A1D804210D661F00375BE7 /* JpegUtil.c */; };
 		B9B4C38A1F6B8DDA00905D35 /* GLKExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B4C3891F6B8DDA00905D35 /* GLKExerciseViewController.m */; };
 		B9B4C38D1F6B8E4200905D35 /* ShaderExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B4C38C1F6B8E4200905D35 /* ShaderExerciseViewController.m */; };
 		B9D838BD1F6FB7B200E52FF0 /* triangle.vs in Resources */ = {isa = PBXBuildFile; fileRef = B9D838BC1F6FB7B200E52FF0 /* triangle.vs */; };
@@ -492,6 +495,22 @@
 		B9A1D4CE2109BE3700375BE7 /* MyCircleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCircleView.m; sourceTree = "<group>"; };
 		B9A1D4D02109C7BD00375BE7 /* circle.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = circle.vs; sourceTree = "<group>"; };
 		B9A1D4D22109C7C400375BE7 /* circle.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = circle.fs; sourceTree = "<group>"; };
+		B9A1D7EB210D661F00375BE7 /* JpegUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpegUtil.h; sourceTree = "<group>"; };
+		B9A1D7EE210D661F00375BE7 /* jpeglib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jpeglib.h; sourceTree = "<group>"; };
+		B9A1D7EF210D661F00375BE7 /* jerror.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jerror.h; sourceTree = "<group>"; };
+		B9A1D7F0210D661F00375BE7 /* jconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jconfig.h; sourceTree = "<group>"; };
+		B9A1D7F1210D661F00375BE7 /* jmorecfg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jmorecfg.h; sourceTree = "<group>"; };
+		B9A1D7F3210D661F00375BE7 /* jpeglib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jpeglib.h; sourceTree = "<group>"; };
+		B9A1D7F4210D661F00375BE7 /* jerror.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jerror.h; sourceTree = "<group>"; };
+		B9A1D7F5210D661F00375BE7 /* jconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jconfig.h; sourceTree = "<group>"; };
+		B9A1D7F6210D661F00375BE7 /* jmorecfg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jmorecfg.h; sourceTree = "<group>"; };
+		B9A1D7F9210D661F00375BE7 /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjpeg.a; sourceTree = "<group>"; };
+		B9A1D7FB210D661F00375BE7 /* Android.mk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Android.mk; sourceTree = "<group>"; };
+		B9A1D7FD210D661F00375BE7 /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjpeg.a; sourceTree = "<group>"; };
+		B9A1D7FF210D661F00375BE7 /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjpeg.a; sourceTree = "<group>"; };
+		B9A1D801210D661F00375BE7 /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjpeg.a; sourceTree = "<group>"; };
+		B9A1D803210D661F00375BE7 /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjpeg.a; sourceTree = "<group>"; };
+		B9A1D804210D661F00375BE7 /* JpegUtil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = JpegUtil.c; sourceTree = "<group>"; };
 		B9B4C3881F6B8DDA00905D35 /* GLKExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLKExerciseViewController.h; sourceTree = "<group>"; };
 		B9B4C3891F6B8DDA00905D35 /* GLKExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLKExerciseViewController.m; sourceTree = "<group>"; };
 		B9B4C38B1F6B8E4200905D35 /* ShaderExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderExerciseViewController.h; sourceTree = "<group>"; };
@@ -508,6 +527,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9A1D808210D661F00375BE7 /* libjpeg.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,6 +551,7 @@
 		B904EFE521003B5F008B24FB /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				B9A1D7E9210D661F00375BE7 /* 3rd */,
 				B904EFE621003BA3008B24FB /* FQShaderHelper.h */,
 				B904EFE721003BA3008B24FB /* FQShaderHelper.m */,
 			);
@@ -905,6 +926,117 @@
 			path = FQOpenGLDemoUITests;
 			sourceTree = "<group>";
 		};
+		B9A1D7E9210D661F00375BE7 /* 3rd */ = {
+			isa = PBXGroup;
+			children = (
+				B9A1D7EA210D661F00375BE7 /* jpeg */,
+			);
+			path = 3rd;
+			sourceTree = "<group>";
+		};
+		B9A1D7EA210D661F00375BE7 /* jpeg */ = {
+			isa = PBXGroup;
+			children = (
+				B9A1D7EB210D661F00375BE7 /* JpegUtil.h */,
+				B9A1D804210D661F00375BE7 /* JpegUtil.c */,
+				B9A1D7EC210D661F00375BE7 /* include */,
+				B9A1D7F7210D661F00375BE7 /* prebuilt */,
+			);
+			path = jpeg;
+			sourceTree = "<group>";
+		};
+		B9A1D7EC210D661F00375BE7 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				B9A1D7ED210D661F00375BE7 /* ios */,
+				B9A1D7F2210D661F00375BE7 /* android */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		B9A1D7ED210D661F00375BE7 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				B9A1D7EE210D661F00375BE7 /* jpeglib.h */,
+				B9A1D7EF210D661F00375BE7 /* jerror.h */,
+				B9A1D7F0210D661F00375BE7 /* jconfig.h */,
+				B9A1D7F1210D661F00375BE7 /* jmorecfg.h */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		B9A1D7F2210D661F00375BE7 /* android */ = {
+			isa = PBXGroup;
+			children = (
+				B9A1D7F3210D661F00375BE7 /* jpeglib.h */,
+				B9A1D7F4210D661F00375BE7 /* jerror.h */,
+				B9A1D7F5210D661F00375BE7 /* jconfig.h */,
+				B9A1D7F6210D661F00375BE7 /* jmorecfg.h */,
+			);
+			path = android;
+			sourceTree = "<group>";
+		};
+		B9A1D7F7210D661F00375BE7 /* prebuilt */ = {
+			isa = PBXGroup;
+			children = (
+				B9A1D7F8210D661F00375BE7 /* ios */,
+				B9A1D7FA210D661F00375BE7 /* android */,
+			);
+			path = prebuilt;
+			sourceTree = "<group>";
+		};
+		B9A1D7F8210D661F00375BE7 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				B9A1D7F9210D661F00375BE7 /* libjpeg.a */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		B9A1D7FA210D661F00375BE7 /* android */ = {
+			isa = PBXGroup;
+			children = (
+				B9A1D7FB210D661F00375BE7 /* Android.mk */,
+				B9A1D7FC210D661F00375BE7 /* armeabi-v7a */,
+				B9A1D7FE210D661F00375BE7 /* x86 */,
+				B9A1D800210D661F00375BE7 /* arm64-v8a */,
+				B9A1D802210D661F00375BE7 /* armeabi */,
+			);
+			path = android;
+			sourceTree = "<group>";
+		};
+		B9A1D7FC210D661F00375BE7 /* armeabi-v7a */ = {
+			isa = PBXGroup;
+			children = (
+				B9A1D7FD210D661F00375BE7 /* libjpeg.a */,
+			);
+			path = "armeabi-v7a";
+			sourceTree = "<group>";
+		};
+		B9A1D7FE210D661F00375BE7 /* x86 */ = {
+			isa = PBXGroup;
+			children = (
+				B9A1D7FF210D661F00375BE7 /* libjpeg.a */,
+			);
+			path = x86;
+			sourceTree = "<group>";
+		};
+		B9A1D800210D661F00375BE7 /* arm64-v8a */ = {
+			isa = PBXGroup;
+			children = (
+				B9A1D801210D661F00375BE7 /* libjpeg.a */,
+			);
+			path = "arm64-v8a";
+			sourceTree = "<group>";
+		};
+		B9A1D802210D661F00375BE7 /* armeabi */ = {
+			isa = PBXGroup;
+			children = (
+				B9A1D803210D661F00375BE7 /* libjpeg.a */,
+			);
+			path = armeabi;
+			sourceTree = "<group>";
+		};
 		B9B4C3871F6B8DDA00905D35 /* Exercises */ = {
 			isa = PBXGroup;
 			children = (
@@ -1120,6 +1252,7 @@
 				B913ABAD2102E9FF00B013FB /* packing.inl in Resources */,
 				B913ABCC2102E9FF00B013FB /* number_precision.inl in Resources */,
 				B913AC0521045C4300B013FB /* color.vs in Resources */,
+				B9A1D806210D661F00375BE7 /* Android.mk in Resources */,
 				B913ABA52102E9FF00B013FB /* type_vec4_simd.inl in Resources */,
 				B913AB9C2102E9FF00B013FB /* type_mat4x4.inl in Resources */,
 				B913AB852102E9FF00B013FB /* CMakeLists.txt in Resources */,
@@ -1243,6 +1376,7 @@
 				B9A1D4CF2109BE3700375BE7 /* MyCircleView.m in Sources */,
 				B9B4C38A1F6B8DDA00905D35 /* GLKExerciseViewController.m in Sources */,
 				B913AC0021041D4300B013FB /* MyCameraView.mm in Sources */,
+				B9A1D80B210D662000375BE7 /* JpegUtil.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1398,7 +1532,7 @@
 				INFOPLIST_FILE = FQOpenGLDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/FQOpenGLDemo/Tools/3rd/jpeg/prebuilt/ios";
 				PRODUCT_BUNDLE_IDENTIFIER = qi.fan.FQOpenGLDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1413,7 +1547,7 @@
 				INFOPLIST_FILE = FQOpenGLDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/FQOpenGLDemo/Tools/3rd/jpeg/prebuilt/ios";
 				PRODUCT_BUNDLE_IDENTIFIER = qi.fan.FQOpenGLDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

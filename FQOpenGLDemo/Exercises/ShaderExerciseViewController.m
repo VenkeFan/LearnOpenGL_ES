@@ -25,7 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    MyCircleView *view = [[MyCircleView alloc] initWithFrame:self.view.bounds];
+    MyTextureView *view = [[MyTextureView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:view];
 }
 

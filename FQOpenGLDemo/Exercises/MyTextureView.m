@@ -9,6 +9,7 @@
 #import "MyTextureView.h"
 #import "FQShaderHelper.h"
 #import <GLKit/GLKit.h>
+#include "JpegUtil.h"
 
 @interface MyTextureView ()
 
@@ -74,8 +75,9 @@
     
     
     // 生成纹理
-    [self genTexture:shaderProgram];
-//    [self genTexture2];
+//    [self genTexture:shaderProgram];
+//    [self genTexture2:shaderProgram];
+    [self genTexture3:shaderProgram];
     
     // 设置背景色
     glClearColor(0.3, 0.0, 0.0, 1.0);
@@ -109,19 +111,10 @@
     glActiveTexture(GL_TEXTURE1);
     glBindTexture(GL_TEXTURE_2D, textureInfo2.name);
     
-    // 环绕方式
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
-    
-    // 过滤方式
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-    
-    // 多级渐远
-    glGenerateMipmap(GL_TEXTURE_2D);
+    [self setupTexture];
 }
 
-- (void)genTexture2 {
+- (void)genTexture2:(GLuint)shaderProgram {
     UIImage *img = [UIImage imageNamed:@"timg.jpeg"];
     // 将图片数据以RGBA的格式导出到textureData中
     CGImageRef imageRef = [img CGImage];
@@ -153,6 +146,46 @@
     
     glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, (GLsizei)width, (GLsizei)height, 0, GL_RGBA, GL_UNSIGNED_BYTE, textureData);
     
+    glUniform1i(glGetUniformLocation(shaderProgram, "ourTexture"), 0);
+    
+    [self setupTexture];
+}
+
+- (void)genTexture3:(GLuint)shaderProgram {
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"timg" ofType:@"jpeg"];
+    
+    unsigned char *textureData;
+    int size;
+    int width;
+    int height;
+    
+    // 加载纹理
+    if (read_jpeg_file(path.UTF8String, &textureData, &size, &width, &height) < 0) {
+        printf("%s\n", "decode fail");
+    }
+    
+    // 生成纹理
+    GLuint texture;
+    glGenTextures(1, &texture);
+
+    // 在绑定纹理之前先激活纹理单元，OpenGL ES中最多可以激活8个通道。通道0是默认激活的，所以本例中这一句也可以不写
+    glActiveTexture(GL_TEXTURE0);
+
+    glBindTexture(GL_TEXTURE_2D, texture);
+
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, (GLsizei)width, (GLsizei)height, 0, GL_RGB, GL_UNSIGNED_BYTE, textureData);
+    
+    glUniform1i(glGetUniformLocation(shaderProgram, "ourTexture"), 0);
+    
+    if (textureData) {
+        free(textureData);
+        textureData = NULL;
+    }
+    
+    [self setupTexture];
+}
+
+- (void)setupTexture {
     // 环绕方式
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
@@ -162,7 +195,9 @@
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
     
     // 多级渐远
-    glGenerateMipmap(GL_TEXTURE_2D);
+    glGenerateMipmap(GL_TEXTURE_2D); // 为当前绑定的纹理自动生成所有需要的多级渐远纹理
+    
+//    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR); // 切换多级渐远纹理级别
 }
 
 @end

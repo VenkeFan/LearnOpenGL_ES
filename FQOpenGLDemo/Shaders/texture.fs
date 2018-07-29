@@ -11,6 +11,6 @@ uniform sampler2D anthorTexture;
 void main()
 {
 //    gl_FragColor = texture2D(ourTexture, TexCoord);
-//    gl_FragColor = texture2D(ourTexture, TexCoord) * vec4(ourColor, 1.0);
-    gl_FragColor = mix(texture2D(ourTexture, TexCoord), texture2D(anthorTexture, TexCoord), 0.2);
+    gl_FragColor = texture2D(ourTexture, TexCoord) * vec4(ourColor, 1.0);
+//    gl_FragColor = mix(texture2D(ourTexture, TexCoord), texture2D(anthorTexture, TexCoord), 0.2);
 }

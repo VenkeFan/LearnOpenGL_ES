@@ -25,7 +25,7 @@ typedef struct {
 
 - (void)renderWithVertexFileName:(NSString *)vertexName fragmentFileName:(NSString *)fragmentName {
     GLfloat radiusX = 0.8;
-    GLfloat radiusY = radiusX * self.renderWidth / self.renderHeight;
+    GLfloat radiusY = radiusX * self.renderWidth / self.renderHeight; // 因为设备宽高比不为1
     int vertexCount = 100;
     float delta = (M_PI * 2) / vertexCount;
     Vertex *vertices = (Vertex *)malloc(sizeof(Vertex) * vertexCount);
@@ -35,7 +35,7 @@ typedef struct {
         GLfloat y = radiusY * sin(delta * i);
         GLfloat z = 0.0;
         
-        Vertex v = (Vertex){x, y, z, 1.0, 0.0, 0.0};
+        Vertex v = (Vertex){x, y, z, x, y, x + y};
         vertices[i] = v;
         
         printf("%f, %f\n", x, y);
@@ -68,6 +68,8 @@ typedef struct {
     glDrawArrays(GL_TRIANGLE_FAN, 0, vertexCount);
     
     [self.context presentRenderbuffer:GL_RENDERBUFFER];
+    
+    glDeleteBuffers(1, &VBO);
 }
 
 @end

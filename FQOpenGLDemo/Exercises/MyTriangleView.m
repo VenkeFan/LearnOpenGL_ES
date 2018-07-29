@@ -61,6 +61,12 @@
     glGenBuffers(1, &VBO); // 生成VBO对象
     
     glBindBuffer(GL_ARRAY_BUFFER, VBO); // 将缓冲对象绑定到 GL_ARRAY_BUFFER 目标上
+    /*
+     参数 target：与 glBindBuffer 中的参数 target 相同；
+     参数 size ：指定顶点缓存区的大小，以字节为单位计数；
+     参数 data ：用于初始化顶点缓存区的数据，可以为 NULL，表示只分配空间，之后再由 glBufferSubData 进行初始化；
+     参数 usage ：表示该缓存区域将会被如何使用，它的主要目的是用于对该缓存区域做何种程度的优化，比如经常修改的数据可能就会放在GPU缓存中达到快速操作的目的。
+     */
     glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW); // 把顶点数据从 CPU 内存复制到 GPU 的缓冲内存中
     
 #pragma mark - 自定义着色器程序
