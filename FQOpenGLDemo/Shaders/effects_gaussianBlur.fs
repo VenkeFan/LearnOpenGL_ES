@@ -5,7 +5,6 @@ precision mediump float;
 varying vec2 vTexcoord;
 uniform sampler2D image;
 
-const vec2 texSize = vec2(150.0, 150.0);
 const float PI = 3.14159265;
 
 float gaussianWeight(float x, float y, float sigma)
@@ -31,8 +30,12 @@ void main()
     factor[3] = 0.118318; factor[4] = 0.147761; factor[5] = 0.118318;
     factor[6] = 0.0947416; factor[7] = 0.118318; factor[8] = 0.0947416;
     
-    float horizontal = 1.0 / texSize.s;
-    float vertical = 1.0 / texSize.t;
+//    vec2 texSize = vec2(700.0, 1333.0);
+//    float horizontal = 1.0 / texSize.s;
+//    float vertical = 1.0 / texSize.t;
+    
+    float horizontal = 1.0 / 150.0;
+    float vertical = 1.0 / 150.0;
     vec4 finalColor = vec4(0.0);
     
     for (int i = -1; i <= 1; i++) {

@@ -21,8 +21,9 @@
          effects_eddy
          effects_mosaic
          effects_gaussianBlur
+         effects_emboss
          */
-        [self renderWithVertexFileName:@"effects" fragmentFileName:@"effects_gaussianBlur"];
+        [self renderWithVertexFileName:@"effects" fragmentFileName:@"effects_emboss"];
     }
     return self;
 }

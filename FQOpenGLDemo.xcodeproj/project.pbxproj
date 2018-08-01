@@ -180,6 +180,7 @@
 		B9FDB741210F1E5000E26BB7 /* effects_eddy.fs in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB740210F1E5000E26BB7 /* effects_eddy.fs */; };
 		B9FDB7432111624700E26BB7 /* effects_mosaic.fs in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7422111624700E26BB7 /* effects_mosaic.fs */; };
 		B9FDB7452111809B00E26BB7 /* effects_gaussianBlur.fs in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7442111809B00E26BB7 /* effects_gaussianBlur.fs */; };
+		B9FDB7472111C27300E26BB7 /* effects_emboss.fs in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7462111C27300E26BB7 /* effects_emboss.fs */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -565,6 +566,7 @@
 		B9FDB740210F1E5000E26BB7 /* effects_eddy.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = effects_eddy.fs; sourceTree = "<group>"; };
 		B9FDB7422111624700E26BB7 /* effects_mosaic.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = effects_mosaic.fs; sourceTree = "<group>"; };
 		B9FDB7442111809B00E26BB7 /* effects_gaussianBlur.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = effects_gaussianBlur.fs; sourceTree = "<group>"; };
+		B9FDB7462111C27300E26BB7 /* effects_emboss.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = effects_emboss.fs; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1250,6 +1252,7 @@
 				B9FDB740210F1E5000E26BB7 /* effects_eddy.fs */,
 				B9FDB7422111624700E26BB7 /* effects_mosaic.fs */,
 				B9FDB7442111809B00E26BB7 /* effects_gaussianBlur.fs */,
+				B9FDB7462111C27300E26BB7 /* effects_emboss.fs */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -1473,6 +1476,7 @@
 				B913AB862102E9FF00B013FB /* func_exponential.inl in Resources */,
 				B913ABE82102E9FF00B013FB /* matrix_operation.inl in Resources */,
 				B913ABB42102E9FF00B013FB /* vec1.inl in Resources */,
+				B9FDB7472111C27300E26BB7 /* effects_emboss.fs in Resources */,
 				B913AB8A2102E9FF00B013FB /* type_half.inl in Resources */,
 				B913ABD02102E9FF00B013FB /* io.inl in Resources */,
 				B913ABEA2102E9FF00B013FB /* perpendicular.inl in Resources */,
