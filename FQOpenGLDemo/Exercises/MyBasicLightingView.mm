@@ -88,6 +88,10 @@
     glEnableVertexAttribArray(posLoc);
     glVertexAttribPointer(posLoc, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(GL_FLOAT), (void *)0);
     
+    GLuint normalPos = glGetAttribLocation(objProgram, "aNormal");
+    glEnableVertexAttribArray(normalPos);
+    glVertexAttribPointer(normalPos, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(GL_FLOAT), (GLfloat *)NULL + 3);
+    
     // 光源
     GLuint lampProgram = [FQShaderHelper linkShaderWithVertexFileName:@"basicLighting_lamp"
                                                      fragmentFileName:@"basicLighting_lamp"];

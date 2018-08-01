@@ -71,7 +71,7 @@
     
     {
         // 2.
-        GLKMatrix4 scale = GLKMatrix4MakeScale(0.5f, 0.5f, 0.5f);
+        GLKMatrix4 scale = GLKMatrix4MakeScale(0.5f, 0.5f, 1.0f);
         GLKMatrix4 rotation = GLKMatrix4MakeRotation(M_PI_2, 0.f, 0.f, 1.f);
         
         GLKMatrix4 mat = GLKMatrix4Multiply(rotation, scale);
@@ -80,6 +80,12 @@
     }
     
     {
+        // test
+//        glm::mat3 matrix = glm::mat3(glm::vec3(1.0f, 2.0f, 3.0f),
+//                                     glm::vec3(4.0f, 5.0f, 6.0f),
+//                                     glm::vec3(7.0f, 8.0f, 9.0f));
+//        printf("%f - %f - %f", matrix[1].x, matrix[1].y, matrix[1].z);
+        
         // 3.
 //        glm::mat4 trans;
 //        trans = glm::rotate(trans, glm::radians(90.0f), glm::vec3(0.0f, 0.0f, 1.0f)); // 沿Z轴旋转90度

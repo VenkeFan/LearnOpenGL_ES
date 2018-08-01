@@ -75,9 +75,9 @@
     
     
     // 生成纹理
-//    [self genTexture:shaderProgram];
+    [self genTexture:shaderProgram];
 //    [self genTexture2:shaderProgram];
-    [self genTexture3:shaderProgram];
+//    [self genTexture3:shaderProgram];
     
     // 设置背景色
     glClearColor(0.3, 0.0, 0.0, 1.0);
@@ -91,7 +91,7 @@
 }
 
 - (void)genTexture:(GLuint)shaderProgram {
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"4" ofType:@"jpg"];
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"1" ofType:@"jpg"];
     NSDictionary *options = @{GLKTextureLoaderOriginBottomLeft: @(YES)};
     GLKTextureInfo *textureInfo = [GLKTextureLoader textureWithContentsOfFile:filePath options:options error:nil];
     
@@ -115,7 +115,7 @@
 }
 
 - (void)genTexture2:(GLuint)shaderProgram {
-    UIImage *img = [UIImage imageNamed:@"timg.jpeg"];
+    UIImage *img = [UIImage imageNamed:@"1.jpg"];
     // 将图片数据以RGBA的格式导出到textureData中
     CGImageRef imageRef = [img CGImage];
     size_t width = CGImageGetWidth(imageRef);
@@ -152,7 +152,7 @@
 }
 
 - (void)genTexture3:(GLuint)shaderProgram {
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"timg" ofType:@"jpeg"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"1" ofType:@"jpg"];
     
     unsigned char *textureData;
     int size;
@@ -172,7 +172,18 @@
     glActiveTexture(GL_TEXTURE0);
 
     glBindTexture(GL_TEXTURE_2D, texture);
-
+    
+    /*
+     参数 target ：指定纹理单元的类型，二维纹理需要指定为GL_TEXTURE_2D
+     参数 level：指定纹理单元的层次，非mipmap纹理level设置为0，mipmap纹理设置为纹理的层级
+     参数 internalFormat：指定OpenGL ES是如何管理纹理单元中数据格式的
+     参数 width：指定纹理单元的宽度
+     参数 height：指定纹理单元的高度
+     参数 border：指定纹理单元的边框，如果包含边框取值为1，不包含边框取值为0
+     参数 format：指定data所指向的数据的格式
+     参数 type：指定data所指向的数据的类型
+     参数 data：实际指向的数据
+     */
     glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, (GLsizei)width, (GLsizei)height, 0, GL_RGB, GL_UNSIGNED_BYTE, textureData);
     
     glUniform1i(glGetUniformLocation(shaderProgram, "ourTexture"), 0);
@@ -187,8 +198,8 @@
 
 - (void)setupTexture {
     // 环绕方式
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
     
     // 过滤方式
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);

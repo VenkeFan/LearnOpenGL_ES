@@ -11,10 +11,6 @@
 		B904EFEB21003F6C008B24FB /* MyTextureView.m in Sources */ = {isa = PBXBuildFile; fileRef = B904EFEA21003F6C008B24FB /* MyTextureView.m */; };
 		B904EFED21006842008B24FB /* texture.vs in Resources */ = {isa = PBXBuildFile; fileRef = B904EFEC21006842008B24FB /* texture.vs */; };
 		B904EFEF21006852008B24FB /* texture.fs in Resources */ = {isa = PBXBuildFile; fileRef = B904EFEE21006852008B24FB /* texture.fs */; };
-		B904EFF1210070A9008B24FB /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B904EFF0210070A9008B24FB /* 4.jpg */; };
-		B904EFF321008283008B24FB /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B904EFF221008283008B24FB /* 5.jpg */; };
-		B904EFF7210085D0008B24FB /* timg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B904EFF6210085CF008B24FB /* timg.jpeg */; };
-		B904EFF921008E55008B24FB /* awesomeface.png in Resources */ = {isa = PBXBuildFile; fileRef = B904EFF821008E55008B24FB /* awesomeface.png */; };
 		B904EFFC2100958A008B24FB /* MyTransformationsView.mm in Sources */ = {isa = PBXBuildFile; fileRef = B904EFFB2100958A008B24FB /* MyTransformationsView.mm */; };
 		B904EFFF210097E4008B24FB /* MyEAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = B904EFFE210097E4008B24FB /* MyEAGLView.m */; };
 		B913AA7B2101E35500B013FB /* transformations.vs in Resources */ = {isa = PBXBuildFile; fileRef = B913AA7A2101E35500B013FB /* transformations.vs */; };
@@ -168,7 +164,22 @@
 		B9D838BD1F6FB7B200E52FF0 /* triangle.vs in Resources */ = {isa = PBXBuildFile; fileRef = B9D838BC1F6FB7B200E52FF0 /* triangle.vs */; };
 		B9D838BF1F6FB82200E52FF0 /* triangle.fs in Resources */ = {isa = PBXBuildFile; fileRef = B9D838BE1F6FB82200E52FF0 /* triangle.fs */; };
 		B9D838C21F6FBAB500E52FF0 /* MyTriangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D838C11F6FBAB500E52FF0 /* MyTriangleView.m */; };
-		B9F2CDD4200373F600FAC8A4 /* ear_10.png in Resources */ = {isa = PBXBuildFile; fileRef = B9F2CDD3200373F600FAC8A4 /* ear_10.png */; };
+		B9FDB72C210F034A00E26BB7 /* ear_10.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB723210F034A00E26BB7 /* ear_10.png */; };
+		B9FDB72D210F034A00E26BB7 /* timg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB724210F034A00E26BB7 /* timg.jpeg */; };
+		B9FDB72E210F034A00E26BB7 /* wood.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB725210F034A00E26BB7 /* wood.jpg */; };
+		B9FDB72F210F034A00E26BB7 /* noise.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB726210F034A00E26BB7 /* noise.jpg */; };
+		B9FDB730210F034A00E26BB7 /* flower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB727210F034A00E26BB7 /* flower.jpg */; };
+		B9FDB731210F034A00E26BB7 /* awesomeface.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB728210F034A00E26BB7 /* awesomeface.png */; };
+		B9FDB732210F034A00E26BB7 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB729210F034A00E26BB7 /* 4.jpg */; };
+		B9FDB733210F034A00E26BB7 /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB72A210F034A00E26BB7 /* 5.jpg */; };
+		B9FDB737210F038C00E26BB7 /* MyEffectsView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9FDB736210F038C00E26BB7 /* MyEffectsView.m */; };
+		B9FDB739210F03E400E26BB7 /* effects.vs in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB738210F03E400E26BB7 /* effects.vs */; };
+		B9FDB73B210F06CD00E26BB7 /* effects_gray.fs in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB73A210F06CD00E26BB7 /* effects_gray.fs */; };
+		B9FDB73D210F148D00E26BB7 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB73C210F148D00E26BB7 /* 1.jpg */; };
+		B9FDB73F210F1CD200E26BB7 /* effects_reverse.fs in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB73E210F1CD200E26BB7 /* effects_reverse.fs */; };
+		B9FDB741210F1E5000E26BB7 /* effects_eddy.fs in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB740210F1E5000E26BB7 /* effects_eddy.fs */; };
+		B9FDB7432111624700E26BB7 /* effects_mosaic.fs in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7422111624700E26BB7 /* effects_mosaic.fs */; };
+		B9FDB7452111809B00E26BB7 /* effects_gaussianBlur.fs in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7442111809B00E26BB7 /* effects_gaussianBlur.fs */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -195,10 +206,6 @@
 		B904EFEA21003F6C008B24FB /* MyTextureView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTextureView.m; sourceTree = "<group>"; };
 		B904EFEC21006842008B24FB /* texture.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = texture.vs; sourceTree = "<group>"; };
 		B904EFEE21006852008B24FB /* texture.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = texture.fs; sourceTree = "<group>"; };
-		B904EFF0210070A9008B24FB /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
-		B904EFF221008283008B24FB /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
-		B904EFF6210085CF008B24FB /* timg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = timg.jpeg; sourceTree = "<group>"; };
-		B904EFF821008E55008B24FB /* awesomeface.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = awesomeface.png; sourceTree = "<group>"; };
 		B904EFFA2100958A008B24FB /* MyTransformationsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyTransformationsView.h; sourceTree = "<group>"; };
 		B904EFFB2100958A008B24FB /* MyTransformationsView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MyTransformationsView.mm; sourceTree = "<group>"; };
 		B904EFFD210097E4008B24FB /* MyEAGLView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyEAGLView.h; sourceTree = "<group>"; };
@@ -541,7 +548,23 @@
 		B9D838BE1F6FB82200E52FF0 /* triangle.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = triangle.fs; sourceTree = "<group>"; };
 		B9D838C01F6FBAB500E52FF0 /* MyTriangleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTriangleView.h; sourceTree = "<group>"; };
 		B9D838C11F6FBAB500E52FF0 /* MyTriangleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTriangleView.m; sourceTree = "<group>"; };
-		B9F2CDD3200373F600FAC8A4 /* ear_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ear_10.png; sourceTree = "<group>"; };
+		B9FDB723210F034A00E26BB7 /* ear_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ear_10.png; sourceTree = "<group>"; };
+		B9FDB724210F034A00E26BB7 /* timg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = timg.jpeg; sourceTree = "<group>"; };
+		B9FDB725210F034A00E26BB7 /* wood.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wood.jpg; sourceTree = "<group>"; };
+		B9FDB726210F034A00E26BB7 /* noise.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = noise.jpg; sourceTree = "<group>"; };
+		B9FDB727210F034A00E26BB7 /* flower.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flower.jpg; sourceTree = "<group>"; };
+		B9FDB728210F034A00E26BB7 /* awesomeface.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = awesomeface.png; sourceTree = "<group>"; };
+		B9FDB729210F034A00E26BB7 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		B9FDB72A210F034A00E26BB7 /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
+		B9FDB735210F038C00E26BB7 /* MyEffectsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyEffectsView.h; sourceTree = "<group>"; };
+		B9FDB736210F038C00E26BB7 /* MyEffectsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyEffectsView.m; sourceTree = "<group>"; };
+		B9FDB738210F03E400E26BB7 /* effects.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = effects.vs; sourceTree = "<group>"; };
+		B9FDB73A210F06CD00E26BB7 /* effects_gray.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = effects_gray.fs; sourceTree = "<group>"; };
+		B9FDB73C210F148D00E26BB7 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		B9FDB73E210F1CD200E26BB7 /* effects_reverse.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = effects_reverse.fs; sourceTree = "<group>"; };
+		B9FDB740210F1E5000E26BB7 /* effects_eddy.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = effects_eddy.fs; sourceTree = "<group>"; };
+		B9FDB7422111624700E26BB7 /* effects_mosaic.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = effects_mosaic.fs; sourceTree = "<group>"; };
+		B9FDB7442111809B00E26BB7 /* effects_gaussianBlur.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = effects_gaussianBlur.fs; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -903,14 +926,10 @@
 		B9377DC21F6A5CAA00CC06D8 /* FQOpenGLDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B9FDB722210F034A00E26BB7 /* Resources */,
 				B904EFE521003B5F008B24FB /* Tools */,
 				B9B4C3D41F6BACAE00905D35 /* Shaders */,
 				B9B4C3871F6B8DDA00905D35 /* Exercises */,
-				B904EFF0210070A9008B24FB /* 4.jpg */,
-				B904EFF221008283008B24FB /* 5.jpg */,
-				B904EFF821008E55008B24FB /* awesomeface.png */,
-				B904EFF6210085CF008B24FB /* timg.jpeg */,
-				B9F2CDD3200373F600FAC8A4 /* ear_10.png */,
 				B9377DC61F6A5CAA00CC06D8 /* AppDelegate.h */,
 				B9377DC71F6A5CAA00CC06D8 /* AppDelegate.m */,
 				B9377DC91F6A5CAA00CC06D8 /* ViewController.h */,
@@ -1199,6 +1218,8 @@
 				B913AC0221045BA800B013FB /* MyColorView.mm */,
 				B913AC0A2105C66900B013FB /* MyBasicLightingView.h */,
 				B913AC0B2105C66900B013FB /* MyBasicLightingView.mm */,
+				B9FDB735210F038C00E26BB7 /* MyEffectsView.h */,
+				B9FDB736210F038C00E26BB7 /* MyEffectsView.m */,
 			);
 			path = Exercises;
 			sourceTree = "<group>";
@@ -1223,8 +1244,30 @@
 				B913AC0F2105C6E100B013FB /* basicLighting.fs */,
 				B913AC132105C6FE00B013FB /* basicLighting_lamp.vs */,
 				B913AC112105C6EC00B013FB /* basicLighting_lamp.fs */,
+				B9FDB738210F03E400E26BB7 /* effects.vs */,
+				B9FDB73A210F06CD00E26BB7 /* effects_gray.fs */,
+				B9FDB73E210F1CD200E26BB7 /* effects_reverse.fs */,
+				B9FDB740210F1E5000E26BB7 /* effects_eddy.fs */,
+				B9FDB7422111624700E26BB7 /* effects_mosaic.fs */,
+				B9FDB7442111809B00E26BB7 /* effects_gaussianBlur.fs */,
 			);
 			path = Shaders;
+			sourceTree = "<group>";
+		};
+		B9FDB722210F034A00E26BB7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B9FDB73C210F148D00E26BB7 /* 1.jpg */,
+				B9FDB723210F034A00E26BB7 /* ear_10.png */,
+				B9FDB724210F034A00E26BB7 /* timg.jpeg */,
+				B9FDB725210F034A00E26BB7 /* wood.jpg */,
+				B9FDB726210F034A00E26BB7 /* noise.jpg */,
+				B9FDB727210F034A00E26BB7 /* flower.jpg */,
+				B9FDB728210F034A00E26BB7 /* awesomeface.png */,
+				B9FDB729210F034A00E26BB7 /* 4.jpg */,
+				B9FDB72A210F034A00E26BB7 /* 5.jpg */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1339,12 +1382,14 @@
 				B913ABF32102E9FF00B013FB /* polar_coordinates.inl in Resources */,
 				B913AC122105C6EC00B013FB /* basicLighting_lamp.fs in Resources */,
 				B913ABDA2102E9FF00B013FB /* vector_angle.inl in Resources */,
+				B9FDB7432111624700E26BB7 /* effects_mosaic.fs in Resources */,
 				B913ABBC2102E9FF00B013FB /* noise.inl in Resources */,
 				B913ABC22102E9FF00B013FB /* extend.inl in Resources */,
 				B913ABA32102E9FF00B013FB /* type_mat4x4_simd.inl in Resources */,
 				B9D838BF1F6FB82200E52FF0 /* triangle.fs in Resources */,
 				B913ABF42102E9FF00B013FB /* scalar_relational.inl in Resources */,
 				B913ABD42102E9FF00B013FB /* color_space_YCoCg.inl in Resources */,
+				B9FDB732210F034A00E26BB7 /* 4.jpg in Resources */,
 				B913ABEB2102E9FF00B013FB /* transform2.inl in Resources */,
 				B913ABEF2102E9FF00B013FB /* norm.inl in Resources */,
 				B913ABD22102E9FF00B013FB /* spline.inl in Resources */,
@@ -1356,7 +1401,6 @@
 				B9D838BD1F6FB7B200E52FF0 /* triangle.vs in Resources */,
 				B913AB952102E9FF00B013FB /* func_packing_simd.inl in Resources */,
 				B913ABC12102E9FF00B013FB /* matrix_query.inl in Resources */,
-				B904EFF921008E55008B24FB /* awesomeface.png in Resources */,
 				B913AA7B2101E35500B013FB /* transformations.vs in Resources */,
 				B913ABF02102E9FF00B013FB /* handed_coordinate_space.inl in Resources */,
 				B913ABC62102E9FF00B013FB /* gradient_paint.inl in Resources */,
@@ -1364,28 +1408,29 @@
 				B913ABB72102E9FF00B013FB /* epsilon.inl in Resources */,
 				B9377DD31F6A5CAA00CC06D8 /* LaunchScreen.storyboard in Resources */,
 				B913ABDF2102E9FF00B013FB /* vector_query.inl in Resources */,
+				B9FDB730210F034A00E26BB7 /* flower.jpg in Resources */,
 				B913ABD72102E9FF00B013FB /* closest_point.inl in Resources */,
 				B913ABFB210315D400B013FB /* coordinate.vs in Resources */,
 				B913AC0721045C4D00B013FB /* color.fs in Resources */,
 				B913ABA72102E9FF00B013FB /* func_exponential_simd.inl in Resources */,
+				B9FDB739210F03E400E26BB7 /* effects.vs in Resources */,
 				B913ABAE2102E9FF00B013FB /* matrix_transform.inl in Resources */,
 				B913ABE22102E9FF00B013FB /* normalize_dot.inl in Resources */,
-				B904EFF7210085D0008B24FB /* timg.jpeg in Resources */,
 				B913AB8B2102E9FF00B013FB /* func_vector_relational_simd.inl in Resources */,
 				B913AB882102E9FF00B013FB /* func_vector_relational.inl in Resources */,
 				B913ABB12102E9FF00B013FB /* round.inl in Resources */,
 				B9377DD01F6A5CAA00CC06D8 /* Assets.xcassets in Resources */,
 				B913AB8F2102E9FF00B013FB /* type_vec.inl in Resources */,
+				B9FDB72E210F034A00E26BB7 /* wood.jpg in Resources */,
 				B913ABA42102E9FF00B013FB /* func_matrix.inl in Resources */,
 				B913ABB52102E9FF00B013FB /* integer.inl in Resources */,
 				B913ABBE2102E9FF00B013FB /* constants.inl in Resources */,
 				B913AC102105C6E100B013FB /* basicLighting.fs in Resources */,
-				B904EFF1210070A9008B24FB /* 4.jpg in Resources */,
-				B9F2CDD4200373F600FAC8A4 /* ear_10.png in Resources */,
 				B913ABC72102E9FF00B013FB /* type_trait.inl in Resources */,
 				B913AB912102E9FF00B013FB /* func_trigonometric.inl in Resources */,
 				B913ABE32102E9FF00B013FB /* std_based_type.inl in Resources */,
 				B913ABAC2102E9FF00B013FB /* quaternion.inl in Resources */,
+				B9FDB72D210F034A00E26BB7 /* timg.jpeg in Resources */,
 				B913ABAD2102E9FF00B013FB /* packing.inl in Resources */,
 				B913ABCC2102E9FF00B013FB /* number_precision.inl in Resources */,
 				B913AC0521045C4300B013FB /* color.vs in Resources */,
@@ -1402,17 +1447,20 @@
 				B913ABB02102E9FF00B013FB /* bitfield.inl in Resources */,
 				B9A1D4D32109C7C400375BE7 /* circle.fs in Resources */,
 				B913ABB62102E9FF00B013FB /* functions.inl in Resources */,
+				B9FDB741210F1E5000E26BB7 /* effects_eddy.fs in Resources */,
 				B913ABB32102E9FF00B013FB /* ulp.inl in Resources */,
 				B913ABCD2102E9FF00B013FB /* mixed_product.inl in Resources */,
+				B9FDB72F210F034A00E26BB7 /* noise.jpg in Resources */,
 				B913ABC32102E9FF00B013FB /* associated_min_max.inl in Resources */,
 				B913AB872102E9FF00B013FB /* func_integer_simd.inl in Resources */,
-				B904EFF321008283008B24FB /* 5.jpg in Resources */,
 				B913ABC52102E9FF00B013FB /* quaternion.inl in Resources */,
 				B913ABBD2102E9FF00B013FB /* random.inl in Resources */,
 				B913AB8C2102E9FF00B013FB /* func_matrix_simd.inl in Resources */,
 				B913ABCE2102E9FF00B013FB /* transform.inl in Resources */,
 				B913ABC02102E9FF00B013FB /* log_base.inl in Resources */,
 				B913ABC92102E9FF00B013FB /* raw_data.inl in Resources */,
+				B9FDB73F210F1CD200E26BB7 /* effects_reverse.fs in Resources */,
+				B9FDB7452111809B00E26BB7 /* effects_gaussianBlur.fs in Resources */,
 				B913ABF62102E9FF00B013FB /* projection.inl in Resources */,
 				B913AB9F2102E9FF00B013FB /* type_vec2.inl in Resources */,
 				B913ABA82102E9FF00B013FB /* type_mat.inl in Resources */,
@@ -1429,11 +1477,13 @@
 				B913ABD02102E9FF00B013FB /* io.inl in Resources */,
 				B913ABEA2102E9FF00B013FB /* perpendicular.inl in Resources */,
 				B913AB972102E9FF00B013FB /* func_trigonometric_simd.inl in Resources */,
+				B9FDB72C210F034A00E26BB7 /* ear_10.png in Resources */,
 				B913ABDB2102E9FF00B013FB /* string_cast.inl in Resources */,
 				B913ABA22102E9FF00B013FB /* type_vec3.inl in Resources */,
 				B913AB9D2102E9FF00B013FB /* func_geometric_simd.inl in Resources */,
 				B913ABEC2102E9FF00B013FB /* common.inl in Resources */,
 				B913ABCA2102E9FF00B013FB /* matrix_cross_product.inl in Resources */,
+				B9FDB733210F034A00E26BB7 /* 5.jpg in Resources */,
 				B913ABD32102E9FF00B013FB /* fast_square_root.inl in Resources */,
 				B913ABF12102E9FF00B013FB /* fast_exponential.inl in Resources */,
 				B913AB8E2102E9FF00B013FB /* func_geometric.inl in Resources */,
@@ -1443,6 +1493,7 @@
 				B913AB892102E9FF00B013FB /* func_packing.inl in Resources */,
 				B913ABC42102E9FF00B013FB /* matrix_transform_2d.inl in Resources */,
 				B913ABE42102E9FF00B013FB /* type_aligned.inl in Resources */,
+				B9FDB73D210F148D00E26BB7 /* 1.jpg in Resources */,
 				B913ABE12102E9FF00B013FB /* component_wise.inl in Resources */,
 				B913ABDE2102E9FF00B013FB /* hash.inl in Resources */,
 				B913AB962102E9FF00B013FB /* type_vec4.inl in Resources */,
@@ -1454,6 +1505,7 @@
 				B913AB9E2102E9FF00B013FB /* type_mat2x3.inl in Resources */,
 				B913ABAF2102E9FF00B013FB /* type_precision.inl in Resources */,
 				B913ABE02102E9FF00B013FB /* orthonormalize.inl in Resources */,
+				B9FDB731210F034A00E26BB7 /* awesomeface.png in Resources */,
 				B913ABED2102E9FF00B013FB /* color_space.inl in Resources */,
 				B913ABB82102E9FF00B013FB /* matrix_access.inl in Resources */,
 				B913AB9A2102E9FF00B013FB /* type_vec1.inl in Resources */,
@@ -1469,6 +1521,7 @@
 				B913AC0921045FBA00B013FB /* lamp.fs in Resources */,
 				B913ABFD210315DB00B013FB /* coordinate.fs in Resources */,
 				B913ABA62102E9FF00B013FB /* type_mat3x4.inl in Resources */,
+				B9FDB73B210F06CD00E26BB7 /* effects_gray.fs in Resources */,
 				B913AB932102E9FF00B013FB /* type_mat4x2.inl in Resources */,
 				B913ABDC2102E9FF00B013FB /* rotate_vector.inl in Resources */,
 				B913AC142105C6FE00B013FB /* basicLighting_lamp.vs in Resources */,
@@ -1505,6 +1558,7 @@
 				B9377DCB1F6A5CAA00CC06D8 /* ViewController.m in Sources */,
 				B904EFFF210097E4008B24FB /* MyEAGLView.m in Sources */,
 				B9377DC81F6A5CAA00CC06D8 /* AppDelegate.m in Sources */,
+				B9FDB737210F038C00E26BB7 /* MyEffectsView.m in Sources */,
 				B9377DC51F6A5CAA00CC06D8 /* main.m in Sources */,
 				B9A1D831210DC45B00375BE7 /* TextureUtil.c in Sources */,
 				B904EFEB21003F6C008B24FB /* MyTextureView.m in Sources */,
