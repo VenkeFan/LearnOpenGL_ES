@@ -125,6 +125,11 @@
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     
     // 绘制（vertices里有几个顶点坐标，这里的参数就传几个）
+    /*
+     参数 mode ：绘制方式，例如：GL_POINTS、GL_LINES。
+     参数 first ：从数组缓存中的哪一位开始绘制，一般为0。
+     参数 count ：数组中顶点的数量。
+     */
     glDrawArrays(GL_TRIANGLES, 0, 3); // 使用当前激活的着色器，之前定义的顶点属性配置，和VBO的顶点数据（通过VAO间接绑定）来绘制图元
     
 #pragma mark - 渲染

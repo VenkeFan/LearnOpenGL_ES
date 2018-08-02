@@ -16,6 +16,7 @@
 #import "MyColorView.h"
 #import "MyBasicLightingView.h"
 #import "MyEffectsView.h"
+#import "MyInstancedRenderView.h"
 
 @interface ShaderExerciseViewController ()
 
@@ -26,7 +27,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    MyEffectsView *view = [[MyEffectsView alloc] initWithFrame:self.view.bounds];
+    MyInstancedRenderView *view = [[MyInstancedRenderView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:view];
 }
 

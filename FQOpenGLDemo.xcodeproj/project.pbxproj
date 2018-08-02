@@ -181,6 +181,9 @@
 		B9FDB7432111624700E26BB7 /* effects_mosaic.fs in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7422111624700E26BB7 /* effects_mosaic.fs */; };
 		B9FDB7452111809B00E26BB7 /* effects_gaussianBlur.fs in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7442111809B00E26BB7 /* effects_gaussianBlur.fs */; };
 		B9FDB7472111C27300E26BB7 /* effects_emboss.fs in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7462111C27300E26BB7 /* effects_emboss.fs */; };
+		B9FDB74A2112B82B00E26BB7 /* MyInstancedRenderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9FDB7492112B82B00E26BB7 /* MyInstancedRenderView.m */; };
+		B9FDB74C2112B86100E26BB7 /* instancedRender.vs in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB74B2112B86100E26BB7 /* instancedRender.vs */; };
+		B9FDB74E2112B86900E26BB7 /* instancedRender.fs in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB74D2112B86900E26BB7 /* instancedRender.fs */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -567,6 +570,10 @@
 		B9FDB7422111624700E26BB7 /* effects_mosaic.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = effects_mosaic.fs; sourceTree = "<group>"; };
 		B9FDB7442111809B00E26BB7 /* effects_gaussianBlur.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = effects_gaussianBlur.fs; sourceTree = "<group>"; };
 		B9FDB7462111C27300E26BB7 /* effects_emboss.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = effects_emboss.fs; sourceTree = "<group>"; };
+		B9FDB7482112B82B00E26BB7 /* MyInstancedRenderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyInstancedRenderView.h; sourceTree = "<group>"; };
+		B9FDB7492112B82B00E26BB7 /* MyInstancedRenderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyInstancedRenderView.m; sourceTree = "<group>"; };
+		B9FDB74B2112B86100E26BB7 /* instancedRender.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = instancedRender.vs; sourceTree = "<group>"; };
+		B9FDB74D2112B86900E26BB7 /* instancedRender.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = instancedRender.fs; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1222,6 +1229,8 @@
 				B913AC0B2105C66900B013FB /* MyBasicLightingView.mm */,
 				B9FDB735210F038C00E26BB7 /* MyEffectsView.h */,
 				B9FDB736210F038C00E26BB7 /* MyEffectsView.m */,
+				B9FDB7482112B82B00E26BB7 /* MyInstancedRenderView.h */,
+				B9FDB7492112B82B00E26BB7 /* MyInstancedRenderView.m */,
 			);
 			path = Exercises;
 			sourceTree = "<group>";
@@ -1253,6 +1262,8 @@
 				B9FDB7422111624700E26BB7 /* effects_mosaic.fs */,
 				B9FDB7442111809B00E26BB7 /* effects_gaussianBlur.fs */,
 				B9FDB7462111C27300E26BB7 /* effects_emboss.fs */,
+				B9FDB74B2112B86100E26BB7 /* instancedRender.vs */,
+				B9FDB74D2112B86900E26BB7 /* instancedRender.fs */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -1433,6 +1444,7 @@
 				B913AB912102E9FF00B013FB /* func_trigonometric.inl in Resources */,
 				B913ABE32102E9FF00B013FB /* std_based_type.inl in Resources */,
 				B913ABAC2102E9FF00B013FB /* quaternion.inl in Resources */,
+				B9FDB74C2112B86100E26BB7 /* instancedRender.vs in Resources */,
 				B9FDB72D210F034A00E26BB7 /* timg.jpeg in Resources */,
 				B913ABAD2102E9FF00B013FB /* packing.inl in Resources */,
 				B913ABCC2102E9FF00B013FB /* number_precision.inl in Resources */,
@@ -1471,6 +1483,7 @@
 				B913ABA12102E9FF00B013FB /* type_gentype.inl in Resources */,
 				B9A1D826210DBFCF00375BE7 /* Android.mk in Resources */,
 				B904EFED21006842008B24FB /* texture.vs in Resources */,
+				B9FDB74E2112B86900E26BB7 /* instancedRender.fs in Resources */,
 				B913AB942102E9FF00B013FB /* type_mat4x3.inl in Resources */,
 				B913ABD12102E9FF00B013FB /* fast_trigonometry.inl in Resources */,
 				B913AB862102E9FF00B013FB /* func_exponential.inl in Resources */,
@@ -1572,6 +1585,7 @@
 				B9B4C38D1F6B8E4200905D35 /* ShaderExerciseViewController.m in Sources */,
 				B9A1D82B210DBFCF00375BE7 /* PngUtil.c in Sources */,
 				B9A1D4CF2109BE3700375BE7 /* MyCircleView.m in Sources */,
+				B9FDB74A2112B82B00E26BB7 /* MyInstancedRenderView.m in Sources */,
 				B9B4C38A1F6B8DDA00905D35 /* GLKExerciseViewController.m in Sources */,
 				B913AC0021041D4300B013FB /* MyCameraView.mm in Sources */,
 				B9A1D80B210D662000375BE7 /* JpegUtil.c in Sources */,

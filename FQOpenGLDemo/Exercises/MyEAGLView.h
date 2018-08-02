@@ -19,4 +19,8 @@
 
 - (void)renderWithVertexFileName:(NSString *)vertexName fragmentFileName:(NSString *)fragmentName;
 
+- (void)genTexture:(GLuint)shaderProgram;
+- (void)genTexture2:(GLuint)shaderProgram;
+- (void)genTexture3:(GLuint)shaderProgram;
+
 @end

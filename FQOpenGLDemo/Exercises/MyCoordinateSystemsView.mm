@@ -91,7 +91,23 @@
     glVertexAttribPointer(texLoc, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(GL_FLOAT), (GLfloat *)NULL + 3);
     
     // 生成纹理
-    [self genTexture:shaderProgram];
+    [super genTexture:shaderProgram];
+    
+    // 模型矩阵
+    glm::mat4 model;
+    model = glm::rotate(model, glm::radians(30.f), glm::vec3(1.f, 1.f, 0.f));
+    
+    // 观察矩阵 (使场景向Z轴负方向移动，模拟摄像机向Z轴正方向移动)
+    glm::mat4 view;
+    view = glm::translate(view, glm::vec3(0.f, 0.f, -3.f));
+    
+    // 投影矩阵（透视投影）
+    glm::mat4 projection;
+    projection = glm::perspective(glm::radians(90.f), self.renderWidth/(float)self.renderHeight, 0.1f, 100.f);
+    
+    glUniformMatrix4fv(glGetUniformLocation(shaderProgram, "model"), 1, GL_FALSE, glm::value_ptr(model));
+    glUniformMatrix4fv(glGetUniformLocation(shaderProgram, "view"), 1, GL_FALSE, glm::value_ptr(view));
+    glUniformMatrix4fv(glGetUniformLocation(shaderProgram, "projection"), 1, GL_FALSE, glm::value_ptr(projection));
     
     // 设置背景色
     glClearColor(0.3, 0.0, 0.0, 1.0);
@@ -140,26 +156,6 @@
     }
     
     [self.context presentRenderbuffer:GL_RENDERBUFFER];
-}
-
-- (void)genTexture:(GLuint)shaderProgram {
-    [super genTexture:shaderProgram];
-    
-    // 模型矩阵
-    glm::mat4 model;
-    model = glm::rotate(model, glm::radians(30.f), glm::vec3(1.f, 1.f, 0.f));
-    
-    // 观察矩阵 (使场景向Z轴负方向移动，模拟摄像机向Z轴正方向移动)
-    glm::mat4 view;
-    view = glm::translate(view, glm::vec3(0.f, 0.f, -3.f));
-
-    // 投影矩阵（透视投影）
-    glm::mat4 projection;
-    projection = glm::perspective(glm::radians(90.f), self.renderWidth/(float)self.renderHeight, 0.1f, 100.f);
-
-    glUniformMatrix4fv(glGetUniformLocation(shaderProgram, "model"), 1, GL_FALSE, glm::value_ptr(model));
-    glUniformMatrix4fv(glGetUniformLocation(shaderProgram, "view"), 1, GL_FALSE, glm::value_ptr(view));
-    glUniformMatrix4fv(glGetUniformLocation(shaderProgram, "projection"), 1, GL_FALSE, glm::value_ptr(projection));
 }
 
 @end
