@@ -57,7 +57,7 @@
     self.myEAGLLayer.contentsScale = [UIScreen mainScreen].scale;
     self.myEAGLLayer.drawableProperties = @{kEAGLDrawablePropertyRetainedBacking: @(FALSE),
                                             kEAGLDrawablePropertyColorFormat: kEAGLColorFormatRGBA8};
-    
+    // 渲染缓存有：颜色缓存、深度缓存、模版缓存
     // 设置颜色缓存
     glGenRenderbuffers(1, &_renderBuffer);
     // 当第一次来绑定某个渲染缓存的时候，它会分配这个对象的存储空间并初始化，此后再调用这个函数的时候会将指定的渲染缓存对象绑定为当前的激活状态
@@ -90,6 +90,11 @@
     
     // 设置颜色缓存为当前的渲染缓存
     glBindRenderbuffer(GL_RENDERBUFFER, _renderBuffer);
+    
+    if (glCheckFramebufferStatus(GL_FRAMEBUFFER) != GL_FRAMEBUFFER_COMPLETE) {
+        printf("ERROR:FRAMEBUFFER:: 帧缓存不完整！");
+        glBindFramebuffer(GL_FRAMEBUFFER, 0);
+    }
 }
 
 #pragma mark - 纹理

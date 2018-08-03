@@ -185,6 +185,10 @@
 		B9FDB74C2112B86100E26BB7 /* instancedRender.vs in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB74B2112B86100E26BB7 /* instancedRender.vs */; };
 		B9FDB74E2112B86900E26BB7 /* instancedRender.fs in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB74D2112B86900E26BB7 /* instancedRender.fs */; };
 		B9FDB76721130AAE00E26BB7 /* libyuv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9FDB76621130AAE00E26BB7 /* libyuv.a */; };
+		B9FDB76A2114140C00E26BB7 /* MyFrameBufferView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9FDB7692114140C00E26BB7 /* MyFrameBufferView.m */; };
+		B9FDB76D2114608B00E26BB7 /* MyMaterialView.mm in Sources */ = {isa = PBXBuildFile; fileRef = B9FDB76C2114608B00E26BB7 /* MyMaterialView.mm */; };
+		B9FDB76F211460A600E26BB7 /* material.vs in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB76E211460A600E26BB7 /* material.vs */; };
+		B9FDB771211460AD00E26BB7 /* material.fs in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB770211460AD00E26BB7 /* material.fs */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -595,6 +599,12 @@
 		B9FDB76321130AAE00E26BB7 /* rotate_argb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rotate_argb.h; sourceTree = "<group>"; };
 		B9FDB76421130AAE00E26BB7 /* row.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = row.h; sourceTree = "<group>"; };
 		B9FDB76621130AAE00E26BB7 /* libyuv.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libyuv.a; sourceTree = "<group>"; };
+		B9FDB7682114140C00E26BB7 /* MyFrameBufferView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFrameBufferView.h; sourceTree = "<group>"; };
+		B9FDB7692114140C00E26BB7 /* MyFrameBufferView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFrameBufferView.m; sourceTree = "<group>"; };
+		B9FDB76B2114608B00E26BB7 /* MyMaterialView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyMaterialView.h; sourceTree = "<group>"; };
+		B9FDB76C2114608B00E26BB7 /* MyMaterialView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MyMaterialView.mm; sourceTree = "<group>"; };
+		B9FDB76E211460A600E26BB7 /* material.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = material.vs; sourceTree = "<group>"; };
+		B9FDB770211460AD00E26BB7 /* material.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = material.fs; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1254,6 +1264,10 @@
 				B9FDB736210F038C00E26BB7 /* MyEffectsView.m */,
 				B9FDB7482112B82B00E26BB7 /* MyInstancedRenderView.h */,
 				B9FDB7492112B82B00E26BB7 /* MyInstancedRenderView.m */,
+				B9FDB7682114140C00E26BB7 /* MyFrameBufferView.h */,
+				B9FDB7692114140C00E26BB7 /* MyFrameBufferView.m */,
+				B9FDB76B2114608B00E26BB7 /* MyMaterialView.h */,
+				B9FDB76C2114608B00E26BB7 /* MyMaterialView.mm */,
 			);
 			path = Exercises;
 			sourceTree = "<group>";
@@ -1287,6 +1301,8 @@
 				B9FDB7462111C27300E26BB7 /* effects_emboss.fs */,
 				B9FDB74B2112B86100E26BB7 /* instancedRender.vs */,
 				B9FDB74D2112B86900E26BB7 /* instancedRender.fs */,
+				B9FDB76E211460A600E26BB7 /* material.vs */,
+				B9FDB770211460AD00E26BB7 /* material.fs */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -1478,6 +1494,7 @@
 				B913ABF42102E9FF00B013FB /* scalar_relational.inl in Resources */,
 				B913ABD42102E9FF00B013FB /* color_space_YCoCg.inl in Resources */,
 				B9FDB732210F034A00E26BB7 /* 4.jpg in Resources */,
+				B9FDB76F211460A600E26BB7 /* material.vs in Resources */,
 				B913ABEB2102E9FF00B013FB /* transform2.inl in Resources */,
 				B913ABEF2102E9FF00B013FB /* norm.inl in Resources */,
 				B913ABD22102E9FF00B013FB /* spline.inl in Resources */,
@@ -1547,6 +1564,7 @@
 				B913AB8C2102E9FF00B013FB /* func_matrix_simd.inl in Resources */,
 				B913ABCE2102E9FF00B013FB /* transform.inl in Resources */,
 				B913ABC02102E9FF00B013FB /* log_base.inl in Resources */,
+				B9FDB771211460AD00E26BB7 /* material.fs in Resources */,
 				B913ABC92102E9FF00B013FB /* raw_data.inl in Resources */,
 				B9FDB73F210F1CD200E26BB7 /* effects_reverse.fs in Resources */,
 				B9FDB7452111809B00E26BB7 /* effects_gaussianBlur.fs in Resources */,
@@ -1645,6 +1663,7 @@
 			files = (
 				B904EFFC2100958A008B24FB /* MyTransformationsView.mm in Sources */,
 				B913AC0321045BA800B013FB /* MyColorView.mm in Sources */,
+				B9FDB76A2114140C00E26BB7 /* MyFrameBufferView.m in Sources */,
 				B904EFE821003BA3008B24FB /* FQShaderHelper.m in Sources */,
 				B9377DCB1F6A5CAA00CC06D8 /* ViewController.m in Sources */,
 				B904EFFF210097E4008B24FB /* MyEAGLView.m in Sources */,
@@ -1661,6 +1680,7 @@
 				B9A1D4CF2109BE3700375BE7 /* MyCircleView.m in Sources */,
 				B9FDB74A2112B82B00E26BB7 /* MyInstancedRenderView.m in Sources */,
 				B9B4C38A1F6B8DDA00905D35 /* GLKExerciseViewController.m in Sources */,
+				B9FDB76D2114608B00E26BB7 /* MyMaterialView.mm in Sources */,
 				B913AC0021041D4300B013FB /* MyCameraView.mm in Sources */,
 				B9A1D80B210D662000375BE7 /* JpegUtil.c in Sources */,
 			);
