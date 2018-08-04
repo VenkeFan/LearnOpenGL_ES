@@ -19,6 +19,7 @@
 #import "MyInstancedRenderView.h"
 #import "MyFrameBufferView.h"
 #import "MyMaterialView.h"
+#import "MyLightingMapsView.h"
 
 @interface ShaderExerciseViewController ()
 
@@ -29,7 +30,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    MyMaterialView *view = [[MyMaterialView alloc] initWithFrame:self.view.bounds];
+    MyLightingMapsView *view = [[MyLightingMapsView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:view];
 }
 

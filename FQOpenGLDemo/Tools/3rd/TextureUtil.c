@@ -87,11 +87,11 @@ int read_texture_file(const char *file, TextureInfo *info)
         info->rgba = (unsigned char*)malloc(sizeof(unsigned char)*png_data.width*png_data.height*depth);
 
         for (int i = 0, j = 0; i < png_data.width*png_data.height*depth; i++, j+= depth) {
-            info->rgba[j] = png_data.rgba[i][0];
-            info->rgba[j+1] = png_data.rgba[i][1];
-            info->rgba[j+2] = png_data.rgba[i][2];
+            info->rgba[j] = png_data.rgba[i];
+            info->rgba[j+1] = png_data.rgba[i];
+            info->rgba[j+2] = png_data.rgba[i];
             if(png_data.flag == PNG_HAVE_ALPHA) {
-                info->rgba[j+3] = png_data.rgba[i][3];
+                info->rgba[j+3] = png_data.rgba[i];
             }
         }
         //free

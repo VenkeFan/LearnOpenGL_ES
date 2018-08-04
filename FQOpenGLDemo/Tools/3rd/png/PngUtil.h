@@ -30,7 +30,7 @@ typedef struct {
     int width, height; /* 尺寸 */
     int bit_depth;  /* 位深 */
     int flag;   /* 一个标志，表示是否有alpha通道 */
-    unsigned char **rgba; /* 图片数组;r=rgba[0];g=rgba[1];b=rgba[2] */
+    unsigned char *rgba; /* 图片数组;RGB or RGBA */
 } pic_data;
 
 /**
@@ -47,7 +47,7 @@ int read_png_file(const char *filepath, pic_data *out);
 /**
  write png file
 
- @param file_name png file name
+ @param filename png file name
  @param graph     png data to write
 
  @return success or not

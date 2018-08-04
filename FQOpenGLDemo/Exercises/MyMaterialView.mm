@@ -109,10 +109,6 @@
     {
         glUseProgram(objProgram);
         
-        // 物体光照颜色
-        glUniform3fv(glGetUniformLocation(objProgram, "lightPos"), 1, glm::value_ptr(lightPos));
-        glUniform3f(glGetUniformLocation(objProgram, "lightColor"), 1.0f, 1.0f, 1.0f);
-        glUniform3f(glGetUniformLocation(objProgram, "objectColor"), 1.0f, 0.5f, 0.31f);
         glUniform3f(glGetUniformLocation(objProgram, "viewPos"), 0.0f, 0.0f, 3.0f);
         
         // 材质
@@ -122,6 +118,7 @@
         glUniform1f(glGetUniformLocation(objProgram, "material.shininess"), 32.0f);
         
         // 光照属性
+        glUniform3fv(glGetUniformLocation(objProgram, "light.position"), 1, glm::value_ptr(lightPos));
         glUniform3f(glGetUniformLocation(objProgram, "light.ambient"), 0.2, 0.2, 0.2);
         glUniform3f(glGetUniformLocation(objProgram, "light.diffuse"), 0.5f, 0.5f, 0.5f);
         glUniform3f(glGetUniformLocation(objProgram, "light.specular"), 1.0f, 1.0f, 1.0f);

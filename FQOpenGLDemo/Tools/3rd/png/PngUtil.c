@@ -54,7 +54,7 @@ int read_png_file(const char *filepath, pic_data *out)
     color_type     = png_get_color_type(png_ptr, info_ptr); /*颜色类型*/
     
     int i,j;
-    int size, pos = 0;
+    int size = 0;
     /* row_pointers里边就是rgba数据 */
     png_bytep* row_pointers;
     row_pointers = png_get_rows(png_ptr, info_ptr);
@@ -67,7 +67,7 @@ int read_png_file(const char *filepath, pic_data *out)
     if(channels == 4 || color_type == PNG_COLOR_TYPE_RGB_ALPHA) {
         size *= (4*sizeof(unsigned char)); /* 每个像素点占4个字节内存 */
         out->flag = PNG_HAVE_ALPHA;    /* 标记 */
-        out->rgba = (unsigned char**) malloc(size);
+        out->rgba = (unsigned char*) malloc(size);
         if(out->rgba == NULL)
         {/* 如果分配内存失败 */
             fclose(pic_fp);
@@ -78,13 +78,13 @@ int read_png_file(const char *filepath, pic_data *out)
         temp = (4 * out->width);/* 每行有4 * out->width个字节 */
         for(i = 0; i < out->height; i++)
         {
+            int row = i * 4 * out->width;
             for(j = 0; j < temp; j += 4)
             {/* 一个字节一个字节的赋值 */
-                out->rgba[0][pos] = row_pointers[i][j]; // red
-                out->rgba[1][pos] = row_pointers[i][j+1]; // green
-                out->rgba[2][pos] = row_pointers[i][j+2];   // blue
-                out->rgba[3][pos] = row_pointers[i][j+3]; // alpha
-                ++pos;
+                out->rgba[row+j] = row_pointers[i][j]; // red
+                out->rgba[row+j+1] = row_pointers[i][j+1]; // green
+                out->rgba[row+j+2] = row_pointers[i][j+2];   // blue
+                out->rgba[row+j+3] = row_pointers[i][j+3]; // alpha
             }
         }
         
@@ -92,7 +92,7 @@ int read_png_file(const char *filepath, pic_data *out)
     }else if(channels == 3 || color_type == PNG_COLOR_TYPE_RGB) {
         size *= (3*sizeof(unsigned char)); /* 每个像素点占3个字节内存 */
         out->flag = PNG_NO_ALPHA;    /* 标记 */
-        out->rgba = (unsigned char**) malloc(size);
+        out->rgba = (unsigned char*) malloc(size);
         if(out->rgba == NULL)
         {/* 如果分配内存失败 */
             fclose(pic_fp);
@@ -103,12 +103,12 @@ int read_png_file(const char *filepath, pic_data *out)
         temp = (3 * out->width);/* 每行有3 * out->width个字节 */
         for(i = 0; i < out->height; i++)
         {
+            int row = i * 3 * out->width;
             for(j = 0; j < temp; j += 3)
             {/* 一个字节一个字节的赋值 */
-                out->rgba[0][pos] = row_pointers[i][j]; // red
-                out->rgba[1][pos] = row_pointers[i][j+1]; // green
-                out->rgba[2][pos] = row_pointers[i][j+2];   // blue
-                ++pos;
+                out->rgba[row+j] = row_pointers[i][j]; // red
+                out->rgba[row+j+1] = row_pointers[i][j+1]; // green
+                out->rgba[row+j+2] = row_pointers[i][j+2];   // blue
             }
         }
     }else {
@@ -122,7 +122,7 @@ int read_png_file(const char *filepath, pic_data *out)
 
 int write_png_file(const char *filename , pic_data *graph)
 {
-    int j, i, temp, pos;
+    int j, i, temp;
     png_byte color_type;
     
     png_structp png_ptr;
@@ -187,20 +187,19 @@ int write_png_file(const char *filename , pic_data *graph)
         temp = (3 * graph->width);
     }
     
-    pos = 0;
     row_pointers = (png_bytep*)malloc(graph->height*sizeof(png_bytep));
     for(i = 0; i < graph->height; i++)
     {
         row_pointers[i] = (png_bytep)malloc(sizeof(unsigned char)*temp);
+        int row = i * temp;
         for(j = 0; j < temp; j += 4)
         {
-            row_pointers[i][j]   = graph->rgba[0][pos]; // red
-            row_pointers[i][j+1] = graph->rgba[1][pos]; // green
-            row_pointers[i][j+2] = graph->rgba[2][pos];   // blue
+            row_pointers[i][j]   = graph->rgba[row+j+0]; // red
+            row_pointers[i][j+1] = graph->rgba[row+j+1]; // green
+            row_pointers[i][j+2] = graph->rgba[row+j+2];   // blue
             if(graph->flag == PNG_HAVE_ALPHA) { // alpha
-                row_pointers[i][j+3] = graph->rgba[3][pos];
+                row_pointers[i][j+3] = graph->rgba[row+j+3];
             }
-            ++pos;
         }
     }
     png_write_image(png_ptr, row_pointers);

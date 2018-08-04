@@ -5,7 +5,7 @@ precision mediump float;
 uniform vec3 lightPos;
 uniform vec3 lightColor;
 uniform vec3 objectColor;
-uniform vec3 viewPos;
+uniform vec3 viewPos; // 摄像机坐标
 
 varying vec3 Normal;
 varying vec3 FragPos;

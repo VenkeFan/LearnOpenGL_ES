@@ -189,6 +189,12 @@
 		B9FDB76D2114608B00E26BB7 /* MyMaterialView.mm in Sources */ = {isa = PBXBuildFile; fileRef = B9FDB76C2114608B00E26BB7 /* MyMaterialView.mm */; };
 		B9FDB76F211460A600E26BB7 /* material.vs in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB76E211460A600E26BB7 /* material.vs */; };
 		B9FDB771211460AD00E26BB7 /* material.fs in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB770211460AD00E26BB7 /* material.fs */; };
+		B9FDB7732114818900E26BB7 /* container2.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7722114818900E26BB7 /* container2.png */; };
+		B9FDB7762114822400E26BB7 /* MyLightingMapsView.mm in Sources */ = {isa = PBXBuildFile; fileRef = B9FDB7752114822400E26BB7 /* MyLightingMapsView.mm */; };
+		B9FDB7782114825400E26BB7 /* lightingMaps.vs in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7772114825400E26BB7 /* lightingMaps.vs */; };
+		B9FDB77A2114826000E26BB7 /* lightingMaps.fs in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7792114826000E26BB7 /* lightingMaps.fs */; };
+		B9FDB77C2115489400E26BB7 /* container2_specular.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB77B2115489400E26BB7 /* container2_specular.png */; };
+		B9FDB77E21154C7100E26BB7 /* lighting_maps_specular_color.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB77D21154C7100E26BB7 /* lighting_maps_specular_color.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -605,6 +611,13 @@
 		B9FDB76C2114608B00E26BB7 /* MyMaterialView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MyMaterialView.mm; sourceTree = "<group>"; };
 		B9FDB76E211460A600E26BB7 /* material.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = material.vs; sourceTree = "<group>"; };
 		B9FDB770211460AD00E26BB7 /* material.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = material.fs; sourceTree = "<group>"; };
+		B9FDB7722114818900E26BB7 /* container2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = container2.png; sourceTree = "<group>"; };
+		B9FDB7742114822400E26BB7 /* MyLightingMapsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyLightingMapsView.h; sourceTree = "<group>"; };
+		B9FDB7752114822400E26BB7 /* MyLightingMapsView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MyLightingMapsView.mm; sourceTree = "<group>"; };
+		B9FDB7772114825400E26BB7 /* lightingMaps.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = lightingMaps.vs; sourceTree = "<group>"; };
+		B9FDB7792114826000E26BB7 /* lightingMaps.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = lightingMaps.fs; sourceTree = "<group>"; };
+		B9FDB77B2115489400E26BB7 /* container2_specular.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = container2_specular.png; sourceTree = "<group>"; };
+		B9FDB77D21154C7100E26BB7 /* lighting_maps_specular_color.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lighting_maps_specular_color.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1268,6 +1281,8 @@
 				B9FDB7692114140C00E26BB7 /* MyFrameBufferView.m */,
 				B9FDB76B2114608B00E26BB7 /* MyMaterialView.h */,
 				B9FDB76C2114608B00E26BB7 /* MyMaterialView.mm */,
+				B9FDB7742114822400E26BB7 /* MyLightingMapsView.h */,
+				B9FDB7752114822400E26BB7 /* MyLightingMapsView.mm */,
 			);
 			path = Exercises;
 			sourceTree = "<group>";
@@ -1303,6 +1318,8 @@
 				B9FDB74D2112B86900E26BB7 /* instancedRender.fs */,
 				B9FDB76E211460A600E26BB7 /* material.vs */,
 				B9FDB770211460AD00E26BB7 /* material.fs */,
+				B9FDB7772114825400E26BB7 /* lightingMaps.vs */,
+				B9FDB7792114826000E26BB7 /* lightingMaps.fs */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -1317,6 +1334,9 @@
 				B9FDB726210F034A00E26BB7 /* noise.jpg */,
 				B9FDB727210F034A00E26BB7 /* flower.jpg */,
 				B9FDB728210F034A00E26BB7 /* awesomeface.png */,
+				B9FDB77D21154C7100E26BB7 /* lighting_maps_specular_color.png */,
+				B9FDB77B2115489400E26BB7 /* container2_specular.png */,
+				B9FDB7722114818900E26BB7 /* container2.png */,
 				B9FDB729210F034A00E26BB7 /* 4.jpg */,
 				B9FDB72A210F034A00E26BB7 /* 5.jpg */,
 			);
@@ -1520,6 +1540,7 @@
 				B913ABA72102E9FF00B013FB /* func_exponential_simd.inl in Resources */,
 				B9FDB739210F03E400E26BB7 /* effects.vs in Resources */,
 				B913ABAE2102E9FF00B013FB /* matrix_transform.inl in Resources */,
+				B9FDB77C2115489400E26BB7 /* container2_specular.png in Resources */,
 				B913ABE22102E9FF00B013FB /* normalize_dot.inl in Resources */,
 				B913AB8B2102E9FF00B013FB /* func_vector_relational_simd.inl in Resources */,
 				B913AB882102E9FF00B013FB /* func_vector_relational.inl in Resources */,
@@ -1559,6 +1580,7 @@
 				B9FDB72F210F034A00E26BB7 /* noise.jpg in Resources */,
 				B913ABC32102E9FF00B013FB /* associated_min_max.inl in Resources */,
 				B913AB872102E9FF00B013FB /* func_integer_simd.inl in Resources */,
+				B9FDB7732114818900E26BB7 /* container2.png in Resources */,
 				B913ABC52102E9FF00B013FB /* quaternion.inl in Resources */,
 				B913ABBD2102E9FF00B013FB /* random.inl in Resources */,
 				B913AB8C2102E9FF00B013FB /* func_matrix_simd.inl in Resources */,
@@ -1569,6 +1591,7 @@
 				B9FDB73F210F1CD200E26BB7 /* effects_reverse.fs in Resources */,
 				B9FDB7452111809B00E26BB7 /* effects_gaussianBlur.fs in Resources */,
 				B913ABF62102E9FF00B013FB /* projection.inl in Resources */,
+				B9FDB77E21154C7100E26BB7 /* lighting_maps_specular_color.png in Resources */,
 				B913AB9F2102E9FF00B013FB /* type_vec2.inl in Resources */,
 				B913ABA82102E9FF00B013FB /* type_mat.inl in Resources */,
 				B913ABBB2102E9FF00B013FB /* color_space.inl in Resources */,
@@ -1607,6 +1630,7 @@
 				B913ABDE2102E9FF00B013FB /* hash.inl in Resources */,
 				B913AB962102E9FF00B013FB /* type_vec4.inl in Resources */,
 				B913ABF52102E9FF00B013FB /* wrap.inl in Resources */,
+				B9FDB7782114825400E26BB7 /* lightingMaps.vs in Resources */,
 				B904EFEF21006852008B24FB /* texture.fs in Resources */,
 				B913ABC82102E9FF00B013FB /* euler_angles.inl in Resources */,
 				B913ABD52102E9FF00B013FB /* extended_min_max.inl in Resources */,
@@ -1618,6 +1642,7 @@
 				B913ABED2102E9FF00B013FB /* color_space.inl in Resources */,
 				B913ABB82102E9FF00B013FB /* matrix_access.inl in Resources */,
 				B913AB9A2102E9FF00B013FB /* type_vec1.inl in Resources */,
+				B9FDB77A2114826000E26BB7 /* lightingMaps.fs in Resources */,
 				B913ABB22102E9FF00B013FB /* quaternion_simd.inl in Resources */,
 				B913ABBA2102E9FF00B013FB /* color_encoding.inl in Resources */,
 				B913ABE52102E9FF00B013FB /* compatibility.inl in Resources */,
@@ -1677,6 +1702,7 @@
 				B9D838C21F6FBAB500E52FF0 /* MyTriangleView.m in Sources */,
 				B9B4C38D1F6B8E4200905D35 /* ShaderExerciseViewController.m in Sources */,
 				B9A1D82B210DBFCF00375BE7 /* PngUtil.c in Sources */,
+				B9FDB7762114822400E26BB7 /* MyLightingMapsView.mm in Sources */,
 				B9A1D4CF2109BE3700375BE7 /* MyCircleView.m in Sources */,
 				B9FDB74A2112B82B00E26BB7 /* MyInstancedRenderView.m in Sources */,
 				B9B4C38A1F6B8DDA00905D35 /* GLKExerciseViewController.m in Sources */,
@@ -1833,6 +1859,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMPRESS_PNG_FILES = NO;
 				DEVELOPMENT_TEAM = V6R68WLKP9;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = FQOpenGLDemo/Info.plist;
@@ -1845,6 +1872,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = qi.fan.FQOpenGLDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_PNG_TEXT = NO;
 			};
 			name = Debug;
 		};
@@ -1852,6 +1880,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMPRESS_PNG_FILES = NO;
 				DEVELOPMENT_TEAM = V6R68WLKP9;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = FQOpenGLDemo/Info.plist;
@@ -1864,6 +1893,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = qi.fan.FQOpenGLDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_PNG_TEXT = NO;
 			};
 			name = Release;
 		};
