@@ -244,6 +244,8 @@
 		B9FDB7EB2118335D00E26BB7 /* matrix.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7BA2118335C00E26BB7 /* matrix.jpg */; };
 		B9FDB7F221183FA400E26BB7 /* depthTest.vs in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7F121183FA400E26BB7 /* depthTest.vs */; };
 		B9FDB7F421183FAD00E26BB7 /* depthTest.fs in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7F321183FAD00E26BB7 /* depthTest.fs */; };
+		B9FDB7F721194BE600E26BB7 /* MyStencilTestView.mm in Sources */ = {isa = PBXBuildFile; fileRef = B9FDB7F621194BE600E26BB7 /* MyStencilTestView.mm */; };
+		B9FDB7F92119706A00E26BB7 /* stencil_border.fs in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7F82119706A00E26BB7 /* stencil_border.fs */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -717,6 +719,9 @@
 		B9FDB7BA2118335C00E26BB7 /* matrix.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = matrix.jpg; sourceTree = "<group>"; };
 		B9FDB7F121183FA400E26BB7 /* depthTest.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = depthTest.vs; sourceTree = "<group>"; };
 		B9FDB7F321183FAD00E26BB7 /* depthTest.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = depthTest.fs; sourceTree = "<group>"; };
+		B9FDB7F521194BE600E26BB7 /* MyStencilTestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyStencilTestView.h; sourceTree = "<group>"; };
+		B9FDB7F621194BE600E26BB7 /* MyStencilTestView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MyStencilTestView.mm; sourceTree = "<group>"; };
+		B9FDB7F82119706A00E26BB7 /* stencil_border.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = stencil_border.fs; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1384,6 +1389,8 @@
 				B9FDB7692114140C00E26BB7 /* MyFrameBufferView.m */,
 				B9FDB77F21182DCC00E26BB7 /* MyDepthTestView.h */,
 				B9FDB78021182DCC00E26BB7 /* MyDepthTestView.mm */,
+				B9FDB7F521194BE600E26BB7 /* MyStencilTestView.h */,
+				B9FDB7F621194BE600E26BB7 /* MyStencilTestView.mm */,
 			);
 			path = Exercises;
 			sourceTree = "<group>";
@@ -1423,6 +1430,7 @@
 				B9FDB7792114826000E26BB7 /* lightingMaps.fs */,
 				B9FDB7F121183FA400E26BB7 /* depthTest.vs */,
 				B9FDB7F321183FAD00E26BB7 /* depthTest.fs */,
+				B9FDB7F82119706A00E26BB7 /* stencil_border.fs */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -1883,6 +1891,7 @@
 				B913ABC82102E9FF00B013FB /* euler_angles.inl in Resources */,
 				B913ABD52102E9FF00B013FB /* extended_min_max.inl in Resources */,
 				B9FDB7D92118335D00E26BB7 /* bricks2_disp.jpg in Resources */,
+				B9FDB7F92119706A00E26BB7 /* stencil_border.fs in Resources */,
 				B913ABBF2102E9FF00B013FB /* type_ptr.inl in Resources */,
 				B913AB9E2102E9FF00B013FB /* type_mat2x3.inl in Resources */,
 				B913ABAF2102E9FF00B013FB /* type_precision.inl in Resources */,
@@ -1959,6 +1968,7 @@
 				B9A1D831210DC45B00375BE7 /* TextureUtil.c in Sources */,
 				B9FDB78121182DCC00E26BB7 /* MyDepthTestView.mm in Sources */,
 				B904EFEB21003F6C008B24FB /* MyTextureView.m in Sources */,
+				B9FDB7F721194BE600E26BB7 /* MyStencilTestView.mm in Sources */,
 				B913ABF921030F4100B013FB /* MyCoordinateSystemsView.mm in Sources */,
 				B913AC0C2105C66900B013FB /* MyBasicLightingView.mm in Sources */,
 				B9D838C21F6FBAB500E52FF0 /* MyTriangleView.m in Sources */,
