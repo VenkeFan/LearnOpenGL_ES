@@ -9,6 +9,8 @@
 #import "MyTextureView.h"
 #import "FQShaderHelper.h"
 
+#define kUseEBO     1
+
 @interface MyTextureView ()
 
 @end
@@ -24,26 +26,37 @@
 
 - (void)renderWithVertexFileName:(NSString *)vertexName fragmentFileName:(NSString *)fragmentName {
     float vertices[] = {
+#if kUseEBO
         // ---- 位置 ----       ---- 颜色 ----     - 纹理坐标 -
         0.5f,  0.5f, 0.0f,   1.0f, 0.0f, 0.0f,   1.0f, 1.0f,   // 右上
         0.5f, -0.5f, 0.0f,   0.0f, 1.0f, 0.0f,   1.0f, 0.0f,   // 右下
         -0.5f, -0.5f, 0.0f,   0.0f, 0.0f, 1.0f,   0.0f, 0.0f,   // 左下
         -0.5f,  0.5f, 0.0f,   1.0f, 1.0f, 0.0f,   0.0f, 1.0f    // 左上
+#else
+        0.5f,  0.5f, 0.0f,   1.0f, 0.0f, 0.0f,   1.0f, 1.0f,   // 右上
+        0.5f, -0.5f, 0.0f,   0.0f, 1.0f, 0.0f,   1.0f, 0.0f,   // 右下
+        -0.5f, -0.5f, 0.0f,   0.0f, 0.0f, 1.0f,   0.0f, 0.0f,   // 左下
+
+        -0.5f,  0.5f, 0.0f,   1.0f, 1.0f, 0.0f,   0.0f, 1.0f,    // 左上
+        0.5f,  0.5f, 0.0f,   1.0f, 0.0f, 0.0f,   1.0f, 1.0f,   // 右上
+        -0.5f, -0.5f, 0.0f,   0.0f, 0.0f, 1.0f,   0.0f, 0.0f,   // 左下
+#endif
     };
     
+#if kUseEBO
     unsigned int indices[] = {
         0, 1, 3, // 第一个三角形
         1, 2, 3  // 第二个三角形
     };
-    
+
     // 索引缓冲对象
     GLuint EBO;
     glGenBuffers(1, &EBO);
-    
+
     // 复制索引数组到一个索引缓冲中
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
-    
+#endif
     // 顶点缓冲对象
     GLuint VBO; // 缓冲ID
     glGenBuffers(1, &VBO); // 生成VBO对象
@@ -89,7 +102,11 @@
      参数 type ：为索引值的类型，只能是下列值之一：GL_UNSIGNED_BYTE, GL_UNSIGNED_SHORT, GL_UNSIGNED_INT。
      参数 indices ：指向索引存贮位置的指针。
      */
+#if kUseEBO
     glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0); // 从索引缓冲渲染
+#else
+    glDrawArrays(GL_TRIANGLES, 0, 6);
+#endif
     
     [self.context presentRenderbuffer:GL_RENDERBUFFER];
 }

@@ -28,6 +28,12 @@ varying vec2 TexCoord;
 
 void main()
 {
+    // test
+//    gl_FragColor = texture2D(material.diffuse, TexCoord);
+//    gl_FragColor = texture2D(material.specular, TexCoord);
+//    gl_FragColor = mix(texture2D(material.diffuse, TexCoord), texture2D(material.specular, TexCoord), 0.6);
+    
+    
     // 环境光照
     vec3 ambient = light.ambient * texture2D(material.diffuse, TexCoord).rgb;
     

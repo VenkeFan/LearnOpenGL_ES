@@ -10,6 +10,4 @@
 
 @interface MyTextureView : MyEAGLView
 
-- (void)genTexture:(GLuint)shaderProgram;
-
 @end

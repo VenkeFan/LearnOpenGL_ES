@@ -166,7 +166,6 @@
 		B9D838C21F6FBAB500E52FF0 /* MyTriangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D838C11F6FBAB500E52FF0 /* MyTriangleView.m */; };
 		B9FDB72C210F034A00E26BB7 /* ear_10.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB723210F034A00E26BB7 /* ear_10.png */; };
 		B9FDB72D210F034A00E26BB7 /* timg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB724210F034A00E26BB7 /* timg.jpeg */; };
-		B9FDB72E210F034A00E26BB7 /* wood.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB725210F034A00E26BB7 /* wood.jpg */; };
 		B9FDB72F210F034A00E26BB7 /* noise.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB726210F034A00E26BB7 /* noise.jpg */; };
 		B9FDB730210F034A00E26BB7 /* flower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB727210F034A00E26BB7 /* flower.jpg */; };
 		B9FDB731210F034A00E26BB7 /* awesomeface.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB728210F034A00E26BB7 /* awesomeface.png */; };
@@ -195,6 +194,56 @@
 		B9FDB77A2114826000E26BB7 /* lightingMaps.fs in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7792114826000E26BB7 /* lightingMaps.fs */; };
 		B9FDB77C2115489400E26BB7 /* container2_specular.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB77B2115489400E26BB7 /* container2_specular.png */; };
 		B9FDB77E21154C7100E26BB7 /* lighting_maps_specular_color.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB77D21154C7100E26BB7 /* lighting_maps_specular_color.png */; };
+		B9FDB78121182DCC00E26BB7 /* MyDepthTestView.mm in Sources */ = {isa = PBXBuildFile; fileRef = B9FDB78021182DCC00E26BB7 /* MyDepthTestView.mm */; };
+		B9FDB7BB2118335D00E26BB7 /* newport_loft.hdr in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7832118335500E26BB7 /* newport_loft.hdr */; };
+		B9FDB7BD2118335D00E26BB7 /* brickwall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7852118335600E26BB7 /* brickwall.jpg */; };
+		B9FDB7BE2118335D00E26BB7 /* albedo.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7882118335A00E26BB7 /* albedo.png */; };
+		B9FDB7BF2118335D00E26BB7 /* metallic.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7892118335A00E26BB7 /* metallic.png */; };
+		B9FDB7C02118335D00E26BB7 /* normal.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB78A2118335A00E26BB7 /* normal.png */; };
+		B9FDB7C12118335D00E26BB7 /* ao.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB78B2118335A00E26BB7 /* ao.png */; };
+		B9FDB7C22118335D00E26BB7 /* roughness.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB78C2118335A00E26BB7 /* roughness.png */; };
+		B9FDB7C32118335D00E26BB7 /* albedo.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB78E2118335A00E26BB7 /* albedo.png */; };
+		B9FDB7C42118335D00E26BB7 /* metallic.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB78F2118335A00E26BB7 /* metallic.png */; };
+		B9FDB7C52118335D00E26BB7 /* normal.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7902118335A00E26BB7 /* normal.png */; };
+		B9FDB7C62118335D00E26BB7 /* ao.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7912118335A00E26BB7 /* ao.png */; };
+		B9FDB7C72118335D00E26BB7 /* roughness.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7922118335A00E26BB7 /* roughness.png */; };
+		B9FDB7C82118335D00E26BB7 /* albedo.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7942118335A00E26BB7 /* albedo.png */; };
+		B9FDB7C92118335D00E26BB7 /* metallic.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7952118335A00E26BB7 /* metallic.png */; };
+		B9FDB7CA2118335D00E26BB7 /* normal.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7962118335A00E26BB7 /* normal.png */; };
+		B9FDB7CB2118335D00E26BB7 /* ao.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7972118335A00E26BB7 /* ao.png */; };
+		B9FDB7CC2118335D00E26BB7 /* roughness.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7982118335A00E26BB7 /* roughness.png */; };
+		B9FDB7CD2118335D00E26BB7 /* albedo.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB79A2118335A00E26BB7 /* albedo.png */; };
+		B9FDB7CE2118335D00E26BB7 /* metallic.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB79B2118335A00E26BB7 /* metallic.png */; };
+		B9FDB7CF2118335D00E26BB7 /* normal.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB79C2118335A00E26BB7 /* normal.png */; };
+		B9FDB7D02118335D00E26BB7 /* ao.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB79D2118335A00E26BB7 /* ao.png */; };
+		B9FDB7D12118335D00E26BB7 /* roughness.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB79E2118335A00E26BB7 /* roughness.png */; };
+		B9FDB7D22118335D00E26BB7 /* albedo.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7A02118335A00E26BB7 /* albedo.png */; };
+		B9FDB7D32118335D00E26BB7 /* metallic.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7A12118335A00E26BB7 /* metallic.png */; };
+		B9FDB7D42118335D00E26BB7 /* normal.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7A22118335A00E26BB7 /* normal.png */; };
+		B9FDB7D52118335D00E26BB7 /* ao.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7A32118335A00E26BB7 /* ao.png */; };
+		B9FDB7D62118335D00E26BB7 /* roughness.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7A42118335A00E26BB7 /* roughness.png */; };
+		B9FDB7D72118335D00E26BB7 /* window.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7A52118335A00E26BB7 /* window.png */; };
+		B9FDB7D82118335D00E26BB7 /* bricks2_normal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7A62118335A00E26BB7 /* bricks2_normal.jpg */; };
+		B9FDB7D92118335D00E26BB7 /* bricks2_disp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7A72118335A00E26BB7 /* bricks2_disp.jpg */; };
+		B9FDB7DB2118335D00E26BB7 /* marble.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7A92118335B00E26BB7 /* marble.jpg */; };
+		B9FDB7DC2118335D00E26BB7 /* metal.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7AA2118335B00E26BB7 /* metal.png */; };
+		B9FDB7DD2118335D00E26BB7 /* container.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7AB2118335B00E26BB7 /* container.jpg */; };
+		B9FDB7DE2118335D00E26BB7 /* brickwall_normal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7AC2118335B00E26BB7 /* brickwall_normal.jpg */; };
+		B9FDB7DF2118335D00E26BB7 /* toy_box_diffuse.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7AD2118335B00E26BB7 /* toy_box_diffuse.png */; };
+		B9FDB7E02118335D00E26BB7 /* bricks2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7AE2118335B00E26BB7 /* bricks2.jpg */; };
+		B9FDB7E12118335D00E26BB7 /* toy_box_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7AF2118335C00E26BB7 /* toy_box_normal.png */; };
+		B9FDB7E22118335D00E26BB7 /* bottom.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7B12118335C00E26BB7 /* bottom.jpg */; };
+		B9FDB7E32118335D00E26BB7 /* left.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7B22118335C00E26BB7 /* left.jpg */; };
+		B9FDB7E42118335D00E26BB7 /* top.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7B32118335C00E26BB7 /* top.jpg */; };
+		B9FDB7E52118335D00E26BB7 /* back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7B42118335C00E26BB7 /* back.jpg */; };
+		B9FDB7E62118335D00E26BB7 /* right.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7B52118335C00E26BB7 /* right.jpg */; };
+		B9FDB7E72118335D00E26BB7 /* front.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7B62118335C00E26BB7 /* front.jpg */; };
+		B9FDB7E82118335D00E26BB7 /* grass.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7B72118335C00E26BB7 /* grass.png */; };
+		B9FDB7E92118335D00E26BB7 /* toy_box_disp.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7B82118335C00E26BB7 /* toy_box_disp.png */; };
+		B9FDB7EA2118335D00E26BB7 /* wood.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7B92118335C00E26BB7 /* wood.png */; };
+		B9FDB7EB2118335D00E26BB7 /* matrix.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7BA2118335C00E26BB7 /* matrix.jpg */; };
+		B9FDB7F221183FA400E26BB7 /* depthTest.vs in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7F121183FA400E26BB7 /* depthTest.vs */; };
+		B9FDB7F421183FAD00E26BB7 /* depthTest.fs in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7F321183FAD00E26BB7 /* depthTest.fs */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -565,7 +614,6 @@
 		B9D838C11F6FBAB500E52FF0 /* MyTriangleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTriangleView.m; sourceTree = "<group>"; };
 		B9FDB723210F034A00E26BB7 /* ear_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ear_10.png; sourceTree = "<group>"; };
 		B9FDB724210F034A00E26BB7 /* timg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = timg.jpeg; sourceTree = "<group>"; };
-		B9FDB725210F034A00E26BB7 /* wood.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wood.jpg; sourceTree = "<group>"; };
 		B9FDB726210F034A00E26BB7 /* noise.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = noise.jpg; sourceTree = "<group>"; };
 		B9FDB727210F034A00E26BB7 /* flower.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flower.jpg; sourceTree = "<group>"; };
 		B9FDB728210F034A00E26BB7 /* awesomeface.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = awesomeface.png; sourceTree = "<group>"; };
@@ -618,6 +666,57 @@
 		B9FDB7792114826000E26BB7 /* lightingMaps.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = lightingMaps.fs; sourceTree = "<group>"; };
 		B9FDB77B2115489400E26BB7 /* container2_specular.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = container2_specular.png; sourceTree = "<group>"; };
 		B9FDB77D21154C7100E26BB7 /* lighting_maps_specular_color.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lighting_maps_specular_color.png; sourceTree = "<group>"; };
+		B9FDB77F21182DCC00E26BB7 /* MyDepthTestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyDepthTestView.h; sourceTree = "<group>"; };
+		B9FDB78021182DCC00E26BB7 /* MyDepthTestView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MyDepthTestView.mm; sourceTree = "<group>"; };
+		B9FDB7832118335500E26BB7 /* newport_loft.hdr */ = {isa = PBXFileReference; lastKnownFileType = file; path = newport_loft.hdr; sourceTree = "<group>"; };
+		B9FDB7852118335600E26BB7 /* brickwall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = brickwall.jpg; sourceTree = "<group>"; };
+		B9FDB7882118335A00E26BB7 /* albedo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = albedo.png; sourceTree = "<group>"; };
+		B9FDB7892118335A00E26BB7 /* metallic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = metallic.png; sourceTree = "<group>"; };
+		B9FDB78A2118335A00E26BB7 /* normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = normal.png; sourceTree = "<group>"; };
+		B9FDB78B2118335A00E26BB7 /* ao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ao.png; sourceTree = "<group>"; };
+		B9FDB78C2118335A00E26BB7 /* roughness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = roughness.png; sourceTree = "<group>"; };
+		B9FDB78E2118335A00E26BB7 /* albedo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = albedo.png; sourceTree = "<group>"; };
+		B9FDB78F2118335A00E26BB7 /* metallic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = metallic.png; sourceTree = "<group>"; };
+		B9FDB7902118335A00E26BB7 /* normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = normal.png; sourceTree = "<group>"; };
+		B9FDB7912118335A00E26BB7 /* ao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ao.png; sourceTree = "<group>"; };
+		B9FDB7922118335A00E26BB7 /* roughness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = roughness.png; sourceTree = "<group>"; };
+		B9FDB7942118335A00E26BB7 /* albedo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = albedo.png; sourceTree = "<group>"; };
+		B9FDB7952118335A00E26BB7 /* metallic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = metallic.png; sourceTree = "<group>"; };
+		B9FDB7962118335A00E26BB7 /* normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = normal.png; sourceTree = "<group>"; };
+		B9FDB7972118335A00E26BB7 /* ao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ao.png; sourceTree = "<group>"; };
+		B9FDB7982118335A00E26BB7 /* roughness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = roughness.png; sourceTree = "<group>"; };
+		B9FDB79A2118335A00E26BB7 /* albedo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = albedo.png; sourceTree = "<group>"; };
+		B9FDB79B2118335A00E26BB7 /* metallic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = metallic.png; sourceTree = "<group>"; };
+		B9FDB79C2118335A00E26BB7 /* normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = normal.png; sourceTree = "<group>"; };
+		B9FDB79D2118335A00E26BB7 /* ao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ao.png; sourceTree = "<group>"; };
+		B9FDB79E2118335A00E26BB7 /* roughness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = roughness.png; sourceTree = "<group>"; };
+		B9FDB7A02118335A00E26BB7 /* albedo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = albedo.png; sourceTree = "<group>"; };
+		B9FDB7A12118335A00E26BB7 /* metallic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = metallic.png; sourceTree = "<group>"; };
+		B9FDB7A22118335A00E26BB7 /* normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = normal.png; sourceTree = "<group>"; };
+		B9FDB7A32118335A00E26BB7 /* ao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ao.png; sourceTree = "<group>"; };
+		B9FDB7A42118335A00E26BB7 /* roughness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = roughness.png; sourceTree = "<group>"; };
+		B9FDB7A52118335A00E26BB7 /* window.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = window.png; sourceTree = "<group>"; };
+		B9FDB7A62118335A00E26BB7 /* bricks2_normal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bricks2_normal.jpg; sourceTree = "<group>"; };
+		B9FDB7A72118335A00E26BB7 /* bricks2_disp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bricks2_disp.jpg; sourceTree = "<group>"; };
+		B9FDB7A92118335B00E26BB7 /* marble.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = marble.jpg; sourceTree = "<group>"; };
+		B9FDB7AA2118335B00E26BB7 /* metal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = metal.png; sourceTree = "<group>"; };
+		B9FDB7AB2118335B00E26BB7 /* container.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = container.jpg; sourceTree = "<group>"; };
+		B9FDB7AC2118335B00E26BB7 /* brickwall_normal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = brickwall_normal.jpg; sourceTree = "<group>"; };
+		B9FDB7AD2118335B00E26BB7 /* toy_box_diffuse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toy_box_diffuse.png; sourceTree = "<group>"; };
+		B9FDB7AE2118335B00E26BB7 /* bricks2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bricks2.jpg; sourceTree = "<group>"; };
+		B9FDB7AF2118335C00E26BB7 /* toy_box_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toy_box_normal.png; sourceTree = "<group>"; };
+		B9FDB7B12118335C00E26BB7 /* bottom.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bottom.jpg; sourceTree = "<group>"; };
+		B9FDB7B22118335C00E26BB7 /* left.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = left.jpg; sourceTree = "<group>"; };
+		B9FDB7B32118335C00E26BB7 /* top.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = top.jpg; sourceTree = "<group>"; };
+		B9FDB7B42118335C00E26BB7 /* back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = back.jpg; sourceTree = "<group>"; };
+		B9FDB7B52118335C00E26BB7 /* right.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = right.jpg; sourceTree = "<group>"; };
+		B9FDB7B62118335C00E26BB7 /* front.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = front.jpg; sourceTree = "<group>"; };
+		B9FDB7B72118335C00E26BB7 /* grass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grass.png; sourceTree = "<group>"; };
+		B9FDB7B82118335C00E26BB7 /* toy_box_disp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toy_box_disp.png; sourceTree = "<group>"; };
+		B9FDB7B92118335C00E26BB7 /* wood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wood.png; sourceTree = "<group>"; };
+		B9FDB7BA2118335C00E26BB7 /* matrix.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = matrix.jpg; sourceTree = "<group>"; };
+		B9FDB7F121183FA400E26BB7 /* depthTest.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = depthTest.vs; sourceTree = "<group>"; };
+		B9FDB7F321183FAD00E26BB7 /* depthTest.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = depthTest.fs; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1273,16 +1372,18 @@
 				B913AC0221045BA800B013FB /* MyColorView.mm */,
 				B913AC0A2105C66900B013FB /* MyBasicLightingView.h */,
 				B913AC0B2105C66900B013FB /* MyBasicLightingView.mm */,
+				B9FDB76B2114608B00E26BB7 /* MyMaterialView.h */,
+				B9FDB76C2114608B00E26BB7 /* MyMaterialView.mm */,
+				B9FDB7742114822400E26BB7 /* MyLightingMapsView.h */,
+				B9FDB7752114822400E26BB7 /* MyLightingMapsView.mm */,
 				B9FDB735210F038C00E26BB7 /* MyEffectsView.h */,
 				B9FDB736210F038C00E26BB7 /* MyEffectsView.m */,
 				B9FDB7482112B82B00E26BB7 /* MyInstancedRenderView.h */,
 				B9FDB7492112B82B00E26BB7 /* MyInstancedRenderView.m */,
 				B9FDB7682114140C00E26BB7 /* MyFrameBufferView.h */,
 				B9FDB7692114140C00E26BB7 /* MyFrameBufferView.m */,
-				B9FDB76B2114608B00E26BB7 /* MyMaterialView.h */,
-				B9FDB76C2114608B00E26BB7 /* MyMaterialView.mm */,
-				B9FDB7742114822400E26BB7 /* MyLightingMapsView.h */,
-				B9FDB7752114822400E26BB7 /* MyLightingMapsView.mm */,
+				B9FDB77F21182DCC00E26BB7 /* MyDepthTestView.h */,
+				B9FDB78021182DCC00E26BB7 /* MyDepthTestView.mm */,
 			);
 			path = Exercises;
 			sourceTree = "<group>";
@@ -1320,6 +1421,8 @@
 				B9FDB770211460AD00E26BB7 /* material.fs */,
 				B9FDB7772114825400E26BB7 /* lightingMaps.vs */,
 				B9FDB7792114826000E26BB7 /* lightingMaps.fs */,
+				B9FDB7F121183FA400E26BB7 /* depthTest.vs */,
+				B9FDB7F321183FAD00E26BB7 /* depthTest.fs */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -1327,18 +1430,35 @@
 		B9FDB722210F034A00E26BB7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				B9FDB73C210F148D00E26BB7 /* 1.jpg */,
-				B9FDB723210F034A00E26BB7 /* ear_10.png */,
 				B9FDB724210F034A00E26BB7 /* timg.jpeg */,
-				B9FDB725210F034A00E26BB7 /* wood.jpg */,
 				B9FDB726210F034A00E26BB7 /* noise.jpg */,
 				B9FDB727210F034A00E26BB7 /* flower.jpg */,
+				B9FDB7A72118335A00E26BB7 /* bricks2_disp.jpg */,
+				B9FDB7A62118335A00E26BB7 /* bricks2_normal.jpg */,
+				B9FDB7AE2118335B00E26BB7 /* bricks2.jpg */,
+				B9FDB7AC2118335B00E26BB7 /* brickwall_normal.jpg */,
+				B9FDB7852118335600E26BB7 /* brickwall.jpg */,
+				B9FDB7AD2118335B00E26BB7 /* toy_box_diffuse.png */,
+				B9FDB7B82118335C00E26BB7 /* toy_box_disp.png */,
+				B9FDB7AF2118335C00E26BB7 /* toy_box_normal.png */,
+				B9FDB7A52118335A00E26BB7 /* window.png */,
+				B9FDB7B92118335C00E26BB7 /* wood.png */,
 				B9FDB728210F034A00E26BB7 /* awesomeface.png */,
 				B9FDB77D21154C7100E26BB7 /* lighting_maps_specular_color.png */,
 				B9FDB77B2115489400E26BB7 /* container2_specular.png */,
 				B9FDB7722114818900E26BB7 /* container2.png */,
+				B9FDB7AB2118335B00E26BB7 /* container.jpg */,
+				B9FDB7A92118335B00E26BB7 /* marble.jpg */,
+				B9FDB7BA2118335C00E26BB7 /* matrix.jpg */,
+				B9FDB7AA2118335B00E26BB7 /* metal.png */,
+				B9FDB7B72118335C00E26BB7 /* grass.png */,
+				B9FDB723210F034A00E26BB7 /* ear_10.png */,
+				B9FDB73C210F148D00E26BB7 /* 1.jpg */,
 				B9FDB729210F034A00E26BB7 /* 4.jpg */,
 				B9FDB72A210F034A00E26BB7 /* 5.jpg */,
+				B9FDB7822118335500E26BB7 /* hdr */,
+				B9FDB7862118335A00E26BB7 /* pbr */,
+				B9FDB7B02118335C00E26BB7 /* skybox */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -1392,6 +1512,99 @@
 				B9FDB76621130AAE00E26BB7 /* libyuv.a */,
 			);
 			path = lib;
+			sourceTree = "<group>";
+		};
+		B9FDB7822118335500E26BB7 /* hdr */ = {
+			isa = PBXGroup;
+			children = (
+				B9FDB7832118335500E26BB7 /* newport_loft.hdr */,
+			);
+			path = hdr;
+			sourceTree = "<group>";
+		};
+		B9FDB7862118335A00E26BB7 /* pbr */ = {
+			isa = PBXGroup;
+			children = (
+				B9FDB7872118335A00E26BB7 /* wall */,
+				B9FDB78D2118335A00E26BB7 /* rusted_iron */,
+				B9FDB7932118335A00E26BB7 /* grass */,
+				B9FDB7992118335A00E26BB7 /* gold */,
+				B9FDB79F2118335A00E26BB7 /* plastic */,
+			);
+			path = pbr;
+			sourceTree = "<group>";
+		};
+		B9FDB7872118335A00E26BB7 /* wall */ = {
+			isa = PBXGroup;
+			children = (
+				B9FDB7882118335A00E26BB7 /* albedo.png */,
+				B9FDB7892118335A00E26BB7 /* metallic.png */,
+				B9FDB78A2118335A00E26BB7 /* normal.png */,
+				B9FDB78B2118335A00E26BB7 /* ao.png */,
+				B9FDB78C2118335A00E26BB7 /* roughness.png */,
+			);
+			path = wall;
+			sourceTree = "<group>";
+		};
+		B9FDB78D2118335A00E26BB7 /* rusted_iron */ = {
+			isa = PBXGroup;
+			children = (
+				B9FDB78E2118335A00E26BB7 /* albedo.png */,
+				B9FDB78F2118335A00E26BB7 /* metallic.png */,
+				B9FDB7902118335A00E26BB7 /* normal.png */,
+				B9FDB7912118335A00E26BB7 /* ao.png */,
+				B9FDB7922118335A00E26BB7 /* roughness.png */,
+			);
+			path = rusted_iron;
+			sourceTree = "<group>";
+		};
+		B9FDB7932118335A00E26BB7 /* grass */ = {
+			isa = PBXGroup;
+			children = (
+				B9FDB7942118335A00E26BB7 /* albedo.png */,
+				B9FDB7952118335A00E26BB7 /* metallic.png */,
+				B9FDB7962118335A00E26BB7 /* normal.png */,
+				B9FDB7972118335A00E26BB7 /* ao.png */,
+				B9FDB7982118335A00E26BB7 /* roughness.png */,
+			);
+			path = grass;
+			sourceTree = "<group>";
+		};
+		B9FDB7992118335A00E26BB7 /* gold */ = {
+			isa = PBXGroup;
+			children = (
+				B9FDB79A2118335A00E26BB7 /* albedo.png */,
+				B9FDB79B2118335A00E26BB7 /* metallic.png */,
+				B9FDB79C2118335A00E26BB7 /* normal.png */,
+				B9FDB79D2118335A00E26BB7 /* ao.png */,
+				B9FDB79E2118335A00E26BB7 /* roughness.png */,
+			);
+			path = gold;
+			sourceTree = "<group>";
+		};
+		B9FDB79F2118335A00E26BB7 /* plastic */ = {
+			isa = PBXGroup;
+			children = (
+				B9FDB7A02118335A00E26BB7 /* albedo.png */,
+				B9FDB7A12118335A00E26BB7 /* metallic.png */,
+				B9FDB7A22118335A00E26BB7 /* normal.png */,
+				B9FDB7A32118335A00E26BB7 /* ao.png */,
+				B9FDB7A42118335A00E26BB7 /* roughness.png */,
+			);
+			path = plastic;
+			sourceTree = "<group>";
+		};
+		B9FDB7B02118335C00E26BB7 /* skybox */ = {
+			isa = PBXGroup;
+			children = (
+				B9FDB7B12118335C00E26BB7 /* bottom.jpg */,
+				B9FDB7B22118335C00E26BB7 /* left.jpg */,
+				B9FDB7B32118335C00E26BB7 /* top.jpg */,
+				B9FDB7B42118335C00E26BB7 /* back.jpg */,
+				B9FDB7B52118335C00E26BB7 /* right.jpg */,
+				B9FDB7B62118335C00E26BB7 /* front.jpg */,
+			);
+			path = skybox;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1518,28 +1731,42 @@
 				B913ABEB2102E9FF00B013FB /* transform2.inl in Resources */,
 				B913ABEF2102E9FF00B013FB /* norm.inl in Resources */,
 				B913ABD22102E9FF00B013FB /* spline.inl in Resources */,
+				B9FDB7BE2118335D00E26BB7 /* albedo.png in Resources */,
 				B913AB922102E9FF00B013FB /* type_mat2x4.inl in Resources */,
 				B913ABE62102E9FF00B013FB /* rotate_normalized_axis.inl in Resources */,
+				B9FDB7C72118335D00E26BB7 /* roughness.png in Resources */,
+				B9FDB7D82118335D00E26BB7 /* bricks2_normal.jpg in Resources */,
 				B913ABD82102E9FF00B013FB /* dual_quaternion.inl in Resources */,
 				B913ABE72102E9FF00B013FB /* matrix_major_storage.inl in Resources */,
+				B9FDB7D42118335D00E26BB7 /* normal.png in Resources */,
 				B913AC0E2105C6D800B013FB /* basicLighting.vs in Resources */,
+				B9FDB7C02118335D00E26BB7 /* normal.png in Resources */,
 				B9D838BD1F6FB7B200E52FF0 /* triangle.vs in Resources */,
+				B9FDB7C92118335D00E26BB7 /* metallic.png in Resources */,
 				B913AB952102E9FF00B013FB /* func_packing_simd.inl in Resources */,
 				B913ABC12102E9FF00B013FB /* matrix_query.inl in Resources */,
+				B9FDB7EA2118335D00E26BB7 /* wood.png in Resources */,
+				B9FDB7EB2118335D00E26BB7 /* matrix.jpg in Resources */,
 				B913AA7B2101E35500B013FB /* transformations.vs in Resources */,
 				B913ABF02102E9FF00B013FB /* handed_coordinate_space.inl in Resources */,
+				B9FDB7CC2118335D00E26BB7 /* roughness.png in Resources */,
 				B913ABC62102E9FF00B013FB /* gradient_paint.inl in Resources */,
 				B913ABF22102E9FF00B013FB /* matrix_decompose.inl in Resources */,
 				B913ABB72102E9FF00B013FB /* epsilon.inl in Resources */,
 				B9377DD31F6A5CAA00CC06D8 /* LaunchScreen.storyboard in Resources */,
+				B9FDB7D12118335D00E26BB7 /* roughness.png in Resources */,
 				B913ABDF2102E9FF00B013FB /* vector_query.inl in Resources */,
 				B9FDB730210F034A00E26BB7 /* flower.jpg in Resources */,
 				B913ABD72102E9FF00B013FB /* closest_point.inl in Resources */,
 				B913ABFB210315D400B013FB /* coordinate.vs in Resources */,
 				B913AC0721045C4D00B013FB /* color.fs in Resources */,
 				B913ABA72102E9FF00B013FB /* func_exponential_simd.inl in Resources */,
+				B9FDB7DF2118335D00E26BB7 /* toy_box_diffuse.png in Resources */,
 				B9FDB739210F03E400E26BB7 /* effects.vs in Resources */,
 				B913ABAE2102E9FF00B013FB /* matrix_transform.inl in Resources */,
+				B9FDB7DC2118335D00E26BB7 /* metal.png in Resources */,
+				B9FDB7CB2118335D00E26BB7 /* ao.png in Resources */,
+				B9FDB7C12118335D00E26BB7 /* ao.png in Resources */,
 				B9FDB77C2115489400E26BB7 /* container2_specular.png in Resources */,
 				B913ABE22102E9FF00B013FB /* normalize_dot.inl in Resources */,
 				B913AB8B2102E9FF00B013FB /* func_vector_relational_simd.inl in Resources */,
@@ -1547,49 +1774,62 @@
 				B913ABB12102E9FF00B013FB /* round.inl in Resources */,
 				B9377DD01F6A5CAA00CC06D8 /* Assets.xcassets in Resources */,
 				B913AB8F2102E9FF00B013FB /* type_vec.inl in Resources */,
-				B9FDB72E210F034A00E26BB7 /* wood.jpg in Resources */,
 				B913ABA42102E9FF00B013FB /* func_matrix.inl in Resources */,
 				B913ABB52102E9FF00B013FB /* integer.inl in Resources */,
 				B913ABBE2102E9FF00B013FB /* constants.inl in Resources */,
 				B913AC102105C6E100B013FB /* basicLighting.fs in Resources */,
 				B913ABC72102E9FF00B013FB /* type_trait.inl in Resources */,
 				B913AB912102E9FF00B013FB /* func_trigonometric.inl in Resources */,
+				B9FDB7D22118335D00E26BB7 /* albedo.png in Resources */,
+				B9FDB7CA2118335D00E26BB7 /* normal.png in Resources */,
 				B913ABE32102E9FF00B013FB /* std_based_type.inl in Resources */,
 				B913ABAC2102E9FF00B013FB /* quaternion.inl in Resources */,
 				B9FDB74C2112B86100E26BB7 /* instancedRender.vs in Resources */,
 				B9FDB72D210F034A00E26BB7 /* timg.jpeg in Resources */,
 				B913ABAD2102E9FF00B013FB /* packing.inl in Resources */,
+				B9FDB7D32118335D00E26BB7 /* metallic.png in Resources */,
 				B913ABCC2102E9FF00B013FB /* number_precision.inl in Resources */,
 				B913AC0521045C4300B013FB /* color.vs in Resources */,
 				B9A1D806210D661F00375BE7 /* Android.mk in Resources */,
 				B913ABA52102E9FF00B013FB /* type_vec4_simd.inl in Resources */,
+				B9FDB7F421183FAD00E26BB7 /* depthTest.fs in Resources */,
 				B913AB9C2102E9FF00B013FB /* type_mat4x4.inl in Resources */,
 				B913AB852102E9FF00B013FB /* CMakeLists.txt in Resources */,
 				B913ABB92102E9FF00B013FB /* reciprocal.inl in Resources */,
 				B913ABD62102E9FF00B013FB /* float_notmalize.inl in Resources */,
+				B9FDB7C32118335D00E26BB7 /* albedo.png in Resources */,
 				B913ABCB2102E9FF00B013FB /* optimum_pow.inl in Resources */,
+				B9FDB7CE2118335D00E26BB7 /* metallic.png in Resources */,
 				B913ABAB2102E9FF00B013FB /* matrix_inverse.inl in Resources */,
 				B913ABDD2102E9FF00B013FB /* matrix_interpolation.inl in Resources */,
 				B913ABCF2102E9FF00B013FB /* bit.inl in Resources */,
 				B913ABB02102E9FF00B013FB /* bitfield.inl in Resources */,
+				B9FDB7E12118335D00E26BB7 /* toy_box_normal.png in Resources */,
 				B9A1D4D32109C7C400375BE7 /* circle.fs in Resources */,
 				B913ABB62102E9FF00B013FB /* functions.inl in Resources */,
 				B9FDB741210F1E5000E26BB7 /* effects_eddy.fs in Resources */,
 				B913ABB32102E9FF00B013FB /* ulp.inl in Resources */,
 				B913ABCD2102E9FF00B013FB /* mixed_product.inl in Resources */,
 				B9FDB72F210F034A00E26BB7 /* noise.jpg in Resources */,
+				B9FDB7E92118335D00E26BB7 /* toy_box_disp.png in Resources */,
 				B913ABC32102E9FF00B013FB /* associated_min_max.inl in Resources */,
 				B913AB872102E9FF00B013FB /* func_integer_simd.inl in Resources */,
+				B9FDB7C42118335D00E26BB7 /* metallic.png in Resources */,
 				B9FDB7732114818900E26BB7 /* container2.png in Resources */,
 				B913ABC52102E9FF00B013FB /* quaternion.inl in Resources */,
 				B913ABBD2102E9FF00B013FB /* random.inl in Resources */,
+				B9FDB7C52118335D00E26BB7 /* normal.png in Resources */,
 				B913AB8C2102E9FF00B013FB /* func_matrix_simd.inl in Resources */,
 				B913ABCE2102E9FF00B013FB /* transform.inl in Resources */,
+				B9FDB7C62118335D00E26BB7 /* ao.png in Resources */,
+				B9FDB7D02118335D00E26BB7 /* ao.png in Resources */,
 				B913ABC02102E9FF00B013FB /* log_base.inl in Resources */,
 				B9FDB771211460AD00E26BB7 /* material.fs in Resources */,
 				B913ABC92102E9FF00B013FB /* raw_data.inl in Resources */,
 				B9FDB73F210F1CD200E26BB7 /* effects_reverse.fs in Resources */,
 				B9FDB7452111809B00E26BB7 /* effects_gaussianBlur.fs in Resources */,
+				B9FDB7C22118335D00E26BB7 /* roughness.png in Resources */,
+				B9FDB7DB2118335D00E26BB7 /* marble.jpg in Resources */,
 				B913ABF62102E9FF00B013FB /* projection.inl in Resources */,
 				B9FDB77E21154C7100E26BB7 /* lighting_maps_specular_color.png in Resources */,
 				B913AB9F2102E9FF00B013FB /* type_vec2.inl in Resources */,
@@ -1608,12 +1848,14 @@
 				B913AB8A2102E9FF00B013FB /* type_half.inl in Resources */,
 				B913ABD02102E9FF00B013FB /* io.inl in Resources */,
 				B913ABEA2102E9FF00B013FB /* perpendicular.inl in Resources */,
+				B9FDB7DE2118335D00E26BB7 /* brickwall_normal.jpg in Resources */,
 				B913AB972102E9FF00B013FB /* func_trigonometric_simd.inl in Resources */,
 				B9FDB72C210F034A00E26BB7 /* ear_10.png in Resources */,
 				B913ABDB2102E9FF00B013FB /* string_cast.inl in Resources */,
 				B913ABA22102E9FF00B013FB /* type_vec3.inl in Resources */,
 				B913AB9D2102E9FF00B013FB /* func_geometric_simd.inl in Resources */,
 				B913ABEC2102E9FF00B013FB /* common.inl in Resources */,
+				B9FDB7CF2118335D00E26BB7 /* normal.png in Resources */,
 				B913ABCA2102E9FF00B013FB /* matrix_cross_product.inl in Resources */,
 				B9FDB733210F034A00E26BB7 /* 5.jpg in Resources */,
 				B913ABD32102E9FF00B013FB /* fast_square_root.inl in Resources */,
@@ -1622,21 +1864,30 @@
 				B913ABE92102E9FF00B013FB /* intersect.inl in Resources */,
 				B913AB8D2102E9FF00B013FB /* func_integer.inl in Resources */,
 				B913AB9B2102E9FF00B013FB /* func_common_simd.inl in Resources */,
+				B9FDB7E62118335D00E26BB7 /* right.jpg in Resources */,
 				B913AB892102E9FF00B013FB /* func_packing.inl in Resources */,
+				B9FDB7D72118335D00E26BB7 /* window.png in Resources */,
 				B913ABC42102E9FF00B013FB /* matrix_transform_2d.inl in Resources */,
 				B913ABE42102E9FF00B013FB /* type_aligned.inl in Resources */,
+				B9FDB7E42118335D00E26BB7 /* top.jpg in Resources */,
 				B9FDB73D210F148D00E26BB7 /* 1.jpg in Resources */,
 				B913ABE12102E9FF00B013FB /* component_wise.inl in Resources */,
 				B913ABDE2102E9FF00B013FB /* hash.inl in Resources */,
 				B913AB962102E9FF00B013FB /* type_vec4.inl in Resources */,
 				B913ABF52102E9FF00B013FB /* wrap.inl in Resources */,
+				B9FDB7BB2118335D00E26BB7 /* newport_loft.hdr in Resources */,
+				B9FDB7BF2118335D00E26BB7 /* metallic.png in Resources */,
 				B9FDB7782114825400E26BB7 /* lightingMaps.vs in Resources */,
+				B9FDB7E22118335D00E26BB7 /* bottom.jpg in Resources */,
 				B904EFEF21006852008B24FB /* texture.fs in Resources */,
 				B913ABC82102E9FF00B013FB /* euler_angles.inl in Resources */,
 				B913ABD52102E9FF00B013FB /* extended_min_max.inl in Resources */,
+				B9FDB7D92118335D00E26BB7 /* bricks2_disp.jpg in Resources */,
 				B913ABBF2102E9FF00B013FB /* type_ptr.inl in Resources */,
 				B913AB9E2102E9FF00B013FB /* type_mat2x3.inl in Resources */,
 				B913ABAF2102E9FF00B013FB /* type_precision.inl in Resources */,
+				B9FDB7E52118335D00E26BB7 /* back.jpg in Resources */,
+				B9FDB7D62118335D00E26BB7 /* roughness.png in Resources */,
 				B913ABE02102E9FF00B013FB /* orthonormalize.inl in Resources */,
 				B9FDB731210F034A00E26BB7 /* awesomeface.png in Resources */,
 				B913ABED2102E9FF00B013FB /* color_space.inl in Resources */,
@@ -1648,20 +1899,30 @@
 				B913ABE52102E9FF00B013FB /* compatibility.inl in Resources */,
 				B913AB902102E9FF00B013FB /* func_common.inl in Resources */,
 				B9A1D4D12109C7BD00375BE7 /* circle.vs in Resources */,
+				B9FDB7E82118335D00E26BB7 /* grass.png in Resources */,
+				B9FDB7BD2118335D00E26BB7 /* brickwall.jpg in Resources */,
 				B913AA7D2101E36100B013FB /* transformations.fs in Resources */,
+				B9FDB7C82118335D00E26BB7 /* albedo.png in Resources */,
+				B9FDB7F221183FA400E26BB7 /* depthTest.vs in Resources */,
+				B9FDB7E72118335D00E26BB7 /* front.jpg in Resources */,
 				B913ABD92102E9FF00B013FB /* integer.inl in Resources */,
+				B9FDB7E02118335D00E26BB7 /* bricks2.jpg in Resources */,
 				B9377DCE1F6A5CAA00CC06D8 /* Main.storyboard in Resources */,
 				B913ABEE2102E9FF00B013FB /* normal.inl in Resources */,
+				B9FDB7E32118335D00E26BB7 /* left.jpg in Resources */,
 				B913AC0921045FBA00B013FB /* lamp.fs in Resources */,
 				B913ABFD210315DB00B013FB /* coordinate.fs in Resources */,
 				B913ABA62102E9FF00B013FB /* type_mat3x4.inl in Resources */,
+				B9FDB7CD2118335D00E26BB7 /* albedo.png in Resources */,
 				B9FDB73B210F06CD00E26BB7 /* effects_gray.fs in Resources */,
 				B913AB932102E9FF00B013FB /* type_mat4x2.inl in Resources */,
+				B9FDB7DD2118335D00E26BB7 /* container.jpg in Resources */,
 				B913ABDC2102E9FF00B013FB /* rotate_vector.inl in Resources */,
 				B913AC142105C6FE00B013FB /* basicLighting_lamp.vs in Resources */,
 				B913ABA92102E9FF00B013FB /* type_mat3x2.inl in Resources */,
 				B913AB992102E9FF00B013FB /* type_mat2x2.inl in Resources */,
 				B913ABAA2102E9FF00B013FB /* type_mat3x3.inl in Resources */,
+				B9FDB7D52118335D00E26BB7 /* ao.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1696,6 +1957,7 @@
 				B9FDB737210F038C00E26BB7 /* MyEffectsView.m in Sources */,
 				B9377DC51F6A5CAA00CC06D8 /* main.m in Sources */,
 				B9A1D831210DC45B00375BE7 /* TextureUtil.c in Sources */,
+				B9FDB78121182DCC00E26BB7 /* MyDepthTestView.mm in Sources */,
 				B904EFEB21003F6C008B24FB /* MyTextureView.m in Sources */,
 				B913ABF921030F4100B013FB /* MyCoordinateSystemsView.mm in Sources */,
 				B913AC0C2105C66900B013FB /* MyBasicLightingView.mm in Sources */,
