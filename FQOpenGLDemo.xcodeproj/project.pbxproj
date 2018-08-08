@@ -148,6 +148,7 @@
 		B9377DD31F6A5CAA00CC06D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9377DD11F6A5CAA00CC06D8 /* LaunchScreen.storyboard */; };
 		B9377DDE1F6A5CAA00CC06D8 /* FQOpenGLDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9377DDD1F6A5CAA00CC06D8 /* FQOpenGLDemoTests.m */; };
 		B9377DE91F6A5CAA00CC06D8 /* FQOpenGLDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9377DE81F6A5CAA00CC06D8 /* FQOpenGLDemoUITests.m */; };
+		B99C2FBD211AAFB1007016F1 /* MyFaceCullingView.mm in Sources */ = {isa = PBXBuildFile; fileRef = B99C2FBC211AAFB1007016F1 /* MyFaceCullingView.mm */; };
 		B9A1D4CF2109BE3700375BE7 /* MyCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A1D4CE2109BE3700375BE7 /* MyCircleView.m */; };
 		B9A1D4D12109C7BD00375BE7 /* circle.vs in Resources */ = {isa = PBXBuildFile; fileRef = B9A1D4D02109C7BD00375BE7 /* circle.vs */; };
 		B9A1D4D32109C7C400375BE7 /* circle.fs in Resources */ = {isa = PBXBuildFile; fileRef = B9A1D4D22109C7C400375BE7 /* circle.fs */; };
@@ -574,6 +575,8 @@
 		B9377DE81F6A5CAA00CC06D8 /* FQOpenGLDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FQOpenGLDemoUITests.m; sourceTree = "<group>"; };
 		B9377DEA1F6A5CAA00CC06D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B99C2FB9211AA417007016F1 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		B99C2FBB211AAFB1007016F1 /* MyFaceCullingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFaceCullingView.h; sourceTree = "<group>"; };
+		B99C2FBC211AAFB1007016F1 /* MyFaceCullingView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MyFaceCullingView.mm; sourceTree = "<group>"; };
 		B9A1D4CD2109BE3700375BE7 /* MyCircleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCircleView.h; sourceTree = "<group>"; };
 		B9A1D4CE2109BE3700375BE7 /* MyCircleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCircleView.m; sourceTree = "<group>"; };
 		B9A1D4D02109C7BD00375BE7 /* circle.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = circle.vs; sourceTree = "<group>"; };
@@ -1407,6 +1410,8 @@
 				B9FDB7F621194BE600E26BB7 /* MyStencilTestView.mm */,
 				B9FDB7FA211983E600E26BB7 /* MyBlendingView.h */,
 				B9FDB7FB211983E600E26BB7 /* MyBlendingView.mm */,
+				B99C2FBB211AAFB1007016F1 /* MyFaceCullingView.h */,
+				B99C2FBC211AAFB1007016F1 /* MyFaceCullingView.mm */,
 			);
 			path = Exercises;
 			sourceTree = "<group>";
@@ -1984,6 +1989,7 @@
 				B904EFFF210097E4008B24FB /* MyEAGLView.m in Sources */,
 				B9377DC81F6A5CAA00CC06D8 /* AppDelegate.m in Sources */,
 				B9FDB737210F038C00E26BB7 /* MyEffectsView.m in Sources */,
+				B99C2FBD211AAFB1007016F1 /* MyFaceCullingView.mm in Sources */,
 				B9377DC51F6A5CAA00CC06D8 /* main.m in Sources */,
 				B9A1D831210DC45B00375BE7 /* TextureUtil.c in Sources */,
 				B9FDB78121182DCC00E26BB7 /* MyDepthTestView.mm in Sources */,

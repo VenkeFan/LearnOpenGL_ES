@@ -56,6 +56,7 @@
         [self initializeDepthbuffer];
         
         [self renderWithSort];
+//        [self renderWithDiscard];
     }
     return self;
 }

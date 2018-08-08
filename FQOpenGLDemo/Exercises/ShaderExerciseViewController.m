@@ -23,6 +23,7 @@
 #import "MyDepthTestView.h"
 #import "MyStencilTestView.h"
 #import "MyBlendingView.h"
+#import "MyFaceCullingView.h"
 
 @interface ShaderExerciseViewController ()
 
@@ -33,7 +34,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    MyBlendingView *view = [[MyBlendingView alloc] initWithFrame:self.view.bounds];
+    MyFaceCullingView *view = [[MyFaceCullingView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:view];
 }
 
