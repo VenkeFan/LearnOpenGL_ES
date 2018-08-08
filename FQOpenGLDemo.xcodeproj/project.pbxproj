@@ -246,6 +246,10 @@
 		B9FDB7F421183FAD00E26BB7 /* depthTest.fs in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7F321183FAD00E26BB7 /* depthTest.fs */; };
 		B9FDB7F721194BE600E26BB7 /* MyStencilTestView.mm in Sources */ = {isa = PBXBuildFile; fileRef = B9FDB7F621194BE600E26BB7 /* MyStencilTestView.mm */; };
 		B9FDB7F92119706A00E26BB7 /* stencil_border.fs in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB7F82119706A00E26BB7 /* stencil_border.fs */; };
+		B9FDB7FC211983E600E26BB7 /* MyBlendingView.mm in Sources */ = {isa = PBXBuildFile; fileRef = B9FDB7FB211983E600E26BB7 /* MyBlendingView.mm */; };
+		B9FDB7FF2119848000E26BB7 /* FQTextureHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = B9FDB7FE2119848000E26BB7 /* FQTextureHelper.mm */; };
+		B9FDB8032119878300E26BB7 /* blending_discard.fs in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB8022119878300E26BB7 /* blending_discard.fs */; };
+		B9FDB8052119A99400E26BB7 /* blending_sort.fs in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB8042119A99400E26BB7 /* blending_sort.fs */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -569,6 +573,7 @@
 		B9377DE41F6A5CAA00CC06D8 /* FQOpenGLDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FQOpenGLDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9377DE81F6A5CAA00CC06D8 /* FQOpenGLDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FQOpenGLDemoUITests.m; sourceTree = "<group>"; };
 		B9377DEA1F6A5CAA00CC06D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B99C2FB9211AA417007016F1 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
 		B9A1D4CD2109BE3700375BE7 /* MyCircleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCircleView.h; sourceTree = "<group>"; };
 		B9A1D4CE2109BE3700375BE7 /* MyCircleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCircleView.m; sourceTree = "<group>"; };
 		B9A1D4D02109C7BD00375BE7 /* circle.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = circle.vs; sourceTree = "<group>"; };
@@ -722,6 +727,12 @@
 		B9FDB7F521194BE600E26BB7 /* MyStencilTestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyStencilTestView.h; sourceTree = "<group>"; };
 		B9FDB7F621194BE600E26BB7 /* MyStencilTestView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MyStencilTestView.mm; sourceTree = "<group>"; };
 		B9FDB7F82119706A00E26BB7 /* stencil_border.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = stencil_border.fs; sourceTree = "<group>"; };
+		B9FDB7FA211983E600E26BB7 /* MyBlendingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyBlendingView.h; sourceTree = "<group>"; };
+		B9FDB7FB211983E600E26BB7 /* MyBlendingView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MyBlendingView.mm; sourceTree = "<group>"; };
+		B9FDB7FD2119848000E26BB7 /* FQTextureHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FQTextureHelper.h; sourceTree = "<group>"; };
+		B9FDB7FE2119848000E26BB7 /* FQTextureHelper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FQTextureHelper.mm; sourceTree = "<group>"; };
+		B9FDB8022119878300E26BB7 /* blending_discard.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = blending_discard.fs; sourceTree = "<group>"; };
+		B9FDB8042119A99400E26BB7 /* blending_sort.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = blending_sort.fs; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -759,6 +770,8 @@
 				B9A1D7E9210D661F00375BE7 /* 3rd */,
 				B904EFE621003BA3008B24FB /* FQShaderHelper.h */,
 				B904EFE721003BA3008B24FB /* FQShaderHelper.m */,
+				B9FDB7FD2119848000E26BB7 /* FQTextureHelper.h */,
+				B9FDB7FE2119848000E26BB7 /* FQTextureHelper.mm */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -1347,6 +1360,7 @@
 		B9A1D82C210DC37300375BE7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B99C2FB9211AA417007016F1 /* libstdc++.6.0.9.tbd */,
 				B9A1D82D210DC37300375BE7 /* libz.tbd */,
 			);
 			name = Frameworks;
@@ -1391,6 +1405,8 @@
 				B9FDB78021182DCC00E26BB7 /* MyDepthTestView.mm */,
 				B9FDB7F521194BE600E26BB7 /* MyStencilTestView.h */,
 				B9FDB7F621194BE600E26BB7 /* MyStencilTestView.mm */,
+				B9FDB7FA211983E600E26BB7 /* MyBlendingView.h */,
+				B9FDB7FB211983E600E26BB7 /* MyBlendingView.mm */,
 			);
 			path = Exercises;
 			sourceTree = "<group>";
@@ -1431,6 +1447,8 @@
 				B9FDB7F121183FA400E26BB7 /* depthTest.vs */,
 				B9FDB7F321183FAD00E26BB7 /* depthTest.fs */,
 				B9FDB7F82119706A00E26BB7 /* stencil_border.fs */,
+				B9FDB8022119878300E26BB7 /* blending_discard.fs */,
+				B9FDB8042119A99400E26BB7 /* blending_sort.fs */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -1839,6 +1857,7 @@
 				B9FDB7C22118335D00E26BB7 /* roughness.png in Resources */,
 				B9FDB7DB2118335D00E26BB7 /* marble.jpg in Resources */,
 				B913ABF62102E9FF00B013FB /* projection.inl in Resources */,
+				B9FDB8032119878300E26BB7 /* blending_discard.fs in Resources */,
 				B9FDB77E21154C7100E26BB7 /* lighting_maps_specular_color.png in Resources */,
 				B913AB9F2102E9FF00B013FB /* type_vec2.inl in Resources */,
 				B913ABA82102E9FF00B013FB /* type_mat.inl in Resources */,
@@ -1912,6 +1931,7 @@
 				B9FDB7BD2118335D00E26BB7 /* brickwall.jpg in Resources */,
 				B913AA7D2101E36100B013FB /* transformations.fs in Resources */,
 				B9FDB7C82118335D00E26BB7 /* albedo.png in Resources */,
+				B9FDB8052119A99400E26BB7 /* blending_sort.fs in Resources */,
 				B9FDB7F221183FA400E26BB7 /* depthTest.vs in Resources */,
 				B9FDB7E72118335D00E26BB7 /* front.jpg in Resources */,
 				B913ABD92102E9FF00B013FB /* integer.inl in Resources */,
@@ -1969,6 +1989,7 @@
 				B9FDB78121182DCC00E26BB7 /* MyDepthTestView.mm in Sources */,
 				B904EFEB21003F6C008B24FB /* MyTextureView.m in Sources */,
 				B9FDB7F721194BE600E26BB7 /* MyStencilTestView.mm in Sources */,
+				B9FDB7FC211983E600E26BB7 /* MyBlendingView.mm in Sources */,
 				B913ABF921030F4100B013FB /* MyCoordinateSystemsView.mm in Sources */,
 				B913AC0C2105C66900B013FB /* MyBasicLightingView.mm in Sources */,
 				B9D838C21F6FBAB500E52FF0 /* MyTriangleView.m in Sources */,
@@ -1978,6 +1999,7 @@
 				B9A1D4CF2109BE3700375BE7 /* MyCircleView.m in Sources */,
 				B9FDB74A2112B82B00E26BB7 /* MyInstancedRenderView.m in Sources */,
 				B9B4C38A1F6B8DDA00905D35 /* GLKExerciseViewController.m in Sources */,
+				B9FDB7FF2119848000E26BB7 /* FQTextureHelper.mm in Sources */,
 				B9FDB76D2114608B00E26BB7 /* MyMaterialView.mm in Sources */,
 				B913AC0021041D4300B013FB /* MyCameraView.mm in Sources */,
 				B9A1D80B210D662000375BE7 /* JpegUtil.c in Sources */,

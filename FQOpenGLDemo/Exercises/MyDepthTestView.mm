@@ -212,7 +212,7 @@
     
     glBindVertexArrayOES(0);
     
-    // 渲染
+    // 全局配置
     glEnable(GL_DEPTH_TEST); // 启用深度测试，默认是禁用的
     /*
      GL_ALWAYS      永远通过深度测试

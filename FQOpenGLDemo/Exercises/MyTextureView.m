@@ -86,9 +86,9 @@
     
     
     // 生成纹理
-    [super genTexture:shaderProgram];
+//    [super genTexture:shaderProgram];
 //    [super genTexture2:shaderProgram];
-//    [super genTexture3:shaderProgram];
+    [super genTexture3:shaderProgram];
     
     // 设置背景色
     glClearColor(0.3, 0.0, 0.0, 1.0);

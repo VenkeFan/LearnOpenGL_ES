@@ -22,6 +22,7 @@
 #import "MyLightingMapsView.h"
 #import "MyDepthTestView.h"
 #import "MyStencilTestView.h"
+#import "MyBlendingView.h"
 
 @interface ShaderExerciseViewController ()
 
@@ -32,7 +33,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    MyStencilTestView *view = [[MyStencilTestView alloc] initWithFrame:self.view.bounds];
+    MyBlendingView *view = [[MyBlendingView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:view];
 }
 
