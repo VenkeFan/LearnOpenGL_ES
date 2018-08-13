@@ -17,13 +17,14 @@
 #import "MyBasicLightingView.h"
 #import "MyEffectsView.h"
 #import "MyInstancedRenderView.h"
-#import "MyFrameBufferView.h"
 #import "MyMaterialView.h"
 #import "MyLightingMapsView.h"
 #import "MyDepthTestView.h"
 #import "MyStencilTestView.h"
 #import "MyBlendingView.h"
 #import "MyFaceCullingView.h"
+#import "MyFrameBufferView.h"
+#import "MyFrameBufferGLKView.h"
 
 @interface ShaderExerciseViewController ()
 
@@ -34,7 +35,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    MyFaceCullingView *view = [[MyFaceCullingView alloc] initWithFrame:self.view.bounds];
+    UIView *view = [[MyFrameBufferView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:view];
 }
 

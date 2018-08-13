@@ -13,6 +13,9 @@
 		B904EFEF21006852008B24FB /* texture.fs in Resources */ = {isa = PBXBuildFile; fileRef = B904EFEE21006852008B24FB /* texture.fs */; };
 		B904EFFC2100958A008B24FB /* MyTransformationsView.mm in Sources */ = {isa = PBXBuildFile; fileRef = B904EFFB2100958A008B24FB /* MyTransformationsView.mm */; };
 		B904EFFF210097E4008B24FB /* MyEAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = B904EFFE210097E4008B24FB /* MyEAGLView.m */; };
+		B9064D3E211D737C00CA554A /* MyFrameBufferGLKView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9064D3D211D737C00CA554A /* MyFrameBufferGLKView.m */; };
+		B9064D47211DBE9C00CA554A /* framebuffers.vs in Resources */ = {isa = PBXBuildFile; fileRef = B9064D46211DBE9C00CA554A /* framebuffers.vs */; };
+		B9064D49211DBEA600CA554A /* framebuffers.fs in Resources */ = {isa = PBXBuildFile; fileRef = B9064D48211DBEA600CA554A /* framebuffers.fs */; };
 		B913AA7B2101E35500B013FB /* transformations.vs in Resources */ = {isa = PBXBuildFile; fileRef = B913AA7A2101E35500B013FB /* transformations.vs */; };
 		B913AA7D2101E36100B013FB /* transformations.fs in Resources */ = {isa = PBXBuildFile; fileRef = B913AA7C2101E36100B013FB /* transformations.fs */; };
 		B913AB852102E9FF00B013FB /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = B913AA872102E9FE00B013FB /* CMakeLists.txt */; };
@@ -149,6 +152,11 @@
 		B9377DDE1F6A5CAA00CC06D8 /* FQOpenGLDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9377DDD1F6A5CAA00CC06D8 /* FQOpenGLDemoTests.m */; };
 		B9377DE91F6A5CAA00CC06D8 /* FQOpenGLDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9377DE81F6A5CAA00CC06D8 /* FQOpenGLDemoUITests.m */; };
 		B99C2FBD211AAFB1007016F1 /* MyFaceCullingView.mm in Sources */ = {isa = PBXBuildFile; fileRef = B99C2FBC211AAFB1007016F1 /* MyFaceCullingView.mm */; };
+		B99C2FBF211B1E88007016F1 /* framebuffers_screen.vs in Resources */ = {isa = PBXBuildFile; fileRef = B99C2FBE211B1E88007016F1 /* framebuffers_screen.vs */; };
+		B99C2FC1211B1E93007016F1 /* framebuffers_screen.fs in Resources */ = {isa = PBXBuildFile; fileRef = B99C2FC0211B1E93007016F1 /* framebuffers_screen.fs */; };
+		B99C2FC5211C7034007016F1 /* demo_frag.fs in Resources */ = {isa = PBXBuildFile; fileRef = B99C2FC2211C7032007016F1 /* demo_frag.fs */; };
+		B99C2FC6211C7034007016F1 /* demo_mosaic.fs in Resources */ = {isa = PBXBuildFile; fileRef = B99C2FC3211C7033007016F1 /* demo_mosaic.fs */; };
+		B99C2FC7211C7034007016F1 /* demo_vert.vs in Resources */ = {isa = PBXBuildFile; fileRef = B99C2FC4211C7033007016F1 /* demo_vert.vs */; };
 		B9A1D4CF2109BE3700375BE7 /* MyCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A1D4CE2109BE3700375BE7 /* MyCircleView.m */; };
 		B9A1D4D12109C7BD00375BE7 /* circle.vs in Resources */ = {isa = PBXBuildFile; fileRef = B9A1D4D02109C7BD00375BE7 /* circle.vs */; };
 		B9A1D4D32109C7C400375BE7 /* circle.fs in Resources */ = {isa = PBXBuildFile; fileRef = B9A1D4D22109C7C400375BE7 /* circle.fs */; };
@@ -185,7 +193,7 @@
 		B9FDB74C2112B86100E26BB7 /* instancedRender.vs in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB74B2112B86100E26BB7 /* instancedRender.vs */; };
 		B9FDB74E2112B86900E26BB7 /* instancedRender.fs in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB74D2112B86900E26BB7 /* instancedRender.fs */; };
 		B9FDB76721130AAE00E26BB7 /* libyuv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9FDB76621130AAE00E26BB7 /* libyuv.a */; };
-		B9FDB76A2114140C00E26BB7 /* MyFrameBufferView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9FDB7692114140C00E26BB7 /* MyFrameBufferView.m */; };
+		B9FDB76A2114140C00E26BB7 /* MyFrameBufferView.mm in Sources */ = {isa = PBXBuildFile; fileRef = B9FDB7692114140C00E26BB7 /* MyFrameBufferView.mm */; };
 		B9FDB76D2114608B00E26BB7 /* MyMaterialView.mm in Sources */ = {isa = PBXBuildFile; fileRef = B9FDB76C2114608B00E26BB7 /* MyMaterialView.mm */; };
 		B9FDB76F211460A600E26BB7 /* material.vs in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB76E211460A600E26BB7 /* material.vs */; };
 		B9FDB771211460AD00E26BB7 /* material.fs in Resources */ = {isa = PBXBuildFile; fileRef = B9FDB770211460AD00E26BB7 /* material.fs */; };
@@ -281,6 +289,10 @@
 		B904EFFB2100958A008B24FB /* MyTransformationsView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MyTransformationsView.mm; sourceTree = "<group>"; };
 		B904EFFD210097E4008B24FB /* MyEAGLView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyEAGLView.h; sourceTree = "<group>"; };
 		B904EFFE210097E4008B24FB /* MyEAGLView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyEAGLView.m; sourceTree = "<group>"; };
+		B9064D3C211D737C00CA554A /* MyFrameBufferGLKView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFrameBufferGLKView.h; sourceTree = "<group>"; };
+		B9064D3D211D737C00CA554A /* MyFrameBufferGLKView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFrameBufferGLKView.m; sourceTree = "<group>"; };
+		B9064D46211DBE9C00CA554A /* framebuffers.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = framebuffers.vs; sourceTree = "<group>"; };
+		B9064D48211DBEA600CA554A /* framebuffers.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = framebuffers.fs; sourceTree = "<group>"; };
 		B913AA7A2101E35500B013FB /* transformations.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = transformations.vs; sourceTree = "<group>"; };
 		B913AA7C2101E36100B013FB /* transformations.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = transformations.fs; sourceTree = "<group>"; };
 		B913AA7F2102E9FE00B013FB /* vec4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vec4.hpp; sourceTree = "<group>"; };
@@ -577,6 +589,11 @@
 		B99C2FB9211AA417007016F1 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
 		B99C2FBB211AAFB1007016F1 /* MyFaceCullingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFaceCullingView.h; sourceTree = "<group>"; };
 		B99C2FBC211AAFB1007016F1 /* MyFaceCullingView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MyFaceCullingView.mm; sourceTree = "<group>"; };
+		B99C2FBE211B1E88007016F1 /* framebuffers_screen.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = framebuffers_screen.vs; sourceTree = "<group>"; };
+		B99C2FC0211B1E93007016F1 /* framebuffers_screen.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = framebuffers_screen.fs; sourceTree = "<group>"; };
+		B99C2FC2211C7032007016F1 /* demo_frag.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = demo_frag.fs; sourceTree = "<group>"; };
+		B99C2FC3211C7033007016F1 /* demo_mosaic.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = demo_mosaic.fs; sourceTree = "<group>"; };
+		B99C2FC4211C7033007016F1 /* demo_vert.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = demo_vert.vs; sourceTree = "<group>"; };
 		B9A1D4CD2109BE3700375BE7 /* MyCircleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCircleView.h; sourceTree = "<group>"; };
 		B9A1D4CE2109BE3700375BE7 /* MyCircleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCircleView.m; sourceTree = "<group>"; };
 		B9A1D4D02109C7BD00375BE7 /* circle.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = circle.vs; sourceTree = "<group>"; };
@@ -664,7 +681,7 @@
 		B9FDB76421130AAE00E26BB7 /* row.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = row.h; sourceTree = "<group>"; };
 		B9FDB76621130AAE00E26BB7 /* libyuv.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libyuv.a; sourceTree = "<group>"; };
 		B9FDB7682114140C00E26BB7 /* MyFrameBufferView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFrameBufferView.h; sourceTree = "<group>"; };
-		B9FDB7692114140C00E26BB7 /* MyFrameBufferView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFrameBufferView.m; sourceTree = "<group>"; };
+		B9FDB7692114140C00E26BB7 /* MyFrameBufferView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MyFrameBufferView.mm; sourceTree = "<group>"; };
 		B9FDB76B2114608B00E26BB7 /* MyMaterialView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyMaterialView.h; sourceTree = "<group>"; };
 		B9FDB76C2114608B00E26BB7 /* MyMaterialView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MyMaterialView.mm; sourceTree = "<group>"; };
 		B9FDB76E211460A600E26BB7 /* material.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = material.vs; sourceTree = "<group>"; };
@@ -1402,8 +1419,6 @@
 				B9FDB736210F038C00E26BB7 /* MyEffectsView.m */,
 				B9FDB7482112B82B00E26BB7 /* MyInstancedRenderView.h */,
 				B9FDB7492112B82B00E26BB7 /* MyInstancedRenderView.m */,
-				B9FDB7682114140C00E26BB7 /* MyFrameBufferView.h */,
-				B9FDB7692114140C00E26BB7 /* MyFrameBufferView.m */,
 				B9FDB77F21182DCC00E26BB7 /* MyDepthTestView.h */,
 				B9FDB78021182DCC00E26BB7 /* MyDepthTestView.mm */,
 				B9FDB7F521194BE600E26BB7 /* MyStencilTestView.h */,
@@ -1412,6 +1427,10 @@
 				B9FDB7FB211983E600E26BB7 /* MyBlendingView.mm */,
 				B99C2FBB211AAFB1007016F1 /* MyFaceCullingView.h */,
 				B99C2FBC211AAFB1007016F1 /* MyFaceCullingView.mm */,
+				B9FDB7682114140C00E26BB7 /* MyFrameBufferView.h */,
+				B9FDB7692114140C00E26BB7 /* MyFrameBufferView.mm */,
+				B9064D3C211D737C00CA554A /* MyFrameBufferGLKView.h */,
+				B9064D3D211D737C00CA554A /* MyFrameBufferGLKView.m */,
 			);
 			path = Exercises;
 			sourceTree = "<group>";
@@ -1419,6 +1438,9 @@
 		B9B4C3D41F6BACAE00905D35 /* Shaders */ = {
 			isa = PBXGroup;
 			children = (
+				B99C2FC2211C7032007016F1 /* demo_frag.fs */,
+				B99C2FC3211C7033007016F1 /* demo_mosaic.fs */,
+				B99C2FC4211C7033007016F1 /* demo_vert.vs */,
 				B9D838BC1F6FB7B200E52FF0 /* triangle.vs */,
 				B9D838BE1F6FB82200E52FF0 /* triangle.fs */,
 				B9A1D4D02109C7BD00375BE7 /* circle.vs */,
@@ -1454,6 +1476,10 @@
 				B9FDB7F82119706A00E26BB7 /* stencil_border.fs */,
 				B9FDB8022119878300E26BB7 /* blending_discard.fs */,
 				B9FDB8042119A99400E26BB7 /* blending_sort.fs */,
+				B99C2FBE211B1E88007016F1 /* framebuffers_screen.vs */,
+				B99C2FC0211B1E93007016F1 /* framebuffers_screen.fs */,
+				B9064D46211DBE9C00CA554A /* framebuffers.vs */,
+				B9064D48211DBEA600CA554A /* framebuffers.fs */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -1765,6 +1791,7 @@
 				B9FDB7BE2118335D00E26BB7 /* albedo.png in Resources */,
 				B913AB922102E9FF00B013FB /* type_mat2x4.inl in Resources */,
 				B913ABE62102E9FF00B013FB /* rotate_normalized_axis.inl in Resources */,
+				B9064D49211DBEA600CA554A /* framebuffers.fs in Resources */,
 				B9FDB7C72118335D00E26BB7 /* roughness.png in Resources */,
 				B9FDB7D82118335D00E26BB7 /* bricks2_normal.jpg in Resources */,
 				B913ABD82102E9FF00B013FB /* dual_quaternion.inl in Resources */,
@@ -1775,6 +1802,7 @@
 				B9D838BD1F6FB7B200E52FF0 /* triangle.vs in Resources */,
 				B9FDB7C92118335D00E26BB7 /* metallic.png in Resources */,
 				B913AB952102E9FF00B013FB /* func_packing_simd.inl in Resources */,
+				B99C2FC7211C7034007016F1 /* demo_vert.vs in Resources */,
 				B913ABC12102E9FF00B013FB /* matrix_query.inl in Resources */,
 				B9FDB7EA2118335D00E26BB7 /* wood.png in Resources */,
 				B9FDB7EB2118335D00E26BB7 /* matrix.jpg in Resources */,
@@ -1807,6 +1835,7 @@
 				B913AB8F2102E9FF00B013FB /* type_vec.inl in Resources */,
 				B913ABA42102E9FF00B013FB /* func_matrix.inl in Resources */,
 				B913ABB52102E9FF00B013FB /* integer.inl in Resources */,
+				B99C2FC1211B1E93007016F1 /* framebuffers_screen.fs in Resources */,
 				B913ABBE2102E9FF00B013FB /* constants.inl in Resources */,
 				B913AC102105C6E100B013FB /* basicLighting.fs in Resources */,
 				B913ABC72102E9FF00B013FB /* type_trait.inl in Resources */,
@@ -1839,6 +1868,7 @@
 				B9A1D4D32109C7C400375BE7 /* circle.fs in Resources */,
 				B913ABB62102E9FF00B013FB /* functions.inl in Resources */,
 				B9FDB741210F1E5000E26BB7 /* effects_eddy.fs in Resources */,
+				B9064D47211DBE9C00CA554A /* framebuffers.vs in Resources */,
 				B913ABB32102E9FF00B013FB /* ulp.inl in Resources */,
 				B913ABCD2102E9FF00B013FB /* mixed_product.inl in Resources */,
 				B9FDB72F210F034A00E26BB7 /* noise.jpg in Resources */,
@@ -1849,6 +1879,7 @@
 				B9FDB7732114818900E26BB7 /* container2.png in Resources */,
 				B913ABC52102E9FF00B013FB /* quaternion.inl in Resources */,
 				B913ABBD2102E9FF00B013FB /* random.inl in Resources */,
+				B99C2FBF211B1E88007016F1 /* framebuffers_screen.vs in Resources */,
 				B9FDB7C52118335D00E26BB7 /* normal.png in Resources */,
 				B913AB8C2102E9FF00B013FB /* func_matrix_simd.inl in Resources */,
 				B913ABCE2102E9FF00B013FB /* transform.inl in Resources */,
@@ -1927,12 +1958,14 @@
 				B913ABB82102E9FF00B013FB /* matrix_access.inl in Resources */,
 				B913AB9A2102E9FF00B013FB /* type_vec1.inl in Resources */,
 				B9FDB77A2114826000E26BB7 /* lightingMaps.fs in Resources */,
+				B99C2FC5211C7034007016F1 /* demo_frag.fs in Resources */,
 				B913ABB22102E9FF00B013FB /* quaternion_simd.inl in Resources */,
 				B913ABBA2102E9FF00B013FB /* color_encoding.inl in Resources */,
 				B913ABE52102E9FF00B013FB /* compatibility.inl in Resources */,
 				B913AB902102E9FF00B013FB /* func_common.inl in Resources */,
 				B9A1D4D12109C7BD00375BE7 /* circle.vs in Resources */,
 				B9FDB7E82118335D00E26BB7 /* grass.png in Resources */,
+				B99C2FC6211C7034007016F1 /* demo_mosaic.fs in Resources */,
 				B9FDB7BD2118335D00E26BB7 /* brickwall.jpg in Resources */,
 				B913AA7D2101E36100B013FB /* transformations.fs in Resources */,
 				B9FDB7C82118335D00E26BB7 /* albedo.png in Resources */,
@@ -1983,7 +2016,7 @@
 			files = (
 				B904EFFC2100958A008B24FB /* MyTransformationsView.mm in Sources */,
 				B913AC0321045BA800B013FB /* MyColorView.mm in Sources */,
-				B9FDB76A2114140C00E26BB7 /* MyFrameBufferView.m in Sources */,
+				B9FDB76A2114140C00E26BB7 /* MyFrameBufferView.mm in Sources */,
 				B904EFE821003BA3008B24FB /* FQShaderHelper.m in Sources */,
 				B9377DCB1F6A5CAA00CC06D8 /* ViewController.m in Sources */,
 				B904EFFF210097E4008B24FB /* MyEAGLView.m in Sources */,
@@ -2007,6 +2040,7 @@
 				B9B4C38A1F6B8DDA00905D35 /* GLKExerciseViewController.m in Sources */,
 				B9FDB7FF2119848000E26BB7 /* FQTextureHelper.mm in Sources */,
 				B9FDB76D2114608B00E26BB7 /* MyMaterialView.mm in Sources */,
+				B9064D3E211D737C00CA554A /* MyFrameBufferGLKView.m in Sources */,
 				B913AC0021041D4300B013FB /* MyCameraView.mm in Sources */,
 				B9A1D80B210D662000375BE7 /* JpegUtil.c in Sources */,
 			);
