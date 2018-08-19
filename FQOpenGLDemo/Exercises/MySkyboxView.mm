@@ -112,51 +112,11 @@
     glm::mat4 projection;
     
     {
-        // skybox
-        
-        glDepthMask(GL_FALSE);
-        
-        view = glm::translate(view, glm::vec3(0.f, 0.f, 0.f));
-        projection = glm::perspective(glm::radians(90.f), _renderWidth / (float)_renderHeight, 0.1f, 100.0f);
-        
-        GLuint skyboxShader = [FQShaderHelper linkShaderWithVertexFileName:@"skybox" fragmentFileName:@"skybox"];
-        [self loadCubemap];
-        
-        {
-            [self skyboxVertex];
-            
-            glBindVertexArrayOES(_skyboxVAO);
-            
-            int posLoc = glGetAttribLocation(skyboxShader, "aPos");
-            glEnableVertexAttribArray(posLoc);
-            glVertexAttribPointer(posLoc, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (GLfloat *)NULL + 0);
-            
-            glBindVertexArrayOES(0);
-        }
-        
-        {
-            glUseProgram(skyboxShader);
-            
-            glUniformMatrix4fv(glGetUniformLocation(skyboxShader, "view"), 1, GL_FALSE, glm::value_ptr(view));
-            glUniformMatrix4fv(glGetUniformLocation(skyboxShader, "projection"), 1, GL_FALSE, glm::value_ptr(projection));
-        }
-        
-        glBindVertexArrayOES(_skyboxVAO);
-        glActiveTexture(GL_TEXTURE0);
-        glBindTexture(GL_TEXTURE_CUBE_MAP, _cubemapTexture);
-        glUniform1f(glGetUniformLocation(skyboxShader, "skybox"), 0);
-        glDrawArrays(GL_TRIANGLES, 0, 36);
-        glBindTexture(GL_TEXTURE_CUBE_MAP, 0);
-        glBindVertexArrayOES(0);
-    }
-    
-    {
         // cube
-        glDepthMask(GL_TRUE);
         
         model = glm::rotate(model, glm::radians(30.f), glm::vec3(1.f, 1.f, 0.f));
         view = glm::translate(view, glm::vec3(0.f, 0.f, -3.f));
-        projection = glm::perspective(glm::radians(90.f), _renderWidth / (float)_renderHeight, 0.1f, 100.0f);
+        projection = glm::perspective(glm::radians(90.0f), _renderWidth / (float)_renderHeight, 0.1f, 100.0f);
         
         GLuint cubeShader = [FQShaderHelper linkShaderWithVertexFileName:@"cubemap" fragmentFileName:@"cubemap"];
         [self loadTexture];
@@ -192,6 +152,47 @@
         glDrawArrays(GL_TRIANGLES, 0, 36);
         glBindTexture(GL_TEXTURE_2D, 0);
         glBindVertexArrayOES(0);
+    }
+    
+    {
+        // skybox
+        
+        glDepthFunc(GL_LEQUAL);
+        
+        view = glm::translate(view, glm::vec3(0.f, 0.f, -3.f));
+        projection = glm::perspective(glm::radians(10.0f), _renderWidth / (float)_renderHeight, 0.1f, 100.0f);
+        
+        GLuint skyboxShader = [FQShaderHelper linkShaderWithVertexFileName:@"skybox" fragmentFileName:@"skybox"];
+        [self loadCubemap];
+        
+        {
+            [self skyboxVertex];
+            
+            glBindVertexArrayOES(_skyboxVAO);
+            
+            int posLoc = glGetAttribLocation(skyboxShader, "aPos");
+            glEnableVertexAttribArray(posLoc);
+            glVertexAttribPointer(posLoc, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (GLfloat *)NULL + 0);
+            
+            glBindVertexArrayOES(0);
+        }
+        
+        {
+            glUseProgram(skyboxShader);
+            
+            glUniformMatrix4fv(glGetUniformLocation(skyboxShader, "view"), 1, GL_FALSE, glm::value_ptr(view));
+            glUniformMatrix4fv(glGetUniformLocation(skyboxShader, "projection"), 1, GL_FALSE, glm::value_ptr(projection));
+        }
+        
+        glBindVertexArrayOES(_skyboxVAO);
+        glActiveTexture(GL_TEXTURE0);
+        glBindTexture(GL_TEXTURE_CUBE_MAP, _cubemapTexture);
+        glUniform1f(glGetUniformLocation(skyboxShader, "skybox"), 0);
+        glDrawArrays(GL_TRIANGLES, 0, 36);
+        glBindTexture(GL_TEXTURE_CUBE_MAP, 0);
+        glBindVertexArrayOES(0);
+        
+        glDepthFunc(GL_LESS);
     }
     
     [_context presentRenderbuffer:GL_RENDERBUFFER];

@@ -304,7 +304,6 @@
 		B907625D2126D6C000A51BA8 /* skybox.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = skybox.fs; sourceTree = "<group>"; };
 		B907625F2126D89400A51BA8 /* cubemap.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = cubemap.vs; sourceTree = "<group>"; };
 		B90762612126D89D00A51BA8 /* cubemap.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = cubemap.fs; sourceTree = "<group>"; };
-		B907626321281FB800A51BA8 /* camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = camera.h; sourceTree = "<group>"; };
 		B913AA7A2101E35500B013FB /* transformations.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = transformations.vs; sourceTree = "<group>"; };
 		B913AA7C2101E36100B013FB /* transformations.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = transformations.fs; sourceTree = "<group>"; };
 		B913AA7F2102E9FE00B013FB /* vec4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vec4.hpp; sourceTree = "<group>"; };
@@ -799,7 +798,6 @@
 		B904EFE521003B5F008B24FB /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				B907626321281FB800A51BA8 /* camera.h */,
 				B9A1D7E9210D661F00375BE7 /* 3rd */,
 				B904EFE621003BA3008B24FB /* FQShaderHelper.h */,
 				B904EFE721003BA3008B24FB /* FQShaderHelper.m */,
