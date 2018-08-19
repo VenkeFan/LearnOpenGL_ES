@@ -15,7 +15,6 @@
 #include "glm.hpp"
 #include "matrix_transform.hpp"
 #include "type_ptr.hpp"
-#include "geometric.h"
 
 @interface MyFrameBufferView () {
     GLuint _frameBuffer;

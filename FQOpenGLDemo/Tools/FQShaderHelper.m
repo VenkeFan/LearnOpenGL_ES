@@ -62,6 +62,11 @@
         return 0;
     }
     
+    if (program == 0) {
+        printf("%s\n", "program linked fail");
+        return 0;
+    }
+    
     return program;
 }
 
