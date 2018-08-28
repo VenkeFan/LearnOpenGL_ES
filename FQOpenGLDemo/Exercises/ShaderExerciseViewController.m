@@ -26,6 +26,7 @@
 #import "MyFrameBufferView.h"
 #import "MyFrameBufferGLKView.h"
 #import "MySkyboxView.h"
+#import "MyInstancingView.h"
 
 @interface ShaderExerciseViewController ()
 
@@ -36,7 +37,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UIView *view = [[MySkyboxView alloc] initWithFrame:self.view.bounds];
+    UIView *view = [[MyTextureView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:view];
 }
 

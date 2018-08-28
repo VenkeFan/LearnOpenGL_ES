@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B90432792133F4C70072E0AE /* MyInstancingView.m in Sources */ = {isa = PBXBuildFile; fileRef = B90432782133F4C70072E0AE /* MyInstancingView.m */; };
 		B904EFE821003BA3008B24FB /* FQShaderHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B904EFE721003BA3008B24FB /* FQShaderHelper.m */; };
 		B904EFEB21003F6C008B24FB /* MyTextureView.m in Sources */ = {isa = PBXBuildFile; fileRef = B904EFEA21003F6C008B24FB /* MyTextureView.m */; };
 		B904EFED21006842008B24FB /* texture.vs in Resources */ = {isa = PBXBuildFile; fileRef = B904EFEC21006842008B24FB /* texture.vs */; };
@@ -284,6 +285,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B90432772133F4C70072E0AE /* MyInstancingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyInstancingView.h; sourceTree = "<group>"; };
+		B90432782133F4C70072E0AE /* MyInstancingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyInstancingView.m; sourceTree = "<group>"; };
 		B904EFE621003BA3008B24FB /* FQShaderHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FQShaderHelper.h; sourceTree = "<group>"; };
 		B904EFE721003BA3008B24FB /* FQShaderHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FQShaderHelper.m; sourceTree = "<group>"; };
 		B904EFE921003F6C008B24FB /* MyTextureView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyTextureView.h; sourceTree = "<group>"; };
@@ -1444,6 +1447,8 @@
 				B9064D3D211D737C00CA554A /* MyFrameBufferGLKView.m */,
 				B9065A1E2121AC7B00CA554A /* MySkyboxView.h */,
 				B9065A1F2121AC7B00CA554A /* MySkyboxView.mm */,
+				B90432772133F4C70072E0AE /* MyInstancingView.h */,
+				B90432782133F4C70072E0AE /* MyInstancingView.m */,
 			);
 			path = Exercises;
 			sourceTree = "<group>";
@@ -2057,6 +2062,7 @@
 				B9B4C38D1F6B8E4200905D35 /* ShaderExerciseViewController.m in Sources */,
 				B9A1D82B210DBFCF00375BE7 /* PngUtil.c in Sources */,
 				B9FDB7762114822400E26BB7 /* MyLightingMapsView.mm in Sources */,
+				B90432792133F4C70072E0AE /* MyInstancingView.m in Sources */,
 				B9A1D4CF2109BE3700375BE7 /* MyCircleView.m in Sources */,
 				B9FDB74A2112B82B00E26BB7 /* MyInstancedRenderView.m in Sources */,
 				B9B4C38A1F6B8DDA00905D35 /* GLKExerciseViewController.m in Sources */,

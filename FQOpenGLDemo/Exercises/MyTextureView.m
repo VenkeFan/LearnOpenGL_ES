@@ -19,9 +19,62 @@
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
+        [self layoutUI];
+        
         [self renderWithVertexFileName:@"texture" fragmentFileName:@"texture"];
     }
     return self;
+}
+
+- (void)layoutUI {
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
+    [btn setTitle:@"Save" forState:UIControlStateNormal];
+    [btn sizeToFit];
+    btn.center = CGPointMake(CGRectGetWidth(self.bounds) * 0.5,
+                             CGRectGetHeight(self.bounds) - 100 - CGRectGetHeight(btn.bounds) * 0.5);
+    [btn addTarget:self action:@selector(saveBtnOnClicked) forControlEvents:UIControlEventTouchUpInside];
+    [self addSubview:btn];
+}
+
+- (void)saveBtnOnClicked {
+    int width = self.renderWidth;
+    int height = self.renderHeight;
+    unsigned int imageByteSize = width * height * 4;
+    GLubyte *buffer = (GLubyte *)malloc(imageByteSize);
+    
+    glReadPixels(0, 0, width, height, GL_RGBA, GL_UNSIGNED_BYTE, buffer);
+    
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+    NSUInteger bytesPerPixel = 4;
+    NSUInteger bytesPerRow = bytesPerPixel * width;
+    NSUInteger bitsPerComponent = 8;
+    
+    CGContextRef context = CGBitmapContextCreate(buffer,
+                                                 width,
+                                                 height,
+                                                 bitsPerComponent,
+                                                 bytesPerRow,
+                                                 colorSpace,
+                                                 kCGImageAlphaPremultipliedLast | kCGBitmapByteOrder32Big);
+    
+    CGImageRef cgImage = CGBitmapContextCreateImage(context);
+    UIImage *image = [UIImage imageWithCGImage:cgImage
+                                         scale:[UIScreen mainScreen].scale
+                                   orientation:UIImageOrientationDownMirrored];
+    CGContextRelease(context);
+    CGColorSpaceRelease(colorSpace);
+    CGImageRelease(cgImage);
+    free(buffer);
+    
+    UIImageWriteToSavedPhotosAlbum(image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
+}
+
+- (void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo {
+    if(error == NULL) {
+        printf("save image succeed");
+    } else {
+        printf("save image failed");
+    }
 }
 
 - (void)renderWithVertexFileName:(NSString *)vertexName fragmentFileName:(NSString *)fragmentName {
@@ -86,9 +139,9 @@
     
     
     // 生成纹理
-//    [super genTexture:shaderProgram];
+    [super genTexture:shaderProgram];
 //    [super genTexture2:shaderProgram];
-    [super genTexture3:shaderProgram];
+//    [super genTexture3:shaderProgram];
     
     // 设置背景色
     glClearColor(0.3, 0.0, 0.0, 1.0);
