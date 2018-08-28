@@ -37,7 +37,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UIView *view = [[MyTextureView alloc] initWithFrame:self.view.bounds];
+    UIView *view = [[MyInstancingView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:view];
 }
 
