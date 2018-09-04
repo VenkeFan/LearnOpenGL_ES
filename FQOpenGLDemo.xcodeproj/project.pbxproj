@@ -24,6 +24,10 @@
 		B907625E2126D6C000A51BA8 /* skybox.fs in Resources */ = {isa = PBXBuildFile; fileRef = B907625D2126D6C000A51BA8 /* skybox.fs */; };
 		B90762602126D89400A51BA8 /* cubemap.vs in Resources */ = {isa = PBXBuildFile; fileRef = B907625F2126D89400A51BA8 /* cubemap.vs */; };
 		B90762622126D89D00A51BA8 /* cubemap.fs in Resources */ = {isa = PBXBuildFile; fileRef = B90762612126D89D00A51BA8 /* cubemap.fs */; };
+		B908299F213E2C3800FD3C7D /* EffectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B908299E213E2C3800FD3C7D /* EffectsViewController.m */; };
+		B90829A2213E2F0F00FD3C7D /* EffectMirrorView.mm in Sources */ = {isa = PBXBuildFile; fileRef = B90829A1213E2F0F00FD3C7D /* EffectMirrorView.mm */; };
+		B90829A4213E37A600FD3C7D /* effect_mirror.fs in Resources */ = {isa = PBXBuildFile; fileRef = B90829A3213E37A600FD3C7D /* effect_mirror.fs */; };
+		B90829A6213E37B200FD3C7D /* effect_mirror.vs in Resources */ = {isa = PBXBuildFile; fileRef = B90829A5213E37B200FD3C7D /* effect_mirror.vs */; };
 		B913AA7B2101E35500B013FB /* transformations.vs in Resources */ = {isa = PBXBuildFile; fileRef = B913AA7A2101E35500B013FB /* transformations.vs */; };
 		B913AA7D2101E36100B013FB /* transformations.fs in Resources */ = {isa = PBXBuildFile; fileRef = B913AA7C2101E36100B013FB /* transformations.fs */; };
 		B913AB852102E9FF00B013FB /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = B913AA872102E9FE00B013FB /* CMakeLists.txt */; };
@@ -311,6 +315,12 @@
 		B907625D2126D6C000A51BA8 /* skybox.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = skybox.fs; sourceTree = "<group>"; };
 		B907625F2126D89400A51BA8 /* cubemap.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = cubemap.vs; sourceTree = "<group>"; };
 		B90762612126D89D00A51BA8 /* cubemap.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = cubemap.fs; sourceTree = "<group>"; };
+		B908299D213E2C3800FD3C7D /* EffectsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EffectsViewController.h; sourceTree = "<group>"; };
+		B908299E213E2C3800FD3C7D /* EffectsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EffectsViewController.m; sourceTree = "<group>"; };
+		B90829A0213E2F0F00FD3C7D /* EffectMirrorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EffectMirrorView.h; sourceTree = "<group>"; };
+		B90829A1213E2F0F00FD3C7D /* EffectMirrorView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = EffectMirrorView.mm; sourceTree = "<group>"; };
+		B90829A3213E37A600FD3C7D /* effect_mirror.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = effect_mirror.fs; sourceTree = "<group>"; };
+		B90829A5213E37B200FD3C7D /* effect_mirror.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = effect_mirror.vs; sourceTree = "<group>"; };
 		B913AA7A2101E35500B013FB /* transformations.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = transformations.vs; sourceTree = "<group>"; };
 		B913AA7C2101E36100B013FB /* transformations.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = transformations.fs; sourceTree = "<group>"; };
 		B913AA7F2102E9FE00B013FB /* vec4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vec4.hpp; sourceTree = "<group>"; };
@@ -1411,6 +1421,8 @@
 				B9B4C3891F6B8DDA00905D35 /* GLKExerciseViewController.m */,
 				B9B4C38B1F6B8E4200905D35 /* ShaderExerciseViewController.h */,
 				B9B4C38C1F6B8E4200905D35 /* ShaderExerciseViewController.m */,
+				B908299D213E2C3800FD3C7D /* EffectsViewController.h */,
+				B908299E213E2C3800FD3C7D /* EffectsViewController.m */,
 				B904EFFD210097E4008B24FB /* MyEAGLView.h */,
 				B904EFFE210097E4008B24FB /* MyEAGLView.m */,
 				B9D838C01F6FBAB500E52FF0 /* MyTriangleView.h */,
@@ -1453,6 +1465,8 @@
 				B9065A1F2121AC7B00CA554A /* MySkyboxView.mm */,
 				B90432772133F4C70072E0AE /* MyInstancingView.h */,
 				B90432782133F4C70072E0AE /* MyInstancingView.mm */,
+				B90829A0213E2F0F00FD3C7D /* EffectMirrorView.h */,
+				B90829A1213E2F0F00FD3C7D /* EffectMirrorView.mm */,
 			);
 			path = Exercises;
 			sourceTree = "<group>";
@@ -1508,6 +1522,8 @@
 				B90762612126D89D00A51BA8 /* cubemap.fs */,
 				B904327A21353C670072E0AE /* instance.vs */,
 				B904327C21353C730072E0AE /* instance.fs */,
+				B90829A5213E37B200FD3C7D /* effect_mirror.vs */,
+				B90829A3213E37A600FD3C7D /* effect_mirror.fs */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -1953,12 +1969,14 @@
 				B913ABCA2102E9FF00B013FB /* matrix_cross_product.inl in Resources */,
 				B9FDB733210F034A00E26BB7 /* 5.jpg in Resources */,
 				B913ABD32102E9FF00B013FB /* fast_square_root.inl in Resources */,
+				B90829A6213E37B200FD3C7D /* effect_mirror.vs in Resources */,
 				B913ABF12102E9FF00B013FB /* fast_exponential.inl in Resources */,
 				B913AB8E2102E9FF00B013FB /* func_geometric.inl in Resources */,
 				B913ABE92102E9FF00B013FB /* intersect.inl in Resources */,
 				B913AB8D2102E9FF00B013FB /* func_integer.inl in Resources */,
 				B913AB9B2102E9FF00B013FB /* func_common_simd.inl in Resources */,
 				B9FDB7E62118335D00E26BB7 /* right.jpg in Resources */,
+				B90829A4213E37A600FD3C7D /* effect_mirror.fs in Resources */,
 				B913AB892102E9FF00B013FB /* func_packing.inl in Resources */,
 				B907625E2126D6C000A51BA8 /* skybox.fs in Resources */,
 				B9FDB7D72118335D00E26BB7 /* window.png in Resources */,
@@ -2065,6 +2083,8 @@
 				B9FDB7F721194BE600E26BB7 /* MyStencilTestView.mm in Sources */,
 				B9FDB7FC211983E600E26BB7 /* MyBlendingView.mm in Sources */,
 				B913ABF921030F4100B013FB /* MyCoordinateSystemsView.mm in Sources */,
+				B908299F213E2C3800FD3C7D /* EffectsViewController.m in Sources */,
+				B90829A2213E2F0F00FD3C7D /* EffectMirrorView.mm in Sources */,
 				B913AC0C2105C66900B013FB /* MyBasicLightingView.mm in Sources */,
 				B9D838C21F6FBAB500E52FF0 /* MyTriangleView.m in Sources */,
 				B9B4C38D1F6B8E4200905D35 /* ShaderExerciseViewController.m in Sources */,

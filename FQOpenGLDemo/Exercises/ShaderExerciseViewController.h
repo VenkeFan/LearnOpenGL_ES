@@ -10,4 +10,6 @@
 
 @interface ShaderExerciseViewController : UIViewController
 
+- (instancetype)initWithChildViewClass:(Class)childClass;
+
 @end

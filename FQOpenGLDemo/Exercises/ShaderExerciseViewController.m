@@ -28,17 +28,31 @@
 #import "MySkyboxView.h"
 #import "MyInstancingView.h"
 
-@interface ShaderExerciseViewController ()
+@interface ShaderExerciseViewController () {
+    Class _childClass;
+}
 
 @end
 
 @implementation ShaderExerciseViewController
 
+- (instancetype)initWithChildViewClass:(Class)childClass {
+    if (self = [super init]) {
+        _childClass = childClass;
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UIView *view = [[MyInstancingView alloc] initWithFrame:self.view.bounds];
-    [self.view addSubview:view];
+    if ([_childClass isSubclassOfClass:[UIView class]]) {
+        UIView *view = [[_childClass alloc] initWithFrame:self.view.bounds];
+        [self.view addSubview:view];
+    } else {
+        UIView *view = [[MyInstancingView alloc] initWithFrame:self.view.bounds];
+        [self.view addSubview:view];
+    }
 }
 
 - (void)didReceiveMemoryWarning {

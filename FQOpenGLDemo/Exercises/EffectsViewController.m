@@ -1,26 +1,25 @@
 //
-//  ViewController.m
+//  EffectsViewController.m
 //  FQOpenGLDemo
 //
-//  Created by fanqi on 2017/9/14.
-//  Copyright © 2017年 fanqi. All rights reserved.
+//  Created by fan qi on 2018/9/4.
+//  Copyright © 2018年 fanqi. All rights reserved.
 //
 
-#import "ViewController.h"
-#import "GLKExerciseViewController.h"
-#import "ShaderExerciseViewController.h"
 #import "EffectsViewController.h"
+#import "ShaderExerciseViewController.h"
+#import "EffectMirrorView.h"
 
 static NSString * const ReuseID = @"TableViewCell";
 
-@interface ViewController () <UITableViewDelegate, UITableViewDataSource>
+@interface EffectsViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, weak) UITableView *tableView;
 @property (nonatomic, strong) NSArray *dataArray;
 
 @end
 
-@implementation ViewController
+@implementation EffectsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -41,9 +40,7 @@ static NSString * const ReuseID = @"TableViewCell";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ReuseID];
-    
     cell.textLabel.text = [self.dataArray[indexPath.row] allKeys].firstObject;
     
     return cell;
@@ -53,7 +50,8 @@ static NSString * const ReuseID = @"TableViewCell";
     NSDictionary *dic = self.dataArray[indexPath.row];
     Class class = [dic objectForKey:dic.allKeys.firstObject];
     
-    [self.navigationController pushViewController:[class new] animated:YES];
+    ShaderExerciseViewController *ctr = [[ShaderExerciseViewController alloc] initWithChildViewClass:class];
+    [self.navigationController pushViewController:ctr animated:YES];
 }
 
 #pragma mark - Getter
@@ -74,9 +72,7 @@ static NSString * const ReuseID = @"TableViewCell";
 
 - (NSArray *)dataArray {
     if (!_dataArray) {
-        _dataArray = @[@{NSStringFromClass([GLKExerciseViewController class]): [GLKExerciseViewController class]},
-                       @{NSStringFromClass([ShaderExerciseViewController class]): [ShaderExerciseViewController class]},
-                       @{NSStringFromClass([EffectsViewController class]): [EffectsViewController class]}];
+        _dataArray = @[@{NSStringFromClass([EffectMirrorView class]): [EffectMirrorView class]}];
     }
     return _dataArray;
 }
