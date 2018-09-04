@@ -23,7 +23,6 @@
          effects_gaussianBlur
          effects_emboss
          */
-        [self renderWithVertexFileName:@"effects" fragmentFileName:@"effects_emboss"];
     }
     return self;
 }

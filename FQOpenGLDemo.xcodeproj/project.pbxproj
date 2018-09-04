@@ -28,6 +28,14 @@
 		B90829A2213E2F0F00FD3C7D /* EffectMirrorView.mm in Sources */ = {isa = PBXBuildFile; fileRef = B90829A1213E2F0F00FD3C7D /* EffectMirrorView.mm */; };
 		B90829A4213E37A600FD3C7D /* effect_mirror.fs in Resources */ = {isa = PBXBuildFile; fileRef = B90829A3213E37A600FD3C7D /* effect_mirror.fs */; };
 		B90829A6213E37B200FD3C7D /* effect_mirror.vs in Resources */ = {isa = PBXBuildFile; fileRef = B90829A5213E37B200FD3C7D /* effect_mirror.vs */; };
+		B90829A9213E828A00FD3C7D /* EffectGrayView.m in Sources */ = {isa = PBXBuildFile; fileRef = B90829A8213E828A00FD3C7D /* EffectGrayView.m */; };
+		B90829AC213E850C00FD3C7D /* EffectReverseView.m in Sources */ = {isa = PBXBuildFile; fileRef = B90829AB213E850C00FD3C7D /* EffectReverseView.m */; };
+		B90829AF213E853E00FD3C7D /* EffectEddyView.m in Sources */ = {isa = PBXBuildFile; fileRef = B90829AE213E853E00FD3C7D /* EffectEddyView.m */; };
+		B90829B2213E856E00FD3C7D /* EffectMosaicView.m in Sources */ = {isa = PBXBuildFile; fileRef = B90829B1213E856E00FD3C7D /* EffectMosaicView.m */; };
+		B90829B5213E859800FD3C7D /* EffectGaussianBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = B90829B4213E859800FD3C7D /* EffectGaussianBlurView.m */; };
+		B90829B8213E85D800FD3C7D /* EffectEmbossView.m in Sources */ = {isa = PBXBuildFile; fileRef = B90829B7213E85D800FD3C7D /* EffectEmbossView.m */; };
+		B90829BB213E86DC00FD3C7D /* EffectElectricShockView.m in Sources */ = {isa = PBXBuildFile; fileRef = B90829BA213E86DC00FD3C7D /* EffectElectricShockView.m */; };
+		B90829BD213E871100FD3C7D /* effects_electricShock.fs in Resources */ = {isa = PBXBuildFile; fileRef = B90829BC213E871100FD3C7D /* effects_electricShock.fs */; };
 		B913AA7B2101E35500B013FB /* transformations.vs in Resources */ = {isa = PBXBuildFile; fileRef = B913AA7A2101E35500B013FB /* transformations.vs */; };
 		B913AA7D2101E36100B013FB /* transformations.fs in Resources */ = {isa = PBXBuildFile; fileRef = B913AA7C2101E36100B013FB /* transformations.fs */; };
 		B913AB852102E9FF00B013FB /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = B913AA872102E9FE00B013FB /* CMakeLists.txt */; };
@@ -321,6 +329,21 @@
 		B90829A1213E2F0F00FD3C7D /* EffectMirrorView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = EffectMirrorView.mm; sourceTree = "<group>"; };
 		B90829A3213E37A600FD3C7D /* effect_mirror.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = effect_mirror.fs; sourceTree = "<group>"; };
 		B90829A5213E37B200FD3C7D /* effect_mirror.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = effect_mirror.vs; sourceTree = "<group>"; };
+		B90829A7213E828A00FD3C7D /* EffectGrayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EffectGrayView.h; sourceTree = "<group>"; };
+		B90829A8213E828A00FD3C7D /* EffectGrayView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EffectGrayView.m; sourceTree = "<group>"; };
+		B90829AA213E850C00FD3C7D /* EffectReverseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EffectReverseView.h; sourceTree = "<group>"; };
+		B90829AB213E850C00FD3C7D /* EffectReverseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EffectReverseView.m; sourceTree = "<group>"; };
+		B90829AD213E853E00FD3C7D /* EffectEddyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EffectEddyView.h; sourceTree = "<group>"; };
+		B90829AE213E853E00FD3C7D /* EffectEddyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EffectEddyView.m; sourceTree = "<group>"; };
+		B90829B0213E856E00FD3C7D /* EffectMosaicView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EffectMosaicView.h; sourceTree = "<group>"; };
+		B90829B1213E856E00FD3C7D /* EffectMosaicView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EffectMosaicView.m; sourceTree = "<group>"; };
+		B90829B3213E859800FD3C7D /* EffectGaussianBlurView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EffectGaussianBlurView.h; sourceTree = "<group>"; };
+		B90829B4213E859800FD3C7D /* EffectGaussianBlurView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EffectGaussianBlurView.m; sourceTree = "<group>"; };
+		B90829B6213E85D800FD3C7D /* EffectEmbossView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EffectEmbossView.h; sourceTree = "<group>"; };
+		B90829B7213E85D800FD3C7D /* EffectEmbossView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EffectEmbossView.m; sourceTree = "<group>"; };
+		B90829B9213E86DC00FD3C7D /* EffectElectricShockView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EffectElectricShockView.h; sourceTree = "<group>"; };
+		B90829BA213E86DC00FD3C7D /* EffectElectricShockView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EffectElectricShockView.m; sourceTree = "<group>"; };
+		B90829BC213E871100FD3C7D /* effects_electricShock.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = effects_electricShock.fs; sourceTree = "<group>"; };
 		B913AA7A2101E35500B013FB /* transformations.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = transformations.vs; sourceTree = "<group>"; };
 		B913AA7C2101E36100B013FB /* transformations.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = transformations.fs; sourceTree = "<group>"; };
 		B913AA7F2102E9FE00B013FB /* vec4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vec4.hpp; sourceTree = "<group>"; };
@@ -1445,8 +1468,6 @@
 				B9FDB76C2114608B00E26BB7 /* MyMaterialView.mm */,
 				B9FDB7742114822400E26BB7 /* MyLightingMapsView.h */,
 				B9FDB7752114822400E26BB7 /* MyLightingMapsView.mm */,
-				B9FDB735210F038C00E26BB7 /* MyEffectsView.h */,
-				B9FDB736210F038C00E26BB7 /* MyEffectsView.m */,
 				B9FDB7482112B82B00E26BB7 /* MyInstancedRenderView.h */,
 				B9FDB7492112B82B00E26BB7 /* MyInstancedRenderView.m */,
 				B9FDB77F21182DCC00E26BB7 /* MyDepthTestView.h */,
@@ -1465,8 +1486,24 @@
 				B9065A1F2121AC7B00CA554A /* MySkyboxView.mm */,
 				B90432772133F4C70072E0AE /* MyInstancingView.h */,
 				B90432782133F4C70072E0AE /* MyInstancingView.mm */,
+				B9FDB735210F038C00E26BB7 /* MyEffectsView.h */,
+				B9FDB736210F038C00E26BB7 /* MyEffectsView.m */,
 				B90829A0213E2F0F00FD3C7D /* EffectMirrorView.h */,
 				B90829A1213E2F0F00FD3C7D /* EffectMirrorView.mm */,
+				B90829A7213E828A00FD3C7D /* EffectGrayView.h */,
+				B90829A8213E828A00FD3C7D /* EffectGrayView.m */,
+				B90829AA213E850C00FD3C7D /* EffectReverseView.h */,
+				B90829AB213E850C00FD3C7D /* EffectReverseView.m */,
+				B90829AD213E853E00FD3C7D /* EffectEddyView.h */,
+				B90829AE213E853E00FD3C7D /* EffectEddyView.m */,
+				B90829B0213E856E00FD3C7D /* EffectMosaicView.h */,
+				B90829B1213E856E00FD3C7D /* EffectMosaicView.m */,
+				B90829B3213E859800FD3C7D /* EffectGaussianBlurView.h */,
+				B90829B4213E859800FD3C7D /* EffectGaussianBlurView.m */,
+				B90829B6213E85D800FD3C7D /* EffectEmbossView.h */,
+				B90829B7213E85D800FD3C7D /* EffectEmbossView.m */,
+				B90829B9213E86DC00FD3C7D /* EffectElectricShockView.h */,
+				B90829BA213E86DC00FD3C7D /* EffectElectricShockView.m */,
 			);
 			path = Exercises;
 			sourceTree = "<group>";
@@ -1501,6 +1538,7 @@
 				B9FDB7422111624700E26BB7 /* effects_mosaic.fs */,
 				B9FDB7442111809B00E26BB7 /* effects_gaussianBlur.fs */,
 				B9FDB7462111C27300E26BB7 /* effects_emboss.fs */,
+				B90829BC213E871100FD3C7D /* effects_electricShock.fs */,
 				B9FDB74B2112B86100E26BB7 /* instancedRender.vs */,
 				B9FDB74D2112B86900E26BB7 /* instancedRender.fs */,
 				B9FDB76E211460A600E26BB7 /* material.vs */,
@@ -1892,6 +1930,7 @@
 				B913ABAC2102E9FF00B013FB /* quaternion.inl in Resources */,
 				B9FDB74C2112B86100E26BB7 /* instancedRender.vs in Resources */,
 				B9FDB72D210F034A00E26BB7 /* timg.jpeg in Resources */,
+				B90829BD213E871100FD3C7D /* effects_electricShock.fs in Resources */,
 				B913ABAD2102E9FF00B013FB /* packing.inl in Resources */,
 				B9FDB7D32118335D00E26BB7 /* metallic.png in Resources */,
 				B913ABCC2102E9FF00B013FB /* number_precision.inl in Resources */,
@@ -2069,19 +2108,24 @@
 				B904EFFC2100958A008B24FB /* MyTransformationsView.mm in Sources */,
 				B913AC0321045BA800B013FB /* MyColorView.mm in Sources */,
 				B9FDB76A2114140C00E26BB7 /* MyFrameBufferView.mm in Sources */,
+				B90829B5213E859800FD3C7D /* EffectGaussianBlurView.m in Sources */,
 				B904EFE821003BA3008B24FB /* FQShaderHelper.m in Sources */,
 				B9377DCB1F6A5CAA00CC06D8 /* ViewController.m in Sources */,
+				B90829AF213E853E00FD3C7D /* EffectEddyView.m in Sources */,
+				B90829BB213E86DC00FD3C7D /* EffectElectricShockView.m in Sources */,
 				B904EFFF210097E4008B24FB /* MyEAGLView.m in Sources */,
 				B9377DC81F6A5CAA00CC06D8 /* AppDelegate.m in Sources */,
 				B9FDB737210F038C00E26BB7 /* MyEffectsView.m in Sources */,
 				B99C2FBD211AAFB1007016F1 /* MyFaceCullingView.mm in Sources */,
 				B9377DC51F6A5CAA00CC06D8 /* main.m in Sources */,
+				B90829A9213E828A00FD3C7D /* EffectGrayView.m in Sources */,
 				B9A1D831210DC45B00375BE7 /* TextureUtil.c in Sources */,
 				B9FDB78121182DCC00E26BB7 /* MyDepthTestView.mm in Sources */,
 				B9065A202121AC7B00CA554A /* MySkyboxView.mm in Sources */,
 				B904EFEB21003F6C008B24FB /* MyTextureView.m in Sources */,
 				B9FDB7F721194BE600E26BB7 /* MyStencilTestView.mm in Sources */,
 				B9FDB7FC211983E600E26BB7 /* MyBlendingView.mm in Sources */,
+				B90829B2213E856E00FD3C7D /* EffectMosaicView.m in Sources */,
 				B913ABF921030F4100B013FB /* MyCoordinateSystemsView.mm in Sources */,
 				B908299F213E2C3800FD3C7D /* EffectsViewController.m in Sources */,
 				B90829A2213E2F0F00FD3C7D /* EffectMirrorView.mm in Sources */,
@@ -2092,12 +2136,14 @@
 				B9FDB7762114822400E26BB7 /* MyLightingMapsView.mm in Sources */,
 				B90432792133F4C70072E0AE /* MyInstancingView.mm in Sources */,
 				B9A1D4CF2109BE3700375BE7 /* MyCircleView.m in Sources */,
+				B90829B8213E85D800FD3C7D /* EffectEmbossView.m in Sources */,
 				B9FDB74A2112B82B00E26BB7 /* MyInstancedRenderView.m in Sources */,
 				B9B4C38A1F6B8DDA00905D35 /* GLKExerciseViewController.m in Sources */,
 				B9FDB7FF2119848000E26BB7 /* FQTextureHelper.mm in Sources */,
 				B9FDB76D2114608B00E26BB7 /* MyMaterialView.mm in Sources */,
 				B9064D3E211D737C00CA554A /* MyFrameBufferGLKView.m in Sources */,
 				B913AC0021041D4300B013FB /* MyCameraView.mm in Sources */,
+				B90829AC213E850C00FD3C7D /* EffectReverseView.m in Sources */,
 				B9A1D80B210D662000375BE7 /* JpegUtil.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

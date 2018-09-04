@@ -8,7 +8,14 @@
 
 #import "EffectsViewController.h"
 #import "ShaderExerciseViewController.h"
+#import "EffectGrayView.h"
+#import "EffectReverseView.h"
+#import "EffectEddyView.h"
+#import "EffectMosaicView.h"
+#import "EffectGaussianBlurView.h"
+#import "EffectEmbossView.h"
 #import "EffectMirrorView.h"
+#import "EffectElectricShockView.h"
 
 static NSString * const ReuseID = @"TableViewCell";
 
@@ -72,7 +79,14 @@ static NSString * const ReuseID = @"TableViewCell";
 
 - (NSArray *)dataArray {
     if (!_dataArray) {
-        _dataArray = @[@{NSStringFromClass([EffectMirrorView class]): [EffectMirrorView class]}];
+        _dataArray = @[@{NSStringFromClass([EffectGrayView class]): [EffectGrayView class]},
+                       @{NSStringFromClass([EffectReverseView class]): [EffectReverseView class]},
+                       @{NSStringFromClass([EffectEddyView class]): [EffectEddyView class]},
+                       @{NSStringFromClass([EffectMosaicView class]): [EffectMosaicView class]},
+                       @{NSStringFromClass([EffectGaussianBlurView class]): [EffectGaussianBlurView class]},
+                       @{NSStringFromClass([EffectEmbossView class]): [EffectEmbossView class]},
+                       @{NSStringFromClass([EffectMirrorView class]): [EffectMirrorView class]},
+                       @{NSStringFromClass([EffectElectricShockView class]): [EffectElectricShockView class]}];
     }
     return _dataArray;
 }
