@@ -16,6 +16,7 @@
 #import "EffectEmbossView.h"
 #import "EffectMirrorView.h"
 #import "EffectElectricShockView.h"
+#import "EffectGhostView.h"
 
 static NSString * const ReuseID = @"TableViewCell";
 
@@ -86,7 +87,8 @@ static NSString * const ReuseID = @"TableViewCell";
                        @{NSStringFromClass([EffectGaussianBlurView class]): [EffectGaussianBlurView class]},
                        @{NSStringFromClass([EffectEmbossView class]): [EffectEmbossView class]},
                        @{NSStringFromClass([EffectMirrorView class]): [EffectMirrorView class]},
-                       @{NSStringFromClass([EffectElectricShockView class]): [EffectElectricShockView class]}];
+                       @{NSStringFromClass([EffectElectricShockView class]): [EffectElectricShockView class]},
+                       @{NSStringFromClass([EffectGhostView class]): [EffectGhostView class]}];
     }
     return _dataArray;
 }

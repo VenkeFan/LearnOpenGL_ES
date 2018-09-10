@@ -20,6 +20,7 @@
 		B9064D47211DBE9C00CA554A /* framebuffers.vs in Resources */ = {isa = PBXBuildFile; fileRef = B9064D46211DBE9C00CA554A /* framebuffers.vs */; };
 		B9064D49211DBEA600CA554A /* framebuffers.fs in Resources */ = {isa = PBXBuildFile; fileRef = B9064D48211DBEA600CA554A /* framebuffers.fs */; };
 		B9065A202121AC7B00CA554A /* MySkyboxView.mm in Sources */ = {isa = PBXBuildFile; fileRef = B9065A1F2121AC7B00CA554A /* MySkyboxView.mm */; };
+		B9066493214220510095BA4E /* effect_ghost.vs in Resources */ = {isa = PBXBuildFile; fileRef = B9066492214220510095BA4E /* effect_ghost.vs */; };
 		B907625C2126D6B700A51BA8 /* skybox.vs in Resources */ = {isa = PBXBuildFile; fileRef = B907625B2126D6B700A51BA8 /* skybox.vs */; };
 		B907625E2126D6C000A51BA8 /* skybox.fs in Resources */ = {isa = PBXBuildFile; fileRef = B907625D2126D6C000A51BA8 /* skybox.fs */; };
 		B90762602126D89400A51BA8 /* cubemap.vs in Resources */ = {isa = PBXBuildFile; fileRef = B907625F2126D89400A51BA8 /* cubemap.vs */; };
@@ -36,6 +37,8 @@
 		B90829B8213E85D800FD3C7D /* EffectEmbossView.m in Sources */ = {isa = PBXBuildFile; fileRef = B90829B7213E85D800FD3C7D /* EffectEmbossView.m */; };
 		B90829BB213E86DC00FD3C7D /* EffectElectricShockView.m in Sources */ = {isa = PBXBuildFile; fileRef = B90829BA213E86DC00FD3C7D /* EffectElectricShockView.m */; };
 		B90829BD213E871100FD3C7D /* effects_electricShock.fs in Resources */ = {isa = PBXBuildFile; fileRef = B90829BC213E871100FD3C7D /* effects_electricShock.fs */; };
+		B90829C0213EAF5200FD3C7D /* EffectGhostView.mm in Sources */ = {isa = PBXBuildFile; fileRef = B90829BF213EAF5200FD3C7D /* EffectGhostView.mm */; };
+		B90829C2213EAFA000FD3C7D /* effect_ghost.fs in Resources */ = {isa = PBXBuildFile; fileRef = B90829C1213EAFA000FD3C7D /* effect_ghost.fs */; };
 		B913AA7B2101E35500B013FB /* transformations.vs in Resources */ = {isa = PBXBuildFile; fileRef = B913AA7A2101E35500B013FB /* transformations.vs */; };
 		B913AA7D2101E36100B013FB /* transformations.fs in Resources */ = {isa = PBXBuildFile; fileRef = B913AA7C2101E36100B013FB /* transformations.fs */; };
 		B913AB852102E9FF00B013FB /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = B913AA872102E9FE00B013FB /* CMakeLists.txt */; };
@@ -319,6 +322,7 @@
 		B9064D48211DBEA600CA554A /* framebuffers.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = framebuffers.fs; sourceTree = "<group>"; };
 		B9065A1E2121AC7B00CA554A /* MySkyboxView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySkyboxView.h; sourceTree = "<group>"; };
 		B9065A1F2121AC7B00CA554A /* MySkyboxView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MySkyboxView.mm; sourceTree = "<group>"; };
+		B9066492214220510095BA4E /* effect_ghost.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = effect_ghost.vs; sourceTree = "<group>"; };
 		B907625B2126D6B700A51BA8 /* skybox.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = skybox.vs; sourceTree = "<group>"; };
 		B907625D2126D6C000A51BA8 /* skybox.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = skybox.fs; sourceTree = "<group>"; };
 		B907625F2126D89400A51BA8 /* cubemap.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = cubemap.vs; sourceTree = "<group>"; };
@@ -344,6 +348,9 @@
 		B90829B9213E86DC00FD3C7D /* EffectElectricShockView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EffectElectricShockView.h; sourceTree = "<group>"; };
 		B90829BA213E86DC00FD3C7D /* EffectElectricShockView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EffectElectricShockView.m; sourceTree = "<group>"; };
 		B90829BC213E871100FD3C7D /* effects_electricShock.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = effects_electricShock.fs; sourceTree = "<group>"; };
+		B90829BE213EAF5200FD3C7D /* EffectGhostView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EffectGhostView.h; sourceTree = "<group>"; };
+		B90829BF213EAF5200FD3C7D /* EffectGhostView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = EffectGhostView.mm; sourceTree = "<group>"; };
+		B90829C1213EAFA000FD3C7D /* effect_ghost.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = effect_ghost.fs; sourceTree = "<group>"; };
 		B913AA7A2101E35500B013FB /* transformations.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = transformations.vs; sourceTree = "<group>"; };
 		B913AA7C2101E36100B013FB /* transformations.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = transformations.fs; sourceTree = "<group>"; };
 		B913AA7F2102E9FE00B013FB /* vec4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vec4.hpp; sourceTree = "<group>"; };
@@ -1488,8 +1495,6 @@
 				B90432782133F4C70072E0AE /* MyInstancingView.mm */,
 				B9FDB735210F038C00E26BB7 /* MyEffectsView.h */,
 				B9FDB736210F038C00E26BB7 /* MyEffectsView.m */,
-				B90829A0213E2F0F00FD3C7D /* EffectMirrorView.h */,
-				B90829A1213E2F0F00FD3C7D /* EffectMirrorView.mm */,
 				B90829A7213E828A00FD3C7D /* EffectGrayView.h */,
 				B90829A8213E828A00FD3C7D /* EffectGrayView.m */,
 				B90829AA213E850C00FD3C7D /* EffectReverseView.h */,
@@ -1504,6 +1509,10 @@
 				B90829B7213E85D800FD3C7D /* EffectEmbossView.m */,
 				B90829B9213E86DC00FD3C7D /* EffectElectricShockView.h */,
 				B90829BA213E86DC00FD3C7D /* EffectElectricShockView.m */,
+				B90829A0213E2F0F00FD3C7D /* EffectMirrorView.h */,
+				B90829A1213E2F0F00FD3C7D /* EffectMirrorView.mm */,
+				B90829BE213EAF5200FD3C7D /* EffectGhostView.h */,
+				B90829BF213EAF5200FD3C7D /* EffectGhostView.mm */,
 			);
 			path = Exercises;
 			sourceTree = "<group>";
@@ -1562,6 +1571,8 @@
 				B904327C21353C730072E0AE /* instance.fs */,
 				B90829A5213E37B200FD3C7D /* effect_mirror.vs */,
 				B90829A3213E37A600FD3C7D /* effect_mirror.fs */,
+				B9066492214220510095BA4E /* effect_ghost.vs */,
+				B90829C1213EAFA000FD3C7D /* effect_ghost.fs */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -1886,6 +1897,7 @@
 				B9FDB7C92118335D00E26BB7 /* metallic.png in Resources */,
 				B913AB952102E9FF00B013FB /* func_packing_simd.inl in Resources */,
 				B99C2FC7211C7034007016F1 /* demo_vert.vs in Resources */,
+				B9066493214220510095BA4E /* effect_ghost.vs in Resources */,
 				B913ABC12102E9FF00B013FB /* matrix_query.inl in Resources */,
 				B9FDB7EA2118335D00E26BB7 /* wood.png in Resources */,
 				B9FDB7EB2118335D00E26BB7 /* matrix.jpg in Resources */,
@@ -1988,6 +2000,7 @@
 				B9A1D826210DBFCF00375BE7 /* Android.mk in Resources */,
 				B904EFED21006842008B24FB /* texture.vs in Resources */,
 				B9FDB74E2112B86900E26BB7 /* instancedRender.fs in Resources */,
+				B90829C2213EAFA000FD3C7D /* effect_ghost.fs in Resources */,
 				B913AB942102E9FF00B013FB /* type_mat4x3.inl in Resources */,
 				B913ABD12102E9FF00B013FB /* fast_trigonometry.inl in Resources */,
 				B913AB862102E9FF00B013FB /* func_exponential.inl in Resources */,
@@ -2106,6 +2119,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B904EFFC2100958A008B24FB /* MyTransformationsView.mm in Sources */,
+				B90829C0213EAF5200FD3C7D /* EffectGhostView.mm in Sources */,
 				B913AC0321045BA800B013FB /* MyColorView.mm in Sources */,
 				B9FDB76A2114140C00E26BB7 /* MyFrameBufferView.mm in Sources */,
 				B90829B5213E859800FD3C7D /* EffectGaussianBlurView.m in Sources */,

@@ -9,6 +9,7 @@ varying vec2 vTexCoord;
 
 void main()
 {
+    // 因为图片的(0,0)位置一般在左上角，而OpenGL纹理坐标的(0,0)在左下角，这样y轴顺序相反
     vec2 correctTexCoord = vec2(aTexCoord.x, 1.0 - aTexCoord.y);
     
     if (aTexTransform.x > 0.0) {
