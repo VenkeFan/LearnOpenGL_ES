@@ -295,6 +295,7 @@
     glm::mat4 model = glm::mat4();
     glUniformMatrix4fv(glGetUniformLocation(_program, "model"), 1, GL_FALSE, glm::value_ptr(model));
     glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+    
     glBindVertexArrayOES(0);
     
     [_context presentRenderbuffer:GL_RENDERBUFFER];

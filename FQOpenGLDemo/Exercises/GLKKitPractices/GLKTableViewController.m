@@ -8,6 +8,7 @@
 
 #import "GLKTableViewController.h"
 #import "GLKExerciseViewController.h"
+#import "GLKAnimationViewController.h"
 
 static NSString * const ReuseID = @"TableViewCell";
 
@@ -62,7 +63,8 @@ static NSString * const ReuseID = @"TableViewCell";
 
 - (NSArray *)dataArray {
     if (!_dataArray) {
-        _dataArray = @[@{NSStringFromClass([GLKExerciseViewController class]): [GLKExerciseViewController class]}];
+        _dataArray = @[@{NSStringFromClass([GLKExerciseViewController class]): [GLKExerciseViewController class]},
+                       @{NSStringFromClass([GLKAnimationViewController class]): [GLKAnimationViewController class]}];
     }
     return _dataArray;
 }

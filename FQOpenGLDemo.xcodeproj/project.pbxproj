@@ -41,6 +41,7 @@
 		B90829C2213EAFA000FD3C7D /* effect_ghost.fs in Resources */ = {isa = PBXBuildFile; fileRef = B90829C1213EAFA000FD3C7D /* effect_ghost.fs */; };
 		B90F166921521D3700ABC581 /* GLKTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B90F166821521D3700ABC581 /* GLKTableViewController.m */; };
 		B90F166C21521F4000ABC581 /* GLESTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B90F166B21521F4000ABC581 /* GLESTableViewController.m */; };
+		B90F167121522B1C00ABC581 /* GLKAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B90F167021522B1C00ABC581 /* GLKAnimationViewController.m */; };
 		B913AA7B2101E35500B013FB /* transformations.vs in Resources */ = {isa = PBXBuildFile; fileRef = B913AA7A2101E35500B013FB /* transformations.vs */; };
 		B913AA7D2101E36100B013FB /* transformations.fs in Resources */ = {isa = PBXBuildFile; fileRef = B913AA7C2101E36100B013FB /* transformations.fs */; };
 		B913AB852102E9FF00B013FB /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = B913AA872102E9FE00B013FB /* CMakeLists.txt */; };
@@ -360,6 +361,8 @@
 		B90F166821521D3700ABC581 /* GLKTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLKTableViewController.m; sourceTree = "<group>"; };
 		B90F166A21521F4000ABC581 /* GLESTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLESTableViewController.h; sourceTree = "<group>"; };
 		B90F166B21521F4000ABC581 /* GLESTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLESTableViewController.m; sourceTree = "<group>"; };
+		B90F166F21522B1C00ABC581 /* GLKAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLKAnimationViewController.h; sourceTree = "<group>"; };
+		B90F167021522B1C00ABC581 /* GLKAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLKAnimationViewController.m; sourceTree = "<group>"; };
 		B913AA7A2101E35500B013FB /* transformations.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = transformations.vs; sourceTree = "<group>"; };
 		B913AA7C2101E36100B013FB /* transformations.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = transformations.fs; sourceTree = "<group>"; };
 		B913AA7F2102E9FE00B013FB /* vec4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vec4.hpp; sourceTree = "<group>"; };
@@ -874,6 +877,8 @@
 				B90F166821521D3700ABC581 /* GLKTableViewController.m */,
 				B9B4C3881F6B8DDA00905D35 /* GLKExerciseViewController.h */,
 				B9B4C3891F6B8DDA00905D35 /* GLKExerciseViewController.m */,
+				B90F166F21522B1C00ABC581 /* GLKAnimationViewController.h */,
+				B90F167021522B1C00ABC581 /* GLKAnimationViewController.m */,
 			);
 			path = GLKKitPractices;
 			sourceTree = "<group>";
@@ -2190,6 +2195,7 @@
 				B90829A9213E828A00FD3C7D /* EffectGrayView.m in Sources */,
 				B9A1D831210DC45B00375BE7 /* TextureUtil.c in Sources */,
 				B9FDB78121182DCC00E26BB7 /* MyDepthTestView.mm in Sources */,
+				B90F167121522B1C00ABC581 /* GLKAnimationViewController.m in Sources */,
 				B9065A202121AC7B00CA554A /* MySkyboxView.mm in Sources */,
 				B904EFEB21003F6C008B24FB /* MyTextureView.m in Sources */,
 				B9FDB7F721194BE600E26BB7 /* MyStencilTestView.mm in Sources */,
