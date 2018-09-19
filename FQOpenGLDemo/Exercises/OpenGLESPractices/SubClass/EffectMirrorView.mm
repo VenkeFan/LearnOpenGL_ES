@@ -209,7 +209,7 @@
     glActiveTexture(GL_TEXTURE0);
     glBindTexture(GL_TEXTURE_2D, texture);
     {
-        // 很奇怪 1.jpg 这张图片纹理设置必须是以下值，否则纹理显示不出来
+        // 很奇怪 1.jpg 这张图片纹理设置必须是以下值，否则纹理显示不出来（是不是因为这张图片的宽高不是2的幂？）
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);

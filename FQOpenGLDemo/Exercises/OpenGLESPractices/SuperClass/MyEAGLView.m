@@ -186,8 +186,8 @@
      参数 target ：指定纹理单元的类型，二维纹理需要指定为GL_TEXTURE_2D
      参数 level：指定纹理单元的层次，非mipmap纹理level设置为0，mipmap纹理设置为纹理的层级
      参数 internalFormat：指定OpenGL ES是如何管理纹理单元中数据格式的
-     参数 width：指定纹理单元的宽度
-     参数 height：指定纹理单元的高度
+     参数 width：指定纹理单元的宽度（必须是2的幂）
+     参数 height：指定纹理单元的高度（必须是2的幂）
      参数 border：指定纹理单元的边框，如果包含边框取值为1，不包含边框取值为0
      参数 format：指定data所指向的数据的格式
      参数 type：指定data所指向的数据的类型

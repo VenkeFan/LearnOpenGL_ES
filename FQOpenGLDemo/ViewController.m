@@ -7,9 +7,8 @@
 //
 
 #import "ViewController.h"
-#import "GLKExerciseViewController.h"
-#import "ShaderExerciseViewController.h"
-#import "EffectsViewController.h"
+#import "GLKTableViewController.h"
+#import "GLESTableViewController.h"
 
 static NSString * const ReuseID = @"TableViewCell";
 
@@ -41,9 +40,7 @@ static NSString * const ReuseID = @"TableViewCell";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ReuseID];
-    
     cell.textLabel.text = [self.dataArray[indexPath.row] allKeys].firstObject;
     
     return cell;
@@ -53,7 +50,9 @@ static NSString * const ReuseID = @"TableViewCell";
     NSDictionary *dic = self.dataArray[indexPath.row];
     Class class = [dic objectForKey:dic.allKeys.firstObject];
     
-    [self.navigationController pushViewController:[class new] animated:YES];
+    if ([class isSubclassOfClass:[UIViewController class]]) {
+        [self.navigationController pushViewController:[class new] animated:YES];
+    }
 }
 
 #pragma mark - Getter
@@ -74,9 +73,8 @@ static NSString * const ReuseID = @"TableViewCell";
 
 - (NSArray *)dataArray {
     if (!_dataArray) {
-        _dataArray = @[@{NSStringFromClass([GLKExerciseViewController class]): [GLKExerciseViewController class]},
-                       @{NSStringFromClass([ShaderExerciseViewController class]): [ShaderExerciseViewController class]},
-                       @{NSStringFromClass([EffectsViewController class]): [EffectsViewController class]}];
+        _dataArray = @[@{NSStringFromClass([GLKTableViewController class]): [GLKTableViewController class]},
+                       @{NSStringFromClass([GLESTableViewController class]): [GLESTableViewController class]}];
     }
     return _dataArray;
 }

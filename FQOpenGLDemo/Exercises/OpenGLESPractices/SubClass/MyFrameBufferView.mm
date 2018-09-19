@@ -373,7 +373,7 @@
     glTexImage2D(GL_TEXTURE_2D, 0, format, width, height, 0, format, GL_UNSIGNED_BYTE, data);
     
     {
-        // 这个case中纹理的环绕方式和过滤方式必须按以下设置，否则有的图片渲染不出来，原因待查！！！！！！！！！
+        // 这个case中纹理的环绕方式和过滤方式必须按以下设置，否则有的图片渲染不出来（猜测是因为图片的尺寸不是2的幂）
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);

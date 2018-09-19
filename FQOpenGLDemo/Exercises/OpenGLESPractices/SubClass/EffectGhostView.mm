@@ -37,7 +37,7 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
         [self initializeContext];
-        [self initializeLyayer];
+        [self initializeLayer];
         [self initializeFrameAndColorRenderBuffer];
         [self render];
     }
@@ -63,7 +63,7 @@
     [EAGLContext setCurrentContext:_context];
 }
 
-- (void)initializeLyayer {
+- (void)initializeLayer {
     _myEAGLLayer = (CAEAGLLayer *)self.layer;
     _myEAGLLayer.opaque = YES;
     _myEAGLLayer.contentsScale = [UIScreen mainScreen].scale;
@@ -170,7 +170,6 @@
     glBindTexture(GL_TEXTURE_2D, texture);
     glUniform1f(glGetUniformLocation(program, "myTexture"), 0);
     {
-        // 很奇怪 1.jpg 这张图片纹理设置必须是以下值，否则纹理显示不出来
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
@@ -181,7 +180,6 @@
     glBindTexture(GL_TEXTURE_2D, texture);
     glUniform1f(glGetUniformLocation(program, "ghostTexture"), 1);
     {
-        // 很奇怪 1.jpg 这张图片纹理设置必须是以下值，否则纹理显示不出来
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
