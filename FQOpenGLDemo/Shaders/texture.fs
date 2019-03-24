@@ -12,8 +12,7 @@ void main()
 {
 //    gl_FragColor = texture2D(ourTexture, TexCoord);
 //    gl_FragColor = texture2D(ourTexture, TexCoord) * vec4(ourColor, 1.0);
-    gl_FragColor = mix(texture2D(ourTexture, TexCoord), texture2D(anthorTexture, TexCoord), 0.2);
-    
+//    gl_FragColor = mix(texture2D(ourTexture, TexCoord), texture2D(anthorTexture, TexCoord), 0.2);
     
     // 加法
 //    vec4 color1 = texture2D(ourTexture, TexCoord);
@@ -27,9 +26,10 @@ void main()
 //    gl_FragColor = vec4(vec3(color2 - color1), 1.0);
     
     // 乘法
-//    vec4 color1 = texture2D(ourTexture, TexCoord);
-//    vec4 color2 = texture2D(anthorTexture, TexCoord);
-//    gl_FragColor = vec4(vec3(1.5 * color1 * color2), 1.0);
+    vec4 color1 = texture2D(ourTexture, TexCoord);
+    vec4 color2 = texture2D(anthorTexture, TexCoord);
+    gl_FragColor = vec4(vec3(color1 * color2), 1.0);
+//    gl_FragColor = vec4(cross(color1.rgb, color2.rgb), 1.0); // 叉乘
     
     // 除法
 //    vec4 color1 = texture2D(ourTexture, TexCoord);

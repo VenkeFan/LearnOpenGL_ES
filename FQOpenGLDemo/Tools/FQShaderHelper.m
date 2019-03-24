@@ -41,7 +41,7 @@
     // 链接它们
     glLinkProgram(program);
     
-    // 释放不再需要的shader
+    // 将着色器对象标记为删除，当着色器对象和程序对象分离时才删除
     glDeleteShader(vertexShader);
     glDeleteShader(fragmentShader);
     

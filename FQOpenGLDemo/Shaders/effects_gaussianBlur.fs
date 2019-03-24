@@ -49,7 +49,7 @@ void main()
             
             
             {
-//                /*
+//                /*7
 //                 使用高斯函数获取的权重后，图片会变暗
 //                 https://blog.csdn.net/lovelyloulou/article/details/5485538
 //                 */

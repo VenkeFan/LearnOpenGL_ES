@@ -6,6 +6,8 @@ varying vec2 vTexcoord;
 uniform sampler2D image;
 
 const highp vec3 luminanceWeighting = vec3(0.2125, 0.7154, 0.0721); // GPUImage中使用的灰度变换因子
+//const highp vec3 luminanceWeighting = vec3(0.299, 0.587, 0.114);
+//const highp vec3 luminanceWeighting = vec3(1.0, 1.0, 1.0);
 
 /*
  转换为灰度的方法：

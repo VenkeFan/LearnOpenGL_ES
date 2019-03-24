@@ -328,7 +328,7 @@
                                    @"back.jpg"];
     
     glGenTextures(1, &_cubemapTexture);
-    glBindTexture(GL_TEXTURE_2D, _cubemapTexture);
+    glBindTexture(GL_TEXTURE_CUBE_MAP, _cubemapTexture);
     
     unsigned char *data;
     int size;
