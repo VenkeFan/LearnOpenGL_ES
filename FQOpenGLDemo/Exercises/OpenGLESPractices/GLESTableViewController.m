@@ -45,7 +45,6 @@ static NSString * const ReuseID = @"TableViewCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self dataArray];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
     self.tableView.rowHeight = 50;
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:ReuseID];

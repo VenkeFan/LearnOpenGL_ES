@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "GLKTableViewController.h"
 #import "GLESTableViewController.h"
+#import "GPUImageTableViewController.h"
 
 static NSString * const ReuseID = @"TableViewCell";
 
@@ -74,7 +75,8 @@ static NSString * const ReuseID = @"TableViewCell";
 - (NSArray *)dataArray {
     if (!_dataArray) {
         _dataArray = @[@{NSStringFromClass([GLKTableViewController class]): [GLKTableViewController class]},
-                       @{NSStringFromClass([GLESTableViewController class]): [GLESTableViewController class]}];
+                       @{NSStringFromClass([GLESTableViewController class]): [GLESTableViewController class]},
+                       @{NSStringFromClass([GPUImageTableViewController class]): [GPUImageTableViewController class]}];
     }
     return _dataArray;
 }
